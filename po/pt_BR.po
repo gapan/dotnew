@@ -2,12 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-04 22:06+0300\n"
+"POT-Creation-Date: 2010-03-23 21:41+0200\n"
 "PO-Revision-Date: 2010-03-23 09:27-0300\n"
 "Last-Translator: Willian Gustavo Veiga <wiltave@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,9 @@ msgstr "Cancelar"
 #: dotnew:44
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Novo arquivo de configurações encontrado: $file\\n\\nO que você quer fazer com ele?"
+msgstr ""
+"Novo arquivo de configurações encontrado: $file\\n\\nO que você quer fazer "
+"com ele?"
 
 #: dotnew:45 dotnew:60
 #, sh-format
@@ -63,7 +65,8 @@ msgstr "Diff"
 #: dotnew:47
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr "Visualizar as diferenças entre o arquivo de configurações antigo e o novo"
+msgstr ""
+"Visualizar as diferenças entre o arquivo de configurações antigo e o novo"
 
 #: dotnew:48
 #, sh-format
@@ -114,3 +117,8 @@ msgstr "Sem arquivos .new"
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Não existem arquivos de configurações .new no seu sistema"
+
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
+#, fuzzy
+msgid "Manage .new system settings files"
+msgstr "Excluir o novo arquivo de configurações"

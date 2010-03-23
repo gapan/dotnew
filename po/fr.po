@@ -3,12 +3,12 @@
 # Copyright (C) 2009 George Vlahavas
 # This file is distributed under the same license as the dotnew package.
 # George Vlahavas <vlahavas~at~gmail~dot~com>, 2009.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-04 22:06+0300\n"
+"POT-Creation-Date: 2010-03-23 21:41+0200\n"
 "PO-Revision-Date: 2009-07-31 15:08+0200\n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team: French\n"
@@ -20,7 +20,9 @@ msgstr ""
 #: dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
-msgstr "Vous devez posséder le droits d'administrateur (root) afin d'exécuter ce programme"
+msgstr ""
+"Vous devez posséder le droits d'administrateur (root) afin d'exécuter ce "
+"programme"
 
 #: dotnew:42 dotnew:105 dotnew:108
 #, sh-format
@@ -35,7 +37,9 @@ msgstr "Annuler"
 #: dotnew:44
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Un nouveau fichier de configuration est disponible: $file\\n\\nQue voulez vous faire?"
+msgstr ""
+"Un nouveau fichier de configuration est disponible: $file\\n\\nQue voulez "
+"vous faire?"
 
 #: dotnew:45 dotnew:60
 #, sh-format
@@ -65,12 +69,16 @@ msgstr "Diff"
 #: dotnew:47
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr "Afficher les différences entre l'ancien et le nouveau fichier de configuration"
+msgstr ""
+"Afficher les différences entre l'ancien et le nouveau fichier de "
+"configuration"
 
 #: dotnew:48
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr "Utiliser vimdiff afin de modifier l'ancien et le nouveau fichier de configuration"
+msgstr ""
+"Utiliser vimdiff afin de modifier l'ancien et le nouveau fichier de "
+"configuration"
 
 #: dotnew:49
 #, sh-format
@@ -115,4 +123,10 @@ msgstr "Aucun fichier .new"
 #: dotnew:109
 #, sh-format
 msgid "There are no .new configuration files in your system"
-msgstr "Il n'y a aucun nouveau fichier de configuration .new dans votre système"
+msgstr ""
+"Il n'y a aucun nouveau fichier de configuration .new dans votre système"
+
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
+#, fuzzy
+msgid "Manage .new system settings files"
+msgstr "Supprimer le nouveau fichier de configuration"

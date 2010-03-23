@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-04 22:06+0300\n"
+"POT-Creation-Date: 2010-03-23 21:41+0200\n"
 "PO-Revision-Date: 2009-09-27 22:48-0400\n"
 "Last-Translator: Klemens Häckel <click3d at linuxmail (dot) org>\n"
 "Language-Team: Spanish <kde-i18n-doc@kde.org>\n"
@@ -65,8 +65,7 @@ msgstr "Diff"
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr ""
-"Mostrar las diferencias entre el archivo antiguo de configuración y el "
-"nuevo"
+"Mostrar las diferencias entre el archivo antiguo de configuración y el nuevo"
 
 #: dotnew:48
 #, sh-format
@@ -119,3 +118,7 @@ msgstr "No existen archivos .new"
 msgid "There are no .new configuration files in your system"
 msgstr "No se encuentran archivos de configuración .new en su sistema"
 
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
+#, fuzzy
+msgid "Manage .new system settings files"
+msgstr "Eliminar el archivo nuevo de configuración"

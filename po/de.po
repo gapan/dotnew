@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-04 22:06+0300\n"
+"POT-Creation-Date: 2010-03-23 21:41+0200\n"
 "PO-Revision-Date: 2009-07-30 11:33+0100\n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: \n"
@@ -114,3 +114,8 @@ msgstr "Keine .new Dateien"
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Es existieren keine .new Konfigurationsdateien in Ihrem System"
+
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
+#, fuzzy
+msgid "Manage .new system settings files"
+msgstr "Lösche die neue Konfigurationsdatei"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-04 22:06+0300\n"
+"POT-Creation-Date: 2010-03-23 21:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,4 +114,8 @@ msgstr ""
 #: dotnew:109
 #, sh-format
 msgid "There are no .new configuration files in your system"
+msgstr ""
+
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
+msgid "Manage .new system settings files"
 msgstr ""

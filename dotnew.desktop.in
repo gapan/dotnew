@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=Dotnew
-Comment=Manage .new system settings files
-Exec=kdesu dotnew
+_Name=Dotnew
+_Comment=Manage .new system settings files
+Exec=gksu dotnew
 Icon=applications-system
 Terminal=false
 Type=Application
 Categories=Application;System;;
 StartupNotify=true
 Encoding=UTF-8
-OnlyShowIn=KDE
+NotShowIn=KDE
