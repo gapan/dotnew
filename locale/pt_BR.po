@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -20,9 +20,7 @@ msgstr ""
 msgid "You need to be root to run this"
 msgstr "Você precisa ser root para executar isto"
 
-#: dotnew:42
-#: dotnew:105
-#: dotnew:108
+#: dotnew:42 dotnew:105 dotnew:108
 #, sh-format
 msgid "OK"
 msgstr "OK"
@@ -34,17 +32,10 @@ msgstr "Cancelar"
 
 #: dotnew:44
 #, sh-format
-msgid ""
-"New settings file found: $file\\n"
-"\\n"
-"What do you want to do with it?"
-msgstr ""
-"Novo arquivo de configurações encontrado: $file\\n"
-"\\n"
-"O que você quer fazer com ele?"
+msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
+msgstr "Novo arquivo de configurações encontrado: $file\\n\\nO que você quer fazer com ele?"
 
-#: dotnew:45
-#: dotnew:60
+#: dotnew:45 dotnew:60
 #, sh-format
 msgid "Replace"
 msgstr "Substituir"
@@ -54,8 +45,7 @@ msgstr "Substituir"
 msgid "Replace the old settings file with the new one"
 msgstr "Substituir o arquivo de configurações antigo pelo novo"
 
-#: dotnew:46
-#: dotnew:64
+#: dotnew:46 dotnew:64
 #, sh-format
 msgid "Delete"
 msgstr "Excluir"
@@ -65,9 +55,8 @@ msgstr "Excluir"
 msgid "Delete the new settings file"
 msgstr "Excluir o novo arquivo de configurações"
 
-#: dotnew:47
-#: dotnew:67
-#, fuzzy, sh-format
+#: dotnew:47 dotnew:67
+#, sh-format
 msgid "Diff"
 msgstr "Diff"
 
@@ -103,12 +92,8 @@ msgstr "Não"
 
 #: dotnew:97
 #, sh-format
-msgid ""
-"There is no $orig file present.\\n"
-"Move $i to $orig ?"
-msgstr ""
-"O arquivo $orig não está presente.\\n"
-"Mover $i para $orig ?"
+msgid "There is no $orig file present.\\nMove $i to $orig ?"
+msgstr "O arquivo $orig não está presente.\\nMover $i para $orig ?"
 
 #: dotnew:104
 #, sh-format
@@ -129,4 +114,3 @@ msgstr "Sem arquivos .new"
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Não existem arquivos de configurações .new no seu sistema"
-
