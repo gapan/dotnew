@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-04 22:06+0300\n"
+"PO-Revision-Date: 2010-03-23 09:27-0300\n"
+"Last-Translator: Willian Gustavo Veiga <wiltave@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: dotnew:20
+#, sh-format
+msgid "You need to be root to run this"
+msgstr "Você precisa ser root para executar isto"
+
+#: dotnew:42
+#: dotnew:105
+#: dotnew:108
+#, sh-format
+msgid "OK"
+msgstr "OK"
+
+#: dotnew:42
+#, sh-format
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: dotnew:44
+#, sh-format
+msgid ""
+"New settings file found: $file\\n"
+"\\n"
+"What do you want to do with it?"
+msgstr ""
+"Novo arquivo de configurações encontrado: $file\\n"
+"\\n"
+"O que você quer fazer com ele?"
+
+#: dotnew:45
+#: dotnew:60
+#, sh-format
+msgid "Replace"
+msgstr "Substituir"
+
+#: dotnew:45
+#, sh-format
+msgid "Replace the old settings file with the new one"
+msgstr "Substituir o arquivo de configurações antigo pelo novo"
+
+#: dotnew:46
+#: dotnew:64
+#, sh-format
+msgid "Delete"
+msgstr "Excluir"
+
+#: dotnew:46
+#, sh-format
+msgid "Delete the new settings file"
+msgstr "Excluir o novo arquivo de configurações"
+
+#: dotnew:47
+#: dotnew:67
+#, fuzzy, sh-format
+msgid "Diff"
+msgstr "Diff"
+
+#: dotnew:47
+#, sh-format
+msgid "View the differences between the old and new settings files"
+msgstr "Visualizar as diferenças entre o arquivo de configurações antigo e o novo"
+
+#: dotnew:48
+#, sh-format
+msgid "Use vimdiff to edit the old and new settings files"
+msgstr "Usar o vimdiff para editar o arquivo de configurações antigo e o novo"
+
+#: dotnew:49
+#, sh-format
+msgid "Nothing"
+msgstr "Nada"
+
+#: dotnew:49
+#, sh-format
+msgid "Do nothing for now, decide about it later"
+msgstr "Não fazer nada agora, decidir sobre isso depois"
+
+#: dotnew:95
+#, sh-format
+msgid "Yes"
+msgstr "Sim"
+
+#: dotnew:96
+#, sh-format
+msgid "No"
+msgstr "Não"
+
+#: dotnew:97
+#, sh-format
+msgid ""
+"There is no $orig file present.\\n"
+"Move $i to $orig ?"
+msgstr ""
+"O arquivo $orig não está presente.\\n"
+"Mover $i para $orig ?"
+
+#: dotnew:104
+#, sh-format
+msgid "Ready"
+msgstr "Pronto"
+
+#: dotnew:106
+#, sh-format
+msgid "Done processing all .new files"
+msgstr "Processamento de todos os arquivos .new finalizado"
+
+#: dotnew:108
+#, sh-format
+msgid "No .new files"
+msgstr "Sem arquivos .new"
+
+#: dotnew:109
+#, sh-format
+msgid "There are no .new configuration files in your system"
+msgstr "Não existem arquivos de configurações .new no seu sistema"
+
