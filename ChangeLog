@@ -1,0 +1,26 @@
+version 0.5.3
+  * Added Spanish files for compile and install scripts. How stupid to
+  forget about those before.
+
+version 0.5.2
+  * Added Spanish translation
+
+version 0.5.1
+  * Fixed a small typo in the French translation
+
+version 0.5
+  * Added a message after finishing processing all .new files
+
+version 0.4
+  * Fixed some strings in the German translation
+
+version 0.3
+  * Translations now only work with utf8 locales. Fixes problems with
+    Xdialog not parsing utf8 strings properly.
+
+version 0.2
+  * Added support for translations using gettext
+  * Added French, Greek and German translations
+
+version 0.1
+  * Initial release

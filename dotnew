@@ -1,0 +1,111 @@
+#!/bin/sh
+#
+# A tool to manage .new configuration files in slackware and slackware
+# based distributions.
+#
+# Written by George Vlahavas <vlahavas~at~gmail~dot~com>
+# Licensed under the GPL v3
+
+# Translations only work with utf8 locales
+if [ ! `echo $LANG | grep utf8` ]; then
+	LANG=C
+fi
+
+# For gettext internationalization
+export TEXTDOMAIN="dotnew"
+export TEXTDOMAINDIR="/usr/share/locale"
+. gettext.sh
+
+if [ "$UID" != "0" ]; then
+	echo "`eval_gettext 'You need to be root to run this'`"
+	exit 1
+fi
+
+rm -f /tmp/dotnew.$$ /tmp/dotnewdiff.$$
+
+if [[ "$DISPLAY" && "$(which Xdialog 2>&1 | grep -v "which: ")" ]]; then
+	dialog="Xdialog --wrap --left"
+	shortttl='3000'
+	longttl='8000'
+	xflag='yes'
+else
+	dialog="dialog"
+	shortttl=''
+	longttl=''
+	xflag='no'
+fi
+
+dotnewdialog()
+{
+file=$1
+$dialog --title "dotnew" --backtitle "$file" \
+--ok-label "`eval_gettext 'OK'`" --cancel-label "`eval_gettext 'Cancel'`" \
+--menu \
+"`eval_gettext 'New settings file found: $file\n\nWhat do you want to do with it?'`" 20 110 5 \
+"`eval_gettext 'Replace'`" "`eval_gettext 'Replace the old settings file with the new one'`" \
+"`eval_gettext 'Delete'`" "`eval_gettext 'Delete the new settings file'`" \
+"`eval_gettext 'Diff'`" "`eval_gettext 'View the differences between the old and new settings files'`" \
+"Vimdiff" "`eval_gettext 'Use vimdiff to edit the old and new settings files'`" \
+"`eval_gettext 'Nothing'`" "`eval_gettext 'Do nothing for now, decide about it later'`" 2> /tmp/dotnew.$$
+
+if [ ! $? -eq 0 ]; then
+	rm -f /tmp/dotnew.$$
+	exit 0
+fi
+
+choice=`cat /tmp/dotnew.$$`
+rm -f /tmp/dotnew.$$
+
+case $choice in
+	"`eval_gettext 'Replace'`")
+		cp -f $1 $2
+		rm -f $1
+		;;
+	"`eval_gettext 'Delete'`")
+		rm -f $1
+		;;
+	"`eval_gettext 'Diff'`")
+		diff -dU 1 $2 $1 > /tmp/dotnewdiff.$$
+		$dialog --title "diff" --textbox /tmp/dotnewdiff.$$ 25 80
+		rm -f /tmp/dotnewdiff.$$
+		dotnewdialog $1 $2
+		;;
+	Vimdiff)
+		if [ $xflag = "yes" ];then
+			if [[ "$(which gvimdiff 2>&1 | grep -v "which: ")" ]];then
+				gvimdiff $2 $1
+			else
+				xterm -e vimdiff $2 $1
+			fi
+		else
+			vimdiff $2 $1
+		fi
+		;;
+esac
+}
+
+dotnewfiles="$(find /etc -name "*.new")"
+if [ -n "$dotnewfiles" ];then
+	for i in $dotnewfiles; do
+		orig="$(echo $i | sed "s/\.new$//")"
+		if [ -f $orig ]; then
+			dotnewdialog $i $orig
+		else
+			$dialog --title "dotnew" \
+			--yes-label "`eval_gettext 'Yes'`" \
+			--no-label "`eval_gettext 'No'`" \
+			--yesno "`eval_gettext 'There is no $orig file present.\nMove $i to $orig ?'`" 12 80
+			if [ $? -eq 0 ]; then
+				cp -f $i $orig
+				rm -f $i
+			fi
+		fi
+	done
+	$dialog --title "`eval_gettext 'Ready'`" \
+	--ok-label "`eval_gettext 'OK'`" \
+	--msgbox "`eval_gettext 'Done processing all .new files'`" 7 80
+else
+	$dialog --title "`eval_gettext 'No .new files'`" --ok-label "`eval_gettext 'OK'`" \
+	--msgbox "`eval_gettext 'There are no .new configuration files in your system'`" 7 80
+fi
+

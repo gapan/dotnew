@@ -1,0 +1,127 @@
+# French translations for dotnew package
+# Traductions françaises du paquet dotnew.
+# Copyright (C) 2009 George Vlahavas
+# This file is distributed under the same license as the dotnew package.
+# George Vlahavas <vlahavas~at~gmail~dot~com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-04 22:06+0300\n"
+"PO-Revision-Date: 2009-07-31 15:08+0200\n"
+"Last-Translator:  Pierrick Le Brun <akuna~at~free~dot~fr>\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: dotnew:20
+#, sh-format
+msgid "You need to be root to run this"
+msgstr ""
+"Vous devez posséder le droits d'administrateur (root) afin d'exécuter ce "
+"programme"
+
+#: dotnew:42 dotnew:105 dotnew:108
+#, sh-format
+msgid "OK"
+msgstr "Valider"
+
+#: dotnew:42
+#, sh-format
+msgid "Cancel"
+msgstr "Annuler"
+
+#: dotnew:44
+#, sh-format
+msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
+msgstr ""
+"Un nouveau fichier de configuration est disponible: $file\\n\\nQue voulez "
+"vous faire?"
+
+#: dotnew:45 dotnew:60
+#, sh-format
+msgid "Replace"
+msgstr "Remplacer"
+
+#: dotnew:45
+#, sh-format
+msgid "Replace the old settings file with the new one"
+msgstr "Remplacer l'ancien fichier de configuration par le nouveau"
+
+#: dotnew:46 dotnew:64
+#, sh-format
+msgid "Delete"
+msgstr "Supprimer"
+
+#: dotnew:46
+#, sh-format
+msgid "Delete the new settings file"
+msgstr "Supprimer le nouveau fichier de configuration"
+
+#: dotnew:47 dotnew:67
+#, sh-format
+msgid "Diff"
+msgstr ""
+
+#: dotnew:47
+#, sh-format
+msgid "View the differences between the old and new settings files"
+msgstr ""
+"Afficher les différences entre l'ancien et le nouveau fichier de "
+"configuration"
+
+#: dotnew:48
+#, sh-format
+msgid "Use vimdiff to edit the old and new settings files"
+msgstr ""
+"Utiliser vimdiff afin de modifier l'ancien et le nouveau fichier de "
+"configuration"
+
+#: dotnew:49
+#, sh-format
+msgid "Nothing"
+msgstr "Rien"
+
+#: dotnew:49
+#, sh-format
+msgid "Do nothing for now, decide about it later"
+msgstr "Ne rien faire pour l'instant, décider plus tard"
+
+#: dotnew:95
+#, sh-format
+msgid "Yes"
+msgstr "Oui"
+
+#: dotnew:96
+#, sh-format
+msgid "No"
+msgstr "Non"
+
+#: dotnew:97
+#, sh-format
+msgid "There is no $orig file present.\\nMove $i to $orig ?"
+msgstr "Aucun fichier $orig n'a été trouvé.\\nTransformer $i en $orig ?"
+
+#: dotnew:104
+#, sh-format
+msgid "Ready"
+msgstr "Action terminée"
+
+#: dotnew:106
+#, sh-format
+msgid "Done processing all .new files"
+msgstr "Tous les fichiers .new ont été parcourus"
+
+#: dotnew:108
+#, sh-format
+msgid "No .new files"
+msgstr "Aucun fichier .new"
+
+#: dotnew:109
+#, sh-format
+msgid "There are no .new configuration files in your system"
+msgstr ""
+"Il n'y a aucun nouveau fichier de configuration .new dans votre système"

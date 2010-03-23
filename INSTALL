@@ -1,0 +1,31 @@
+You can just copy the dotnew script into /usr/sbin or somewhere
+in your PATH and make sure it has execution permissions.
+
+Alternatively, if you want to have localisation for dotnew, you can
+use two simple scripts that are in the same directory as this README
+file, compile.sh and install.sh. The first one will compile the .mo
+localisation files that come with dotnew in the locale directory and the
+second one installs all files in the system. You'll need to have root
+permissions to install files in your system. install.sh accepts a
+$DESTDIR variable to install in an arbitrary directory (that helps in
+packaging for example). You can use it like this:
+
+DESTDIR=/path/to/installation/directory install.sh
+
+If you want to have dotnew translated in your language, you can just get
+the dotnew.pot file that is in the locale directory and run:
+
+msginit -i dotnew.pot -o yourlocale.po
+
+That will create a .po file which is just a text file that you can edit
+with any text editor. The text that needs to be translated is in msgid
+strings and your translation for each should be written in the msgstr
+strings for each message like this:
+
+msgid "Text to be translated"
+msgstr "Translation of the above text"
+
+When you translate everything in the .po file you can send me your
+translation at vlahavas~at~gmail~dot~com and I'll make sure to add it in
+the next version of dotnew.
+
