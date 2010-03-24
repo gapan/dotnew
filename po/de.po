@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -29,8 +30,7 @@ msgstr "Abbrechen"
 #: dotnew:44
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
-"Neue Konfigurationsdatei gefunden: $file\\n\\nWas wollen Sie damit machen?"
+msgstr "Neue Konfigurationsdatei gefunden: $file\\n\\nWas wollen Sie damit machen?"
 
 #: dotnew:45 dotnew:60
 #, sh-format
@@ -60,15 +60,12 @@ msgstr "Diff"
 #: dotnew:47
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
-"Betrachte den Unterschied zwischen der alten und der neuen "
-"Konfigurationsdatei"
+msgstr "Betrachte den Unterschied zwischen der alten und der neuen Konfigurationsdatei"
 
 #: dotnew:48
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"Benutze vimdiff um die alte und die neue Konfigurationsdatei zu bearbeiten"
+msgstr "Benutze vimdiff um die alte und die neue Konfigurationsdatei zu bearbeiten"
 
 #: dotnew:49
 #, sh-format
@@ -116,6 +113,5 @@ msgid "There are no .new configuration files in your system"
 msgstr "Es existieren keine .new Konfigurationsdateien in Ihrem System"
 
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
-#, fuzzy
 msgid "Manage .new system settings files"
-msgstr "Lösche die neue Konfigurationsdatei"
+msgstr "Verwalte die .new Konfigurationsdateien"
