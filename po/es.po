@@ -4,25 +4,27 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-23 21:41+0200\n"
-"PO-Revision-Date: 2009-09-27 22:48-0400\n"
-"Last-Translator: Klemens Häckel <click3d at linuxmail (dot) org>\n"
-"Language-Team: Spanish <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2010-03-23 22:49-0300\n"
+"Last-Translator: seacat <seacat.lang@gmail.com>\n"
+"Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
+"X-Poedit-Language: Spanish\n"
 "X-Generator: Lokalize 0.3\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: ARGENTINA\n"
 
 #: dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "Debe ser root para ejecutar este programa"
 
-#: dotnew:42 dotnew:105 dotnew:108
+#: dotnew:42
+#: dotnew:105
+#: dotnew:108
 #, sh-format
 msgid "OK"
-msgstr "OK"
+msgstr "Aceptar"
 
 #: dotnew:42
 #, sh-format
@@ -31,12 +33,17 @@ msgstr "Cancelar"
 
 #: dotnew:44
 #, sh-format
-msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
+msgid ""
+"New settings file found: $file\\n"
+"\\n"
+"What do you want to do with it?"
 msgstr ""
-"Encontrado nuevo archivo de configuración: $file\\n\\nQué desea hacer con "
-"ello ?"
+"Encontrado nuevo archivo de configuración: $file\\n"
+"\\n"
+"¿Qué desea hacer con ello?"
 
-#: dotnew:45 dotnew:60
+#: dotnew:45
+#: dotnew:60
 #, sh-format
 msgid "Replace"
 msgstr "Reemplazar"
@@ -46,7 +53,8 @@ msgstr "Reemplazar"
 msgid "Replace the old settings file with the new one"
 msgstr "Reemplazar al archivo antiguo de configuración por el archivo nuevo"
 
-#: dotnew:46 dotnew:64
+#: dotnew:46
+#: dotnew:64
 #, sh-format
 msgid "Delete"
 msgstr "Eliminar"
@@ -56,22 +64,21 @@ msgstr "Eliminar"
 msgid "Delete the new settings file"
 msgstr "Eliminar el archivo nuevo de configuración"
 
-#: dotnew:47 dotnew:67
+#: dotnew:47
+#: dotnew:67
 #, sh-format
 msgid "Diff"
-msgstr "Diff"
+msgstr "Diferencia"
 
 #: dotnew:47
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
-"Mostrar las diferencias entre el archivo antiguo de configuración y el nuevo"
+msgstr "Mostrar las diferencias entre el archivo antiguo de configuración y el nuevo"
 
 #: dotnew:48
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"Usar vimdiff para editar los archivos de configuración, antiguo y nuevo"
+msgstr "Usar vimdiff para editar los archivos de configuración, antiguo y nuevo"
 
 #: dotnew:49
 #, sh-format
@@ -95,8 +102,12 @@ msgstr "No"
 
 #: dotnew:97
 #, sh-format
-msgid "There is no $orig file present.\\nMove $i to $orig ?"
-msgstr "No se encuentra ningún archivo $orig.\\nMover $i a $orig ?"
+msgid ""
+"There is no $orig file present.\\n"
+"Move $i to $orig ?"
+msgstr ""
+"No se encuentra ningún archivo $orig.\\n"
+"¿Mover $i a $orig?"
 
 #: dotnew:104
 #, sh-format
@@ -106,7 +117,7 @@ msgstr "Listo"
 #: dotnew:106
 #, sh-format
 msgid "Done processing all .new files"
-msgstr "Terminado procesamiento de todos los archivos .new"
+msgstr "Terminado el procesamiento de todos los archivos .new"
 
 #: dotnew:108
 #, sh-format
@@ -118,7 +129,8 @@ msgstr "No existen archivos .new"
 msgid "There are no .new configuration files in your system"
 msgstr "No se encuentran archivos de configuración .new en su sistema"
 
-#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
-#, fuzzy
+#: dotnew.desktop.in.h:1
+#: dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
-msgstr "Eliminar el archivo nuevo de configuración"
+msgstr "Administrar archivos .new de configuración del sistema"
+
