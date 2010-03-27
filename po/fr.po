@@ -35,7 +35,7 @@ msgstr "Annuler"
 #: dotnew:44
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Un nouveau fichier de configuration est disponible: $file\\n\\nQue voulez vous faire?"
+msgstr "Un nouveau fichier de configuration est disponible: $file\\n\\nQue voulez vous faire ?"
 
 #: dotnew:45 dotnew:60
 #, sh-format
@@ -95,7 +95,7 @@ msgstr "Non"
 #: dotnew:97
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
-msgstr "Aucun fichier $orig n'a été trouvé.\\nTransformer $i en $orig ?"
+msgstr "Aucun fichier $orig n'a été trouvé.\\nTransformer $i en $orig ?"
 
 #: dotnew:104
 #, sh-format
