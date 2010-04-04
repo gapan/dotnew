@@ -58,6 +58,7 @@ rm -f /tmp/dotnew.$$
 
 case $choice in
 	"`eval_gettext 'Replace'`")
+		cp -f $2 $2.orig
 		cp -f $1 $2
 		rm -f $1
 		;;

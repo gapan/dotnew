@@ -1,6 +1,11 @@
+version 0.6.0
+  * Keep old files with .orig extension
+  * Added Argentinian Spanish, Italian and Brazilian Portuguese
+    translations
+
 version 0.5.3
   * Added Spanish files for compile and install scripts. How stupid to
-  forget about those before.
+    forget about those before.
 
 version 0.5.2
   * Added Spanish translation
