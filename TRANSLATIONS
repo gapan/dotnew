@@ -2,3 +2,10 @@ If you would like to contribute new translations for dotnew, or fix an
 existing translation, please use the dotnew project at transifex.net at
 the following address:
 https://www.transifex.net/projects/p/dotnew/
+
+For existing translations, you can just go ahead and translate online
+using the transifex web interface.
+
+For new translations, you will need to get the dotnew.pot file from the
+project page and create a .po file for your language from it. You can
+use a tool like poedit for that purpose (http://www.poedit.net/)
