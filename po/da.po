@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-23 21:41+0200\n"
-"PO-Revision-Date: 2010-03-24 12:09+0100\n"
+"PO-Revision-Date: 2010-04-20 13:29+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -58,7 +58,7 @@ msgstr "Slet den nye indstillingsfil"
 #: dotnew:47 dotnew:67
 #, sh-format
 msgid "Diff"
-msgstr "Forskel"
+msgstr "Diff"
 
 #: dotnew:47
 #, sh-format
@@ -93,7 +93,7 @@ msgstr "Nej"
 #: dotnew:97
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
-msgstr "Er er ingen $orig fil til stede.\\nFlyt $i til $orig ?"
+msgstr "Er er ingen fil ved navn $orig til stede.\\nFlyt $i til $orig ?"
 
 #: dotnew:104
 #, sh-format
@@ -117,4 +117,4 @@ msgstr "Der er ingen .new-konfigurationsfiler på systemet"
 
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
-msgstr "Håndtér -new-systemindstillingsfiler"
+msgstr "Håndtér .new-systemindstillingsfiler"
