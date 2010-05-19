@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\n"
 
 #: dotnew:20
 #, sh-format
@@ -94,7 +94,7 @@ msgstr "Ні"
 #: dotnew:97
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
-msgstr ""
+msgstr "Немає файлу $orig. \\nПеремістити $i до $orig ?"
 
 #: dotnew:104
 #, sh-format
@@ -104,7 +104,7 @@ msgstr "Готово"
 #: dotnew:106
 #, sh-format
 msgid "Done processing all .new files"
-msgstr ""
+msgstr "Закінчено обробку всіх .new файлів"
 
 #: dotnew:108
 #, sh-format
@@ -114,8 +114,8 @@ msgstr "Немає .new файлів"
 #: dotnew:109
 #, sh-format
 msgid "There are no .new configuration files in your system"
-msgstr ""
+msgstr "Немає файлів налаштувань .new у Вашій системі"
 
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
-msgstr ""
+msgstr "Керування .new файлами налаштувань"
