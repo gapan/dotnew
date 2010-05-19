@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: dotnew\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-11 18:37+0200\n"
+"PO-Revision-Date: 2010-05-11 18:39+0100\n"
+"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
+"Language-Team: Ukrainian <translation@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\n"
+#: dotnew:20
+#, sh-format
+msgid "You need to be root to run this"
+msgstr ""
+
+#: dotnew:42 dotnew:105 dotnew:108
+#, sh-format
+msgid "OK"
+msgstr "ОК"
+
+#: dotnew:42
+#, sh-format
+msgid "Cancel"
+msgstr ""
+
+#: dotnew:44
+#, sh-format
+msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
+msgstr ""
+
+#: dotnew:45 dotnew:60
+#, sh-format
+msgid "Replace"
+msgstr ""
+
+#: dotnew:45
+#, sh-format
+msgid "Replace the old settings file with the new one"
+msgstr ""
+
+#: dotnew:46 dotnew:64
+#, sh-format
+msgid "Delete"
+msgstr ""
+
+#: dotnew:46
+#, sh-format
+msgid "Delete the new settings file"
+msgstr ""
+
+#: dotnew:47 dotnew:67
+#, sh-format
+msgid "Diff"
+msgstr ""
+
+#: dotnew:47
+#, sh-format
+msgid "View the differences between the old and new settings files"
+msgstr ""
+
+#: dotnew:48
+#, sh-format
+msgid "Use vimdiff to edit the old and new settings files"
+msgstr ""
+
+#: dotnew:49
+#, sh-format
+msgid "Nothing"
+msgstr ""
+
+#: dotnew:49
+#, sh-format
+msgid "Do nothing for now, decide about it later"
+msgstr ""
+
+#: dotnew:95
+#, sh-format
+msgid "Yes"
+msgstr ""
+
+#: dotnew:96
+#, sh-format
+msgid "No"
+msgstr ""
+
+#: dotnew:97
+#, sh-format
+msgid "There is no $orig file present.\\nMove $i to $orig ?"
+msgstr ""
+
+#: dotnew:104
+#, sh-format
+msgid "Ready"
+msgstr ""
+
+#: dotnew:106
+#, sh-format
+msgid "Done processing all .new files"
+msgstr ""
+
+#: dotnew:108
+#, sh-format
+msgid "No .new files"
+msgstr ""
+
+#: dotnew:109
+#, sh-format
+msgid "There are no .new configuration files in your system"
+msgstr ""
+
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
+msgid "Manage .new system settings files"
+msgstr ""
