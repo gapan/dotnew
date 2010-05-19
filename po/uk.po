@@ -2,8 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
@@ -15,11 +14,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\n"
+
 #: dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
-msgstr ""
+msgstr "Ви повинні мати права суперкористувача, щоб це запустити"
 
 #: dotnew:42 dotnew:105 dotnew:108
 #, sh-format
@@ -29,67 +29,67 @@ msgstr "ОК"
 #: dotnew:42
 #, sh-format
 msgid "Cancel"
-msgstr ""
+msgstr "Відмінити"
 
 #: dotnew:44
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
+msgstr "Знайдено новий файл налаштувань: $file\\n\\nЩо робити далі з цим?"
 
 #: dotnew:45 dotnew:60
 #, sh-format
 msgid "Replace"
-msgstr ""
+msgstr "Замінити"
 
 #: dotnew:45
 #, sh-format
 msgid "Replace the old settings file with the new one"
-msgstr ""
+msgstr "Замінити старий файл налаштувань новішим"
 
 #: dotnew:46 dotnew:64
 #, sh-format
 msgid "Delete"
-msgstr ""
+msgstr "Видалити"
 
 #: dotnew:46
 #, sh-format
 msgid "Delete the new settings file"
-msgstr ""
+msgstr "Видалити файл з новими налаштуваннями"
 
 #: dotnew:47 dotnew:67
 #, sh-format
 msgid "Diff"
-msgstr ""
+msgstr "Відмінності"
 
 #: dotnew:47
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
+msgstr "Переглянути відмінності між старим файлом налаштувань і новим"
 
 #: dotnew:48
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
+msgstr "Використати vimdiff для редагування файлів з старими і новими налаштуваннями"
 
 #: dotnew:49
 #, sh-format
 msgid "Nothing"
-msgstr ""
+msgstr "Нічого"
 
 #: dotnew:49
 #, sh-format
 msgid "Do nothing for now, decide about it later"
-msgstr ""
+msgstr "Зараз нічого не робити, вернутися до цього пізніше"
 
 #: dotnew:95
 #, sh-format
 msgid "Yes"
-msgstr ""
+msgstr "Так"
 
 #: dotnew:96
 #, sh-format
 msgid "No"
-msgstr ""
+msgstr "Ні"
 
 #: dotnew:97
 #, sh-format
@@ -99,7 +99,7 @@ msgstr ""
 #: dotnew:104
 #, sh-format
 msgid "Ready"
-msgstr ""
+msgstr "Готово"
 
 #: dotnew:106
 #, sh-format
@@ -109,7 +109,7 @@ msgstr ""
 #: dotnew:108
 #, sh-format
 msgid "No .new files"
-msgstr ""
+msgstr "Немає .new файлів"
 
 #: dotnew:109
 #, sh-format
