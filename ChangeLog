@@ -1,3 +1,7 @@
+version 0.6.1
+  * Added Dutch, Polish and Ukrainian translations
+  * Updated Danish translation
+
 version 0.6.0
   * Keep old files with .orig extension
   * Added Argentinian Spanish, Italian and Brazilian Portuguese
