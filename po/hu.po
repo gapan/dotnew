@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dotnew\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-23 21:41+0200\n"
+"PO-Revision-Date: 2010-07-21 19:24+0100\n"
+"Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
+"Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+
+#: dotnew:20
+#, sh-format
+msgid "You need to be root to run this"
+msgstr "Rendszergazda jogosultság szükséges a futtatáshoz"
+
+#: dotnew:42
+#: dotnew:105
+#: dotnew:108
+#, sh-format
+msgid "OK"
+msgstr "OK"
+
+#: dotnew:42
+#, sh-format
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: dotnew:44
+#, sh-format
+msgid ""
+"New settings file found: $file\\n"
+"\\n"
+"What do you want to do with it?"
+msgstr ""
+"Új beállításokat tartalmazó fájl található: $file\\n"
+"\\n"
+"Mit szeretne tenni?"
+
+#: dotnew:45
+#: dotnew:60
+#, sh-format
+msgid "Replace"
+msgstr "Csere"
+
+#: dotnew:45
+#, sh-format
+msgid "Replace the old settings file with the new one"
+msgstr "Lecserélni a régi beállításokat tartalmazó fájlt az újra"
+
+#: dotnew:46
+#: dotnew:64
+#, sh-format
+msgid "Delete"
+msgstr "Törlés"
+
+#: dotnew:46
+#, sh-format
+msgid "Delete the new settings file"
+msgstr "Törölni az új beállításokat tartalmazó fájlt"
+
+#: dotnew:47
+#: dotnew:67
+#, sh-format
+msgid "Diff"
+msgstr "Összehasonlítás"
+
+#: dotnew:47
+#, sh-format
+msgid "View the differences between the old and new settings files"
+msgstr "Összehasonlítani a régi és az új beállításokat tartalmazó fájlokat"
+
+#: dotnew:48
+#, sh-format
+msgid "Use vimdiff to edit the old and new settings files"
+msgstr "vimdiff használata a régi és az új beállításokat tartalmazó fájlok szerkesztéséhez"
+
+#: dotnew:49
+#, sh-format
+msgid "Nothing"
+msgstr "Semmit"
+
+#: dotnew:49
+#, sh-format
+msgid "Do nothing for now, decide about it later"
+msgstr "Most semmit nem csinálok, később döntök"
+
+#: dotnew:95
+#, sh-format
+msgid "Yes"
+msgstr "Igen"
+
+#: dotnew:96
+#, sh-format
+msgid "No"
+msgstr "Nem"
+
+#: dotnew:97
+#, sh-format
+msgid ""
+"There is no $orig file present.\\n"
+"Move $i to $orig ?"
+msgstr ""
+"Nem található: $orig.\\n"
+"Áthelyezi: $i ide $orig ?"
+
+#: dotnew:104
+#, sh-format
+msgid "Ready"
+msgstr "Kész"
+
+#: dotnew:106
+#, sh-format
+msgid "Done processing all .new files"
+msgstr "Minden .new fájl feldolgozva"
+
+#: dotnew:108
+#, sh-format
+msgid "No .new files"
+msgstr "Nincs .new fájl"
+
+#: dotnew:109
+#, sh-format
+msgid "There are no .new configuration files in your system"
+msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
+
+#: dotnew.desktop.in.h:1
+#: dotnew-kde.desktop.in.h:1
+msgid "Manage .new system settings files"
+msgstr "Rendszer beállításokat  tartalmazó fájlok (.new) kezelése"
+
