@@ -117,8 +117,13 @@ class DotnewGTK:
 		try:
 			selectedfile = self.treeview_files.get_selection()
 			self.liststore_files, iter = selectedfile.get_selected()
-			selectedfilename = self.liststore_files.get_value(iter, 2)	
-			os.system('gvimdiff '+selectedfilename+' '+selectedfilename+'.new')
+			selectedfilename = self.liststore_files.get_value(iter, 2)
+			if os.access('/usr/bin/gvimdiff', os.X_OK):
+				os.system('gvimdiff '+selectedfilename+' '+selectedfilename+'.new')
+			else:
+				if os.access('/usr/bin/vimdiff', os.X_OK):	
+					if os.access('/usr/bin/xterm', os.X_OK):
+						os.system('xterm -e vimdiff '+selectedfilename+' '+selectedfilename+'.new')
 		except TypeError:
 			pass
 	
@@ -161,7 +166,8 @@ class DotnewGTK:
 		self.toolbutton_diff = builder.get_object('toolbutton_diff')
 		self.toolbutton_vim = builder.get_object('toolbutton_vim')
 		if not os.access('/usr/bin/gvimdiff', os.X_OK):
-			self.toolbutton_vim.hide()
+			if not os.access('/usr/bin/vimdiff', os.X_OK):
+				self.toolbutton_vim.hide()
 		self.toolbutton_replace_all = builder.get_object('toolbutton_replace_all')
 		self.toolbutton_none = builder.get_object('toolbutton_none')
 
