@@ -23,30 +23,32 @@ fi
 
 rm -f /tmp/dotnew.$$ /tmp/dotnewdiff.$$
 
-if [[ "$DISPLAY" && "$(which Xdialog 2>&1 | grep -v "which: ")" ]]; then
-	dialog="Xdialog --wrap --left"
-	shortttl='3000'
-	longttl='8000'
-	xflag='yes'
-else
-	dialog="dialog"
-	shortttl=''
-	longttl=''
-	xflag='no'
-fi
+dialog="dialog"
 
 dotnewdialog()
 {
-file=$1
-$dialog --title "dotnew" --backtitle "$file" \
---ok-label "`eval_gettext 'OK'`" --cancel-label "`eval_gettext 'Cancel'`" \
---menu \
-"`eval_gettext 'New settings file found: $file\n\nWhat do you want to do with it?'`" 20 110 5 \
-"`eval_gettext 'Replace'`" "`eval_gettext 'Replace the old settings file with the new one'`" \
-"`eval_gettext 'Delete'`" "`eval_gettext 'Delete the new settings file'`" \
-"`eval_gettext 'Diff'`" "`eval_gettext 'View the differences between the old and new settings files'`" \
-"Vimdiff" "`eval_gettext 'Use vimdiff to edit the old and new settings files'`" \
-"`eval_gettext 'Nothing'`" "`eval_gettext 'Do nothing for now, decide about it later'`" 2> /tmp/dotnew.$$
+if [ -x /usr/bin/vimdiff ]; then
+	file=$1
+	$dialog --title "dotnew" --backtitle "$file" \
+	--ok-label "`eval_gettext 'OK'`" --cancel-label "`eval_gettext 'Cancel'`" \
+	--menu \
+	"`eval_gettext 'New settings file found: $file\n\nWhat do you want to do with it?'`" 20 110 5 \
+	"`eval_gettext 'Replace'`" "`eval_gettext 'Replace the old settings file with the new one'`" \
+	"`eval_gettext 'Delete'`" "`eval_gettext 'Delete the new settings file'`" \
+	"`eval_gettext 'Diff'`" "`eval_gettext 'View the differences between the old and new settings files'`" \
+	"Vimdiff" "`eval_gettext 'Use vimdiff to edit the old and new settings files'`" \
+	"`eval_gettext 'Nothing'`" "`eval_gettext 'Do nothing for now, decide about it later'`" 2> /tmp/dotnew.$$
+else
+	file=$1
+	$dialog --title "dotnew" --backtitle "$file" \
+	--ok-label "`eval_gettext 'OK'`" --cancel-label "`eval_gettext 'Cancel'`" \
+	--menu \
+	"`eval_gettext 'New settings file found: $file\n\nWhat do you want to do with it?'`" 20 110 5 \
+	"`eval_gettext 'Replace'`" "`eval_gettext 'Replace the old settings file with the new one'`" \
+	"`eval_gettext 'Delete'`" "`eval_gettext 'Delete the new settings file'`" \
+	"`eval_gettext 'Diff'`" "`eval_gettext 'View the differences between the old and new settings files'`" \
+	"`eval_gettext 'Nothing'`" "`eval_gettext 'Do nothing for now, decide about it later'`" 2> /tmp/dotnew.$$
+fi
 
 if [ ! $? -eq 0 ]; then
 	rm -f /tmp/dotnew.$$
@@ -72,15 +74,7 @@ case $choice in
 		dotnewdialog $1 $2
 		;;
 	Vimdiff)
-		if [ $xflag = "yes" ];then
-			if [[ "$(which gvimdiff 2>&1 | grep -v "which: ")" ]];then
-				gvimdiff $2 $1
-			else
-				xterm -e vimdiff $2 $1
-			fi
-		else
-			vimdiff $2 $1
-		fi
+		vimdiff $2 $1
 		;;
 esac
 }
