@@ -16,7 +16,7 @@ for i in 32 24 22 16; do
 	install -d -m 755 \
 	$DESTDIR/usr/share/icons/hicolor/${i}x${i}/apps/ \
 	2> /dev/null
-	install -m 644 dotnew-$i.png \
+	install -m 644 icons/dotnew-$i.png \
 	$DESTDIR/usr/share/icons/hicolor/${i}x${i}/apps/dotnew.png
 done
 
