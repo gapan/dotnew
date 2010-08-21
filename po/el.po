@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew 0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 21:41+0200\n"
+"POT-Creation-Date: 2010-08-21 23:07+0300\n"
 "PO-Revision-Date: 2010-03-23 21:41+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -16,123 +16,115 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: dotnew:20
+#: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "Πρέπει να έχετε δικαιώματα υπερχρήστη (root)"
 
-#: dotnew:42
-#: dotnew:105
-#: dotnew:108
+#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "Εντάξει"
 
-#: dotnew:42
+#: src/dotnew:33 src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: dotnew:44
+#: src/dotnew:35 src/dotnew:46
 #, sh-format
-msgid ""
-"New settings file found: $file\\n"
-"\\n"
-"What do you want to do with it?"
+msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
-"Βρέθηκε νέο αρχείο ρυθμίσεων: $file\\n"
-"\\n"
-"Τι επιθυμείτε να κάνετε με αυτό;"
+"Βρέθηκε νέο αρχείο ρυθμίσεων: $file\\n\\nΤι επιθυμείτε να κάνετε με αυτό;"
 
-#: dotnew:45
-#: dotnew:60
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:182
 #, sh-format
 msgid "Replace"
 msgstr "Αντικατάσταση"
 
-#: dotnew:45
+#: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Αντικατάσταση του παλιού αρχείου ρυθμίσεων με το νέο"
 
-#: dotnew:46
-#: dotnew:64
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:184
 #, sh-format
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: dotnew:46
+#: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Διαγραφή του νέου αρχείου ρυθμίσεων"
 
-#: dotnew:47
-#: dotnew:67
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70
 #, sh-format
 msgid "Diff"
 msgstr "Διαφορές"
 
-#: dotnew:47
+#: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "Εμφάνιση των διαφορών μεταξύ του παλιού και του νέου αρχείου"
 
-#: dotnew:48
+#: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "Χρήση του vimdiff για επεξεργασία του παλιού και του νέου αρχείου"
 
-#: dotnew:49
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Τίποτα"
 
-#: dotnew:49
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "Τίποτα προς το παρόν, αφήστε το για αργότερα"
 
-#: dotnew:95
+#: src/dotnew:90
 #, sh-format
 msgid "Yes"
 msgstr "Ναι"
 
-#: dotnew:96
+#: src/dotnew:91
 #, sh-format
 msgid "No"
 msgstr "Όχι"
 
-#: dotnew:97
+#: src/dotnew:92
 #, sh-format
-msgid ""
-"There is no $orig file present.\\n"
-"Move $i to $orig ?"
-msgstr ""
-"Δεν υπάρχει αρχείο $orig.\\n"
-"Μεταφορά του $i στο $orig ;"
+msgid "There is no $orig file present.\\nMove $i to $orig ?"
+msgstr "Δεν υπάρχει αρχείο $orig.\\nΜεταφορά του $i στο $orig ;"
 
-#: dotnew:104
+#: src/dotnew:99
 #, sh-format
 msgid "Ready"
 msgstr "Τέλος"
 
-#: dotnew:106
+#: src/dotnew:101
 #, sh-format
 msgid "Done processing all .new files"
 msgstr "Έγινε επεξεργασία όλων των αρχείων .new"
 
-#: dotnew:108
+#: src/dotnew:103
 #, sh-format
 msgid "No .new files"
 msgstr "Μη ύπαρξη αρχείων .new"
 
-#: dotnew:109
+#: src/dotnew:104
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύστημα"
 
-#: dotnew.desktop.in.h:1
-#: dotnew-kde.desktop.in.h:1
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Διαχείριση νέων αρχείων ρυθμίσεων συστήματος .new"
 
+#: src/dotnew-gtk:111
+msgid " vs "
+msgstr ""
+
+#: src/dotnew-gtk:186
+msgid "Configuration file"
+msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 21:41+0200\n"
+"POT-Creation-Date: 2010-08-21 23:07+0300\n"
 "PO-Revision-Date: 2010-04-20 13:29+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -15,102 +15,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: dotnew:20
+#: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "Du skal være root for at køre dette"
 
-#: dotnew:42 dotnew:105 dotnew:108
+#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "O.k."
 
-#: dotnew:42
+#: src/dotnew:33 src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Annullér"
 
-#: dotnew:44
+#: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "Ny indstillingsfil fundet: $file\\n\\nHvad vil du gøre med den?"
 
-#: dotnew:45 dotnew:60
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:182
 #, sh-format
 msgid "Replace"
 msgstr "Erstat"
 
-#: dotnew:45
+#: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Erstat den gamle indstillingsfil med den nye"
 
-#: dotnew:46 dotnew:64
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:184
 #, sh-format
 msgid "Delete"
 msgstr "Slet"
 
-#: dotnew:46
+#: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Slet den nye indstillingsfil"
 
-#: dotnew:47 dotnew:67
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70
 #, sh-format
 msgid "Diff"
 msgstr "Diff"
 
-#: dotnew:47
+#: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "Se forskellene mellem den gamle og den nye indstillingsfil"
 
-#: dotnew:48
+#: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "Brug vimdiff til at redigere den gamle og den nye indstillingsfil"
 
-#: dotnew:49
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Intet"
 
-#: dotnew:49
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "Gør ikke noget, beslut dig senere"
 
-#: dotnew:95
+#: src/dotnew:90
 #, sh-format
 msgid "Yes"
 msgstr "Ja"
 
-#: dotnew:96
+#: src/dotnew:91
 #, sh-format
 msgid "No"
 msgstr "Nej"
 
-#: dotnew:97
+#: src/dotnew:92
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
 msgstr "Er er ingen fil ved navn $orig til stede.\\nFlyt $i til $orig ?"
 
-#: dotnew:104
+#: src/dotnew:99
 #, sh-format
 msgid "Ready"
 msgstr "Klar"
 
-#: dotnew:106
+#: src/dotnew:101
 #, sh-format
 msgid "Done processing all .new files"
 msgstr "Færdig med at behandle alle .new-filer"
 
-#: dotnew:108
+#: src/dotnew:103
 #, sh-format
 msgid "No .new files"
 msgstr "Ingen .new-filer"
 
-#: dotnew:109
+#: src/dotnew:104
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Der er ingen .new-konfigurationsfiler på systemet"
@@ -118,3 +118,11 @@ msgstr "Der er ingen .new-konfigurationsfiler på systemet"
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Håndtér .new-systemindstillingsfiler"
+
+#: src/dotnew-gtk:111
+msgid " vs "
+msgstr ""
+
+#: src/dotnew-gtk:186
+msgid "Configuration file"
+msgstr ""

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 21:41+0200\n"
+"POT-Creation-Date: 2010-08-21 23:07+0300\n"
 "PO-Revision-Date: 2010-03-23 22:49-0300\n"
 "Last-Translator: seacat <seacat.lang@gmail.com>\n"
 "Language-Team: Spanish\n"
@@ -14,123 +14,118 @@ msgstr ""
 "X-Generator: Lokalize 0.3\n"
 "X-Poedit-Country: ARGENTINA\n"
 
-#: dotnew:20
+#: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "Debe ser root para ejecutar este programa"
 
-#: dotnew:42
-#: dotnew:105
-#: dotnew:108
+#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "Aceptar"
 
-#: dotnew:42
+#: src/dotnew:33 src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: dotnew:44
+#: src/dotnew:35 src/dotnew:46
 #, sh-format
-msgid ""
-"New settings file found: $file\\n"
-"\\n"
-"What do you want to do with it?"
+msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
-"Encontrado nuevo archivo de configuración: $file\\n"
-"\\n"
-"¿Qué desea hacer con ello?"
+"Encontrado nuevo archivo de configuración: $file\\n\\n¿Qué desea hacer con "
+"ello?"
 
-#: dotnew:45
-#: dotnew:60
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:182
 #, sh-format
 msgid "Replace"
 msgstr "Reemplazar"
 
-#: dotnew:45
+#: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Reemplazar al archivo antiguo de configuración por el archivo nuevo"
 
-#: dotnew:46
-#: dotnew:64
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:184
 #, sh-format
 msgid "Delete"
 msgstr "Eliminar"
 
-#: dotnew:46
+#: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Eliminar el archivo nuevo de configuración"
 
-#: dotnew:47
-#: dotnew:67
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70
 #, sh-format
 msgid "Diff"
 msgstr "Diferencia"
 
-#: dotnew:47
+#: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr "Mostrar las diferencias entre el archivo antiguo de configuración y el nuevo"
+msgstr ""
+"Mostrar las diferencias entre el archivo antiguo de configuración y el nuevo"
 
-#: dotnew:48
+#: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr "Usar vimdiff para editar los archivos de configuración, antiguo y nuevo"
+msgstr ""
+"Usar vimdiff para editar los archivos de configuración, antiguo y nuevo"
 
-#: dotnew:49
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Nada"
 
-#: dotnew:49
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "No hacer nada por ahora, voy a decidir más tarde"
 
-#: dotnew:95
+#: src/dotnew:90
 #, sh-format
 msgid "Yes"
 msgstr "Si"
 
-#: dotnew:96
+#: src/dotnew:91
 #, sh-format
 msgid "No"
 msgstr "No"
 
-#: dotnew:97
+#: src/dotnew:92
 #, sh-format
-msgid ""
-"There is no $orig file present.\\n"
-"Move $i to $orig ?"
-msgstr ""
-"No se encuentra ningún archivo $orig.\\n"
-"¿Mover $i a $orig?"
+msgid "There is no $orig file present.\\nMove $i to $orig ?"
+msgstr "No se encuentra ningún archivo $orig.\\n¿Mover $i a $orig?"
 
-#: dotnew:104
+#: src/dotnew:99
 #, sh-format
 msgid "Ready"
 msgstr "Listo"
 
-#: dotnew:106
+#: src/dotnew:101
 #, sh-format
 msgid "Done processing all .new files"
 msgstr "Terminado el procesamiento de todos los archivos .new"
 
-#: dotnew:108
+#: src/dotnew:103
 #, sh-format
 msgid "No .new files"
 msgstr "No existen archivos .new"
 
-#: dotnew:109
+#: src/dotnew:104
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "No se encuentran archivos de configuración .new en su sistema"
 
-#: dotnew.desktop.in.h:1
-#: dotnew-kde.desktop.in.h:1
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Administrar archivos .new de configuración del sistema"
 
+#: src/dotnew-gtk:111
+msgid " vs "
+msgstr ""
+
+#: src/dotnew-gtk:186
+msgid "Configuration file"
+msgstr ""

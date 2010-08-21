@@ -1,9 +1,9 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 21:41+0200\n"
+"POT-Creation-Date: 2010-08-21 23:07+0300\n"
 "PO-Revision-Date: 2009-07-30 11:33+0100\n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: \n"
@@ -12,102 +12,106 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: German\n"
 
-#: dotnew:20
+#: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "Sie müssen root sein, um diese Anwendung auszuführen"
 
-#: dotnew:42 dotnew:105 dotnew:108
+#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "OK"
 
-#: dotnew:42
+#: src/dotnew:33 src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: dotnew:44
+#: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Neue Konfigurationsdatei gefunden: $file\\n\\nWas wollen Sie damit machen?"
+msgstr ""
+"Neue Konfigurationsdatei gefunden: $file\\n\\nWas wollen Sie damit machen?"
 
-#: dotnew:45 dotnew:60
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:182
 #, sh-format
 msgid "Replace"
 msgstr "Ersetzen"
 
-#: dotnew:45
+#: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Ersetze die alte Konfigurationsdatei mit der Neuen"
 
-#: dotnew:46 dotnew:64
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:184
 #, sh-format
 msgid "Delete"
 msgstr "Löschen"
 
-#: dotnew:46
+#: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Lösche die neue Konfigurationsdatei"
 
-#: dotnew:47 dotnew:67
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70
 #, sh-format
 msgid "Diff"
 msgstr "Diff"
 
-#: dotnew:47
+#: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr "Betrachte den Unterschied zwischen der alten und der neuen Konfigurationsdatei"
+msgstr ""
+"Betrachte den Unterschied zwischen der alten und der neuen "
+"Konfigurationsdatei"
 
-#: dotnew:48
+#: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr "Benutze vimdiff um die alte und die neue Konfigurationsdatei zu bearbeiten"
+msgstr ""
+"Benutze vimdiff um die alte und die neue Konfigurationsdatei zu bearbeiten"
 
-#: dotnew:49
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Nichts"
 
-#: dotnew:49
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "Jetzt nichts machen und später darüber entscheiden"
 
-#: dotnew:95
+#: src/dotnew:90
 #, sh-format
 msgid "Yes"
 msgstr "Ja"
 
-#: dotnew:96
+#: src/dotnew:91
 #, sh-format
 msgid "No"
 msgstr "Nein"
 
-#: dotnew:97
+#: src/dotnew:92
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
 msgstr "Es existiert kein $orig Datei.\\nVerschiebe $i nach $orig ?"
 
-#: dotnew:104
+#: src/dotnew:99
 #, sh-format
 msgid "Ready"
 msgstr "Erledigt"
 
-#: dotnew:106
+#: src/dotnew:101
 #, sh-format
 msgid "Done processing all .new files"
 msgstr "Alle .new Dateien wurden bearbeitet"
 
-#: dotnew:108
+#: src/dotnew:103
 #, sh-format
 msgid "No .new files"
 msgstr "Keine .new Dateien"
 
-#: dotnew:109
+#: src/dotnew:104
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Es existieren keine .new Konfigurationsdateien in Ihrem System"
@@ -115,3 +119,11 @@ msgstr "Es existieren keine .new Konfigurationsdateien in Ihrem System"
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Verwalte die .new Konfigurationsdateien"
+
+#: src/dotnew-gtk:111
+msgid " vs "
+msgstr ""
+
+#: src/dotnew-gtk:186
+msgid "Configuration file"
+msgstr ""
