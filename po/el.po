@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew 0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:07+0300\n"
+"POT-Creation-Date: 2010-08-21 23:15+0300\n"
 "PO-Revision-Date: 2010-03-23 21:41+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -57,7 +57,7 @@ msgstr "Διαγραφή"
 msgid "Delete the new settings file"
 msgstr "Διαγραφή του νέου αρχείου ρυθμίσεων"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
 #, sh-format
 msgid "Diff"
 msgstr "Διαφορές"
@@ -121,6 +121,55 @@ msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύ
 msgid "Manage .new system settings files"
 msgstr "Διαχείριση νέων αρχείων ρυθμίσεων συστήματος .new"
 
+#: src/dotnew-gtk.glade:35
+#, fuzzy
+msgid "Refresh configuration file list"
+msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύστημα"
+
+#: src/dotnew-gtk.glade:39
+msgid "Compare files line by line"
+msgstr ""
+
+#: src/dotnew-gtk.glade:53
+msgid "Use vimdiff to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:67
+msgid "Use meld to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:90
+#, fuzzy
+msgid "Mark all configuration files for replacement"
+msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύστημα"
+
+#: src/dotnew-gtk.glade:91
+#, fuzzy
+msgid "Replace all"
+msgstr "Αντικατάσταση"
+
+#: src/dotnew-gtk.glade:104
+#, fuzzy
+msgid "Mark all new configuration files for deletion"
+msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύστημα"
+
+#: src/dotnew-gtk.glade:105
+#, fuzzy
+msgid "Delete all"
+msgstr "Διαγραφή"
+
+#: src/dotnew-gtk.glade:118
+msgid "Unmark all checkboxes"
+msgstr ""
+
+#: src/dotnew-gtk.glade:119
+msgid "Unmark all"
+msgstr ""
+
+#: src/dotnew-gtk.glade:141
+msgid "Refresh"
+msgstr ""
+
 #: src/dotnew-gtk:111
 msgid " vs "
 msgstr ""
@@ -128,3 +177,15 @@ msgstr ""
 #: src/dotnew-gtk:186
 msgid "Configuration file"
 msgstr ""
+
+#, fuzzy
+#~ msgid "diff"
+#~ msgstr "Διαφορές"
+
+#, fuzzy
+#~ msgid "VimDiff"
+#~ msgstr "Διαφορές"
+
+#, fuzzy
+#~ msgid "gtk-cancel"
+#~ msgstr "Άκυρο"

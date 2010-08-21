@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:07+0300\n"
+"POT-Creation-Date: 2010-08-21 23:15+0300\n"
 "PO-Revision-Date: 2010-07-21 19:24+0100\n"
 "Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
 "Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
@@ -58,7 +58,7 @@ msgstr "Törlés"
 msgid "Delete the new settings file"
 msgstr "Törölni az új beállításokat tartalmazó fájlt"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
 #, sh-format
 msgid "Diff"
 msgstr "Összehasonlítás"
@@ -124,6 +124,55 @@ msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
 msgid "Manage .new system settings files"
 msgstr "Rendszer beállításokat  tartalmazó fájlok (.new) kezelése"
 
+#: src/dotnew-gtk.glade:35
+#, fuzzy
+msgid "Refresh configuration file list"
+msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
+
+#: src/dotnew-gtk.glade:39
+msgid "Compare files line by line"
+msgstr ""
+
+#: src/dotnew-gtk.glade:53
+msgid "Use vimdiff to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:67
+msgid "Use meld to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:90
+#, fuzzy
+msgid "Mark all configuration files for replacement"
+msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
+
+#: src/dotnew-gtk.glade:91
+#, fuzzy
+msgid "Replace all"
+msgstr "Csere"
+
+#: src/dotnew-gtk.glade:104
+#, fuzzy
+msgid "Mark all new configuration files for deletion"
+msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
+
+#: src/dotnew-gtk.glade:105
+#, fuzzy
+msgid "Delete all"
+msgstr "Törlés"
+
+#: src/dotnew-gtk.glade:118
+msgid "Unmark all checkboxes"
+msgstr ""
+
+#: src/dotnew-gtk.glade:119
+msgid "Unmark all"
+msgstr ""
+
+#: src/dotnew-gtk.glade:141
+msgid "Refresh"
+msgstr ""
+
 #: src/dotnew-gtk:111
 msgid " vs "
 msgstr ""
@@ -131,3 +180,15 @@ msgstr ""
 #: src/dotnew-gtk:186
 msgid "Configuration file"
 msgstr ""
+
+#, fuzzy
+#~ msgid "diff"
+#~ msgstr "Összehasonlítás"
+
+#, fuzzy
+#~ msgid "VimDiff"
+#~ msgstr "Összehasonlítás"
+
+#, fuzzy
+#~ msgid "gtk-cancel"
+#~ msgstr "Mégsem"

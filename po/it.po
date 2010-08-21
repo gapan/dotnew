@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DotNew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:07+0300\n"
+"POT-Creation-Date: 2010-08-21 23:15+0300\n"
 "PO-Revision-Date: 2010-03-30 17:39+0100\n"
 "Last-Translator: Mattia Tristo <mattia.tristo@gmail.com>\n"
 "Language-Team: \n"
@@ -58,7 +58,7 @@ msgstr "Cancella"
 msgid "Delete the new settings file"
 msgstr "Cancella l'archivio delle nuove impostazioni"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
 #, sh-format
 msgid "Diff"
 msgstr "Diff"
@@ -124,6 +124,55 @@ msgstr "Non ci sono archivi di configurazione .new sul tuo sistema"
 msgid "Manage .new system settings files"
 msgstr "Gestisci gli archivi di configurazione di sistema .new"
 
+#: src/dotnew-gtk.glade:35
+#, fuzzy
+msgid "Refresh configuration file list"
+msgstr "Non ci sono archivi di configurazione .new sul tuo sistema"
+
+#: src/dotnew-gtk.glade:39
+msgid "Compare files line by line"
+msgstr ""
+
+#: src/dotnew-gtk.glade:53
+msgid "Use vimdiff to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:67
+msgid "Use meld to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:90
+#, fuzzy
+msgid "Mark all configuration files for replacement"
+msgstr "Non ci sono archivi di configurazione .new sul tuo sistema"
+
+#: src/dotnew-gtk.glade:91
+#, fuzzy
+msgid "Replace all"
+msgstr "Sostituisci"
+
+#: src/dotnew-gtk.glade:104
+#, fuzzy
+msgid "Mark all new configuration files for deletion"
+msgstr "Non ci sono archivi di configurazione .new sul tuo sistema"
+
+#: src/dotnew-gtk.glade:105
+#, fuzzy
+msgid "Delete all"
+msgstr "Cancella"
+
+#: src/dotnew-gtk.glade:118
+msgid "Unmark all checkboxes"
+msgstr ""
+
+#: src/dotnew-gtk.glade:119
+msgid "Unmark all"
+msgstr ""
+
+#: src/dotnew-gtk.glade:141
+msgid "Refresh"
+msgstr ""
+
 #: src/dotnew-gtk:111
 msgid " vs "
 msgstr ""
@@ -131,3 +180,15 @@ msgstr ""
 #: src/dotnew-gtk:186
 msgid "Configuration file"
 msgstr ""
+
+#, fuzzy
+#~ msgid "diff"
+#~ msgstr "Diff"
+
+#, fuzzy
+#~ msgid "VimDiff"
+#~ msgstr "Diff"
+
+#, fuzzy
+#~ msgid "gtk-cancel"
+#~ msgstr "Annulla"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SalixOS PL dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:07+0300\n"
+"POT-Creation-Date: 2010-08-21 23:15+0300\n"
 "PO-Revision-Date: 2010-04-24 19:56+0100\n"
 "Last-Translator: Adrian Marcinkowski <amfidiusz@gmail.com>\n"
 "Language-Team: \n"
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Delete the new settings file"
 msgstr ""
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
 #, sh-format
 msgid "Diff"
 msgstr ""
@@ -119,6 +119,50 @@ msgstr ""
 
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
+msgstr ""
+
+#: src/dotnew-gtk.glade:35
+msgid "Refresh configuration file list"
+msgstr ""
+
+#: src/dotnew-gtk.glade:39
+msgid "Compare files line by line"
+msgstr ""
+
+#: src/dotnew-gtk.glade:53
+msgid "Use vimdiff to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:67
+msgid "Use meld to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:90
+msgid "Mark all configuration files for replacement"
+msgstr ""
+
+#: src/dotnew-gtk.glade:91
+msgid "Replace all"
+msgstr ""
+
+#: src/dotnew-gtk.glade:104
+msgid "Mark all new configuration files for deletion"
+msgstr ""
+
+#: src/dotnew-gtk.glade:105
+msgid "Delete all"
+msgstr ""
+
+#: src/dotnew-gtk.glade:118
+msgid "Unmark all checkboxes"
+msgstr ""
+
+#: src/dotnew-gtk.glade:119
+msgid "Unmark all"
+msgstr ""
+
+#: src/dotnew-gtk.glade:141
+msgid "Refresh"
 msgstr ""
 
 #: src/dotnew-gtk:111

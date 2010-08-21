@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:07+0300\n"
+"POT-Creation-Date: 2010-08-21 23:15+0300\n"
 "PO-Revision-Date: 2010-05-11 18:39+0100\n"
 "Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
@@ -57,7 +57,7 @@ msgstr "Видалити"
 msgid "Delete the new settings file"
 msgstr "Видалити файл з новими налаштуваннями"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
 #, sh-format
 msgid "Diff"
 msgstr "Відмінності"
@@ -122,6 +122,55 @@ msgstr "Немає файлів налаштувань .new у Вашій сис
 msgid "Manage .new system settings files"
 msgstr "Керування .new файлами налаштувань"
 
+#: src/dotnew-gtk.glade:35
+#, fuzzy
+msgid "Refresh configuration file list"
+msgstr "Немає файлів налаштувань .new у Вашій системі"
+
+#: src/dotnew-gtk.glade:39
+msgid "Compare files line by line"
+msgstr ""
+
+#: src/dotnew-gtk.glade:53
+msgid "Use vimdiff to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:67
+msgid "Use meld to merge diffs"
+msgstr ""
+
+#: src/dotnew-gtk.glade:90
+#, fuzzy
+msgid "Mark all configuration files for replacement"
+msgstr "Немає файлів налаштувань .new у Вашій системі"
+
+#: src/dotnew-gtk.glade:91
+#, fuzzy
+msgid "Replace all"
+msgstr "Замінити"
+
+#: src/dotnew-gtk.glade:104
+#, fuzzy
+msgid "Mark all new configuration files for deletion"
+msgstr "Немає файлів налаштувань .new у Вашій системі"
+
+#: src/dotnew-gtk.glade:105
+#, fuzzy
+msgid "Delete all"
+msgstr "Видалити"
+
+#: src/dotnew-gtk.glade:118
+msgid "Unmark all checkboxes"
+msgstr ""
+
+#: src/dotnew-gtk.glade:119
+msgid "Unmark all"
+msgstr ""
+
+#: src/dotnew-gtk.glade:141
+msgid "Refresh"
+msgstr ""
+
 #: src/dotnew-gtk:111
 msgid " vs "
 msgstr ""
@@ -129,3 +178,15 @@ msgstr ""
 #: src/dotnew-gtk:186
 msgid "Configuration file"
 msgstr ""
+
+#, fuzzy
+#~ msgid "diff"
+#~ msgstr "Відмінності"
+
+#, fuzzy
+#~ msgid "VimDiff"
+#~ msgstr "Відмінності"
+
+#, fuzzy
+#~ msgid "gtk-cancel"
+#~ msgstr "Відмінити"
