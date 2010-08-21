@@ -38,7 +38,7 @@
                     <property name="tooltip_text" translatable="yes">Compare files line by line</property>
                     <property name="label" translatable="yes">Diff</property>
                     <property name="use_underline">True</property>
-                    <property name="stock_id">gtk-edit</property>
+                    <property name="stock_id">gtk-file</property>
                     <signal name="clicked" handler="on_toolbutton_diff_clicked"/>
                   </object>
                   <packing>
