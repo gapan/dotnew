@@ -5,6 +5,8 @@ import os
 import commands
 import pango
 import re
+import shutil
+
 
 # Internationalization
 import locale
@@ -35,6 +37,19 @@ class DotnewGTK:
 			self.liststore_files.append([False, False, re.sub('\.new$', '', i)])
 
 	def on_button_ok_clicked(self, widget, data=None):
+		for i in self.liststore_files:
+			if i[0] == 1:
+				try:
+					shutil.copy2(i[2], i[2]+'.orig')
+					shutil.copy2(i[2]+'.new', i[2])
+				except IOError:
+					pass
+			else:
+				if i[1] == 1:
+					try:
+						os.remove(i[2]+'.new')
+					except OSError:
+						pass
 		gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
