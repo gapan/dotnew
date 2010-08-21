@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:49+0300\n"
+"POT-Creation-Date: 2010-08-21 23:58+0300\n"
 "PO-Revision-Date: 2010-04-20 13:29+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -35,7 +35,7 @@ msgstr "Annullér"
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "Ny indstillingsfil fundet: $file\\n\\nHvad vil du gøre med den?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:170
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
 #, sh-format
 msgid "Replace"
 msgstr "Erstat"
@@ -45,7 +45,7 @@ msgstr "Erstat"
 msgid "Replace the old settings file with the new one"
 msgstr "Erstat den gamle indstillingsfil med den nye"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:172
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:178
 #, sh-format
 msgid "Delete"
 msgstr "Slet"
@@ -129,7 +129,7 @@ msgid "Compare files line by line"
 msgstr ""
 
 #: src/dotnew-gtk.glade:53
-msgid "Use gvimdiff to merge diffs"
+msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr ""
 
 #: src/dotnew-gtk.glade:76
@@ -168,7 +168,7 @@ msgstr ""
 msgid " vs "
 msgstr ""
 
-#: src/dotnew-gtk:174
+#: src/dotnew-gtk:180
 msgid "Configuration file"
 msgstr ""
 

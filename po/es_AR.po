@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:49+0300\n"
+"POT-Creation-Date: 2010-08-21 23:58+0300\n"
 "PO-Revision-Date: 2010-03-23 22:49-0300\n"
 "Last-Translator: seacat <seacat.lang@gmail.com>\n"
 "Language-Team: Spanish\n"
@@ -36,7 +36,7 @@ msgstr ""
 "Encontrado nuevo archivo de configuración: $file\\n\\n¿Qué desea hacer con "
 "ello?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:170
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
 #, sh-format
 msgid "Replace"
 msgstr "Reemplazar"
@@ -46,7 +46,7 @@ msgstr "Reemplazar"
 msgid "Replace the old settings file with the new one"
 msgstr "Reemplazar al archivo antiguo de configuración por el archivo nuevo"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:172
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:178
 #, sh-format
 msgid "Delete"
 msgstr "Eliminar"
@@ -132,7 +132,7 @@ msgid "Compare files line by line"
 msgstr ""
 
 #: src/dotnew-gtk.glade:53
-msgid "Use gvimdiff to merge diffs"
+msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr ""
 
 #: src/dotnew-gtk.glade:76
@@ -171,7 +171,7 @@ msgstr ""
 msgid " vs "
 msgstr ""
 
-#: src/dotnew-gtk:174
+#: src/dotnew-gtk:180
 msgid "Configuration file"
 msgstr ""
 

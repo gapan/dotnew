@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:49+0300\n"
+"POT-Creation-Date: 2010-08-21 23:58+0300\n"
 "PO-Revision-Date: 2010-07-21 19:24+0100\n"
 "Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
 "Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
@@ -38,7 +38,7 @@ msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 "Új beállításokat tartalmazó fájl található: $file\\n\\nMit szeretne tenni?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:170
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
 #, sh-format
 msgid "Replace"
 msgstr "Csere"
@@ -48,7 +48,7 @@ msgstr "Csere"
 msgid "Replace the old settings file with the new one"
 msgstr "Lecserélni a régi beállításokat tartalmazó fájlt az újra"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:172
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:178
 #, sh-format
 msgid "Delete"
 msgstr "Törlés"
@@ -134,7 +134,7 @@ msgid "Compare files line by line"
 msgstr ""
 
 #: src/dotnew-gtk.glade:53
-msgid "Use gvimdiff to merge diffs"
+msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr ""
 
 #: src/dotnew-gtk.glade:76
@@ -173,7 +173,7 @@ msgstr ""
 msgid " vs "
 msgstr ""
 
-#: src/dotnew-gtk:174
+#: src/dotnew-gtk:180
 msgid "Configuration file"
 msgstr ""
 

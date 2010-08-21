@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SalixOS PL dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:49+0300\n"
+"POT-Creation-Date: 2010-08-21 23:58+0300\n"
 "PO-Revision-Date: 2010-04-24 19:56+0100\n"
 "Last-Translator: Adrian Marcinkowski <amfidiusz@gmail.com>\n"
 "Language-Team: \n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:170
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
 #, sh-format
 msgid "Replace"
 msgstr ""
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Replace the old settings file with the new one"
 msgstr ""
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:172
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:178
 #, sh-format
 msgid "Delete"
 msgstr ""
@@ -130,7 +130,7 @@ msgid "Compare files line by line"
 msgstr ""
 
 #: src/dotnew-gtk.glade:53
-msgid "Use gvimdiff to merge diffs"
+msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr ""
 
 #: src/dotnew-gtk.glade:76
@@ -165,6 +165,6 @@ msgstr ""
 msgid " vs "
 msgstr ""
 
-#: src/dotnew-gtk:174
+#: src/dotnew-gtk:180
 msgid "Configuration file"
 msgstr ""
