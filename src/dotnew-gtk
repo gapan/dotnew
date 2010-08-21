@@ -41,7 +41,7 @@ class DotnewGTK:
 			if i[0] == 1:
 				try:
 					shutil.copy2(i[2], i[2]+'.orig')
-					shutil.copy2(i[2]+'.new', i[2])
+					shutil.move(i[2]+'.new', i[2])
 				except IOError:
 					pass
 			else:
