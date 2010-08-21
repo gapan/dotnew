@@ -10,5 +10,5 @@ using the GTK+2 toolkit. The user is allowed to:
 - delete the new configuration file
 - view a diff between the old and new configuration files
 - merge differences between the old and new configuration files using
-  vimdiff (or gvimdiff for the GTK+2 version) if it is installed
+  vimdiff (gvimdiff too for the GTK+2 version) if it is installed
 
