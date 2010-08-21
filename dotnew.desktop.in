@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Dotnew
 _Comment=Manage .new system settings files
-Exec=gksu dotnew
+Exec=gksu dotnew-gtk
 Icon=applications-system
 Terminal=false
 Type=Application
