@@ -39,17 +39,22 @@ class DotnewGTK:
 	def on_button_ok_clicked(self, widget, data=None):
 		for i in self.liststore_files:
 			if i[0] == 1:
+				if os.path.exists(i[2]):
+					try:
+						shutil.copy2(i[2], i[2]+'.orig')
+					except IOError:
+						pass
 				try:
-					shutil.copy2(i[2], i[2]+'.orig')
 					shutil.move(i[2]+'.new', i[2])
 				except IOError:
 					pass
 			else:
 				if i[1] == 1:
-					try:
-						os.remove(i[2]+'.new')
-					except OSError:
-						pass
+					if os.path.exists(i[2]+'.new'):
+						try:
+							os.remove(i[2]+'.new')
+						except OSError:
+							pass
 		gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
