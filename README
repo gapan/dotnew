@@ -11,7 +11,4 @@ using the GTK+2 toolkit. The user is allowed to:
 - view a diff between the old and new configuration files
 - merge differences between the old and new configuration files using
   vimdiff (or gvimdiff for the GTK+2 version) if it is installed
-- merge differences between the old and new configuration files using
-  Meld (a diff and merge tool - http://meld.sourceforge.net/)if it is
-  installed (GTK+2 version only)
 
