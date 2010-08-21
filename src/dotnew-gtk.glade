@@ -115,7 +115,7 @@
                 <child>
                   <object class="GtkToolButton" id="toolbutton_none">
                     <property name="visible">True</property>
-                    <property name="tooltip_text" translatable="yes">Unmark all configuration files</property>
+                    <property name="tooltip_text" translatable="yes">Unmark all checkboxes</property>
                     <property name="label" translatable="yes">Unmark all</property>
                     <property name="use_underline">True</property>
                     <property name="stock_id">gtk-undo</property>
