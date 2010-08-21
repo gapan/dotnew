@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dotnew 0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-21 23:15+0300\n"
-"PO-Revision-Date: 2010-03-23 21:41+0200\n"
+"PO-Revision-Date: 2010-08-21 23:19+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -21,48 +21,70 @@ msgstr ""
 msgid "You need to be root to run this"
 msgstr "Πρέπει να έχετε δικαιώματα υπερχρήστη (root)"
 
-#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
+#: src/dotnew:33
+#: src/dotnew:44
+#: src/dotnew:100
+#: src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "Εντάξει"
 
-#: src/dotnew:33 src/dotnew:44
+#: src/dotnew:33
+#: src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: src/dotnew:35 src/dotnew:46
+#: src/dotnew:35
+#: src/dotnew:46
 #, sh-format
-msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
+msgid ""
+"New settings file found: $file\\n"
+"\\n"
+"What do you want to do with it?"
 msgstr ""
-"Βρέθηκε νέο αρχείο ρυθμίσεων: $file\\n\\nΤι επιθυμείτε να κάνετε με αυτό;"
+"Βρέθηκε νέο αρχείο ρυθμίσεων: $file\\n"
+"\\n"
+"Τι επιθυμείτε να κάνετε με αυτό;"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:182
+#: src/dotnew:36
+#: src/dotnew:47
+#: src/dotnew:62
+#: src/dotnew-gtk:182
 #, sh-format
 msgid "Replace"
 msgstr "Αντικατάσταση"
 
-#: src/dotnew:36 src/dotnew:47
+#: src/dotnew:36
+#: src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Αντικατάσταση του παλιού αρχείου ρυθμίσεων με το νέο"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:184
+#: src/dotnew:37
+#: src/dotnew:48
+#: src/dotnew:67
+#: src/dotnew-gtk:184
 #, sh-format
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: src/dotnew:37 src/dotnew:48
+#: src/dotnew:37
+#: src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Διαγραφή του νέου αρχείου ρυθμίσεων"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
+#: src/dotnew:38
+#: src/dotnew:49
+#: src/dotnew:70
+#: src/dotnew-gtk.glade:40
 #, sh-format
 msgid "Diff"
 msgstr "Διαφορές"
 
-#: src/dotnew:38 src/dotnew:49
+#: src/dotnew:38
+#: src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "Εμφάνιση των διαφορών μεταξύ του παλιού και του νέου αρχείου"
@@ -72,12 +94,14 @@ msgstr "Εμφάνιση των διαφορών μεταξύ του παλιο�
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "Χρήση του vimdiff για επεξεργασία του παλιού και του νέου αρχείου"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:40
+#: src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Τίποτα"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:40
+#: src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "Τίποτα προς το παρόν, αφήστε το για αργότερα"
@@ -94,8 +118,12 @@ msgstr "Όχι"
 
 #: src/dotnew:92
 #, sh-format
-msgid "There is no $orig file present.\\nMove $i to $orig ?"
-msgstr "Δεν υπάρχει αρχείο $orig.\\nΜεταφορά του $i στο $orig ;"
+msgid ""
+"There is no $orig file present.\\n"
+"Move $i to $orig ?"
+msgstr ""
+"Δεν υπάρχει αρχείο $orig.\\n"
+"Μεταφορά του $i στο $orig ;"
 
 #: src/dotnew:99
 #, sh-format
@@ -117,18 +145,18 @@ msgstr "Μη ύπαρξη αρχείων .new"
 msgid "There are no .new configuration files in your system"
 msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύστημα"
 
-#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
+#: dotnew.desktop.in.h:1
+#: dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Διαχείριση νέων αρχείων ρυθμίσεων συστήματος .new"
 
 #: src/dotnew-gtk.glade:35
-#, fuzzy
 msgid "Refresh configuration file list"
-msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύστημα"
+msgstr "Ανανέωση λίστας αρχείων ρυθμίσεων"
 
 #: src/dotnew-gtk.glade:39
 msgid "Compare files line by line"
-msgstr ""
+msgstr "Σύγκριση αρχείων γραμμή προς γραμμή"
 
 #: src/dotnew-gtk.glade:53
 msgid "Use vimdiff to merge diffs"
@@ -136,47 +164,43 @@ msgstr ""
 
 #: src/dotnew-gtk.glade:67
 msgid "Use meld to merge diffs"
-msgstr ""
+msgstr "Χρήση του meld για τη συγχώνευση των διαφορών"
 
 #: src/dotnew-gtk.glade:90
-#, fuzzy
 msgid "Mark all configuration files for replacement"
-msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύστημα"
+msgstr "Επισήμανση όλων των αρχείων ρυθμίσεων για αντικατάσταση"
 
 #: src/dotnew-gtk.glade:91
-#, fuzzy
 msgid "Replace all"
-msgstr "Αντικατάσταση"
+msgstr "Αντικατάσταση όλων"
 
 #: src/dotnew-gtk.glade:104
-#, fuzzy
 msgid "Mark all new configuration files for deletion"
-msgstr "Δεν υπάρχουν αρχεία ρυθμίσεων .new στο σύστημα"
+msgstr "Επισήμανση όλων των νέων αρχείων ρυθμίσεων για διαγραφή"
 
 #: src/dotnew-gtk.glade:105
-#, fuzzy
 msgid "Delete all"
-msgstr "Διαγραφή"
+msgstr "Διαγραφή όλων"
 
 #: src/dotnew-gtk.glade:118
 msgid "Unmark all checkboxes"
-msgstr ""
+msgstr "Αποεπιλογή όλων"
 
 #: src/dotnew-gtk.glade:119
 msgid "Unmark all"
-msgstr ""
+msgstr "Αποεπιλογή όλων"
 
 #: src/dotnew-gtk.glade:141
 msgid "Refresh"
-msgstr ""
+msgstr "Ανανέωση"
 
 #: src/dotnew-gtk:111
 msgid " vs "
-msgstr ""
+msgstr " έναντι "
 
 #: src/dotnew-gtk:186
 msgid "Configuration file"
-msgstr ""
+msgstr "Αρχείο ρυθμίσεων"
 
 #, fuzzy
 #~ msgid "diff"
