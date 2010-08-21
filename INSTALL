@@ -1,14 +1,15 @@
-You can just copy the dotnew script into /usr/sbin or somewhere
-in your PATH and make sure it has execution permissions.
+Installation
+------------
 
-Alternatively, if you want to have localisation for dotnew, you can
-use two simple scripts that are in the same directory as this README
-file, compile.sh and install.sh. The first one will compile the .mo
-localisation files that come with dotnew in the locale directory and the
-second one installs all files in the system. You'll need to have root
-permissions to install files in your system. install.sh accepts a
-$DESTDIR variable to install in an arbitrary directory (that helps in
-packaging for example). You can use it like this:
+To install, just run:
 
-DESTDIR=/path/to/installation/directory install.sh
+ ./compile.sh
+
+followed by:
+
+ ./install.sh
+
+as root. You can set DESTDIR to change the installation target:
+
+DESTDIR=/my/custom/installation/target ./install.sh
 
