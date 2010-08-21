@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dotnew 0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-21 23:19+0300\n"
-"PO-Revision-Date: 2010-08-21 23:20+0200\n"
+"PO-Revision-Date: 2010-08-21 23:23+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -184,7 +184,7 @@ msgstr "Διαγραφή όλων"
 
 #: src/dotnew-gtk.glade:118
 msgid "Unmark all checkboxes"
-msgstr "Αποεπιλογή όλων"
+msgstr "Αναίρεση της επισήμανσης για όλα τα αρχεία ρυθμίσεων"
 
 #: src/dotnew-gtk.glade:119
 msgid "Unmark all"
