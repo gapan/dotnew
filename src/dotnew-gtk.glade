@@ -14,6 +14,7 @@
   </object>
   <object class="GtkDialog" id="dotnew">
     <property name="border_width">5</property>
+    <property name="title" translatable="yes">Dotnew</property>
     <property name="window_position">center</property>
     <property name="type_hint">normal</property>
     <property name="has_separator">False</property>
@@ -271,6 +272,7 @@
     <property name="width_request">700</property>
     <property name="height_request">500</property>
     <property name="border_width">5</property>
+    <property name="title" translatable="yes">diff</property>
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
     <property name="destroy_with_parent">True</property>
