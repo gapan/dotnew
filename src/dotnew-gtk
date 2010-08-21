@@ -122,15 +122,6 @@ class DotnewGTK:
 		except TypeError:
 			pass
 	
-	def on_toolbutton_meld_clicked(self, widget, data=None):
-		try:
-			selectedfile = self.treeview_files.get_selection()
-			self.liststore_files, iter = selectedfile.get_selected()
-			selectedfilename = self.liststore_files.get_value(iter, 2)	
-			os.system('meld '+selectedfilename+' '+selectedfilename+'.new')
-		except TypeError:
-			pass
-
 	def on_toolbutton_replace_all_clicked(self, widget, data=None):
 		for i in self.liststore_files:
 			i[0]=1
@@ -171,9 +162,6 @@ class DotnewGTK:
 		self.toolbutton_vim = builder.get_object('toolbutton_vim')
 		if not os.access('/usr/bin/gvimdiff', os.X_OK):
 			self.toolbutton_vim.hide()
-		self.toolbutton_meld = builder.get_object('toolbutton_meld')
-		if not os.access('/usr/bin/meld', os.X_OK):
-			self.toolbutton_meld.hide()
 		self.toolbutton_replace_all = builder.get_object('toolbutton_replace_all')
 		self.toolbutton_none = builder.get_object('toolbutton_none')
 
