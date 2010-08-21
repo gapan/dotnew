@@ -1,12 +1,17 @@
 dotnew is a utility to help the user manage system configuration files
 in slackware and slackware based distributions.
 
-dotnew uses Xdialog or dialog (if you are running under X11 or in a
-linux console respectively) to present the user with a menu for each
-new configuration file present in his system. The user is allowed to:
+dotnew provides both console and graphical interfaces. The console
+interface uses dialog to present the user with a menu for each new
+configuration file present in his system. The graphical interface is
+using the GTK+2 toolkit. The user is allowed to:
 
 - replace the old configuration file with the new one
 - delete the new configuration file
 - view a diff between the old and new configuration files
-- run vimdiff between the old and new configuration files
+- merge differences between the old and new configuration files using
+  vimdiff (or gvimdiff for the GTK+2 version) if it is installed
+- merge differences between the old and new configuration files using
+  Meld (a diff and merge tool - http://meld.sourceforge.net/)if it is
+  installed (GTK+2 version only)
 
