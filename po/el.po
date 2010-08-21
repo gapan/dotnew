@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew 0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:15+0300\n"
-"PO-Revision-Date: 2010-08-21 23:19+0200\n"
+"POT-Creation-Date: 2010-08-21 23:19+0300\n"
+"PO-Revision-Date: 2010-08-21 23:20+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -159,8 +159,8 @@ msgid "Compare files line by line"
 msgstr "Σύγκριση αρχείων γραμμή προς γραμμή"
 
 #: src/dotnew-gtk.glade:53
-msgid "Use vimdiff to merge diffs"
-msgstr ""
+msgid "Use gvimdiff to merge diffs"
+msgstr "Χρήση του gvimdiff για τη συγχώνευση των διαφορών"
 
 #: src/dotnew-gtk.glade:67
 msgid "Use meld to merge diffs"

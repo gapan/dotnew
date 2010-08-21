@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SalixOS PL dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:15+0300\n"
+"POT-Creation-Date: 2010-08-21 23:19+0300\n"
 "PO-Revision-Date: 2010-04-24 19:56+0100\n"
 "Last-Translator: Adrian Marcinkowski <amfidiusz@gmail.com>\n"
 "Language-Team: \n"
@@ -130,7 +130,7 @@ msgid "Compare files line by line"
 msgstr ""
 
 #: src/dotnew-gtk.glade:53
-msgid "Use vimdiff to merge diffs"
+msgid "Use gvimdiff to merge diffs"
 msgstr ""
 
 #: src/dotnew-gtk.glade:67

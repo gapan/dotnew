@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:15+0300\n"
+"POT-Creation-Date: 2010-08-21 23:19+0300\n"
 "PO-Revision-Date: 2010-05-03 20:04+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,7 +131,7 @@ msgid "Compare files line by line"
 msgstr ""
 
 #: src/dotnew-gtk.glade:53
-msgid "Use vimdiff to merge diffs"
+msgid "Use gvimdiff to merge diffs"
 msgstr ""
 
 #: src/dotnew-gtk.glade:67

@@ -50,7 +50,7 @@
                 <child>
                   <object class="GtkToolButton" id="toolbutton_vim">
                     <property name="visible">True</property>
-                    <property name="tooltip_text" translatable="yes">Use vimdiff to merge diffs</property>
+                    <property name="tooltip_text" translatable="yes">Use gvimdiff to merge diffs</property>
                     <property name="label">VimDiff</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">gvim</property>
