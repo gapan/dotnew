@@ -2,9 +2,23 @@
 
 install -d -m 755 $DESTDIR/usr/sbin
 install -d -m 755 $DESTDIR/usr/share/applications
-install -m 755 dotnew $DESTDIR/usr/sbin/
+install -d -m 755 $DESTDIR/usr/share/dotnew
+install -m 755 src/dotnew $DESTDIR/usr/sbin/
+install -m 755 src/dotnew-gtk $DESTDIR/usr/sbin/
 install -m 644 dotnew.desktop $DESTDIR/usr/share/applications/
 install -m 644 dotnew-kde.desktop $DESTDIR/usr/share/applications/
+
+# Install icons
+install -d -m 755 $DESTDIR/usr/share/icons/hicolor/scalable/apps/
+install -m 644 icons/dotnew.svg $DESTDIR/usr/share/icons/hicolor/scalable/apps/
+
+for i in 32 24 22 16; do
+	install -d -m 755 \
+	$DESTDIR/usr/share/icons/hicolor/${i}x${i}/apps/ \
+	2> /dev/null
+	install -m 644 dotnew-$i.png \
+	$DESTDIR/usr/share/icons/hicolor/${i}x${i}/apps/dotnew.png
+done
 
 for i in `ls po/*.po|sed "s/po\/\(.*\)\.po/\1/"`; do
 	install -d -m 755 $DESTDIR/usr/share/locale/$i/LC_MESSAGES
