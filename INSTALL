@@ -12,20 +12,3 @@ packaging for example). You can use it like this:
 
 DESTDIR=/path/to/installation/directory install.sh
 
-If you want to have dotnew translated in your language, you can just get
-the dotnew.pot file that is in the locale directory and run:
-
-msginit -i dotnew.pot -o yourlocale.po
-
-That will create a .po file which is just a text file that you can edit
-with any text editor. The text that needs to be translated is in msgid
-strings and your translation for each should be written in the msgstr
-strings for each message like this:
-
-msgid "Text to be translated"
-msgstr "Translation of the above text"
-
-When you translate everything in the .po file you can send me your
-translation at vlahavas~at~gmail~dot~com and I'll make sure to add it in
-the next version of dotnew.
-
