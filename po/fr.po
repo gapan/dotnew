@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:19+0300\n"
+"POT-Creation-Date: 2010-08-21 23:49+0300\n"
 "PO-Revision-Date: 2009-07-31 15:08+0200\n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team: French\n"
@@ -41,7 +41,7 @@ msgstr ""
 "Un nouveau fichier de configuration est disponible: $file\\n\\nQue voulez "
 "vous faire ?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:182
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:170
 #, sh-format
 msgid "Replace"
 msgstr "Remplacer"
@@ -51,7 +51,7 @@ msgstr "Remplacer"
 msgid "Replace the old settings file with the new one"
 msgstr "Remplacer l'ancien fichier de configuration par le nouveau"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:184
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:172
 #, sh-format
 msgid "Delete"
 msgstr "Supprimer"
@@ -144,41 +144,37 @@ msgstr ""
 msgid "Use gvimdiff to merge diffs"
 msgstr ""
 
-#: src/dotnew-gtk.glade:67
-msgid "Use meld to merge diffs"
-msgstr ""
-
-#: src/dotnew-gtk.glade:90
+#: src/dotnew-gtk.glade:76
 #, fuzzy
 msgid "Mark all configuration files for replacement"
 msgstr ""
 "Il n'y a aucun nouveau fichier de configuration .new dans votre système"
 
-#: src/dotnew-gtk.glade:91
+#: src/dotnew-gtk.glade:77
 #, fuzzy
 msgid "Replace all"
 msgstr "Remplacer"
 
-#: src/dotnew-gtk.glade:104
+#: src/dotnew-gtk.glade:90
 #, fuzzy
 msgid "Mark all new configuration files for deletion"
 msgstr ""
 "Il n'y a aucun nouveau fichier de configuration .new dans votre système"
 
-#: src/dotnew-gtk.glade:105
+#: src/dotnew-gtk.glade:91
 #, fuzzy
 msgid "Delete all"
 msgstr "Supprimer"
 
-#: src/dotnew-gtk.glade:118
+#: src/dotnew-gtk.glade:104
 msgid "Unmark all checkboxes"
 msgstr ""
 
-#: src/dotnew-gtk.glade:119
+#: src/dotnew-gtk.glade:105
 msgid "Unmark all"
 msgstr ""
 
-#: src/dotnew-gtk.glade:141
+#: src/dotnew-gtk.glade:127
 msgid "Refresh"
 msgstr ""
 
@@ -186,7 +182,7 @@ msgstr ""
 msgid " vs "
 msgstr ""
 
-#: src/dotnew-gtk:186
+#: src/dotnew-gtk:174
 msgid "Configuration file"
 msgstr ""
 

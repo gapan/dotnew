@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:19+0300\n"
+"POT-Creation-Date: 2010-08-21 23:49+0300\n"
 "PO-Revision-Date: 2010-05-03 20:04+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "Annuleren"
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "Nieuw instellingenbestand gevonden: $file\\n\\nWat wilt u ermee doen?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:182
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:170
 #, sh-format
 msgid "Replace"
 msgstr "Vervangen"
@@ -45,7 +45,7 @@ msgstr "Vervangen"
 msgid "Replace the old settings file with the new one"
 msgstr "Vervang het oude instellingen bestand met de nieuwe instellingen"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:184
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:172
 #, sh-format
 msgid "Delete"
 msgstr "Verwijderen"
@@ -134,39 +134,35 @@ msgstr ""
 msgid "Use gvimdiff to merge diffs"
 msgstr ""
 
-#: src/dotnew-gtk.glade:67
-msgid "Use meld to merge diffs"
-msgstr ""
-
-#: src/dotnew-gtk.glade:90
+#: src/dotnew-gtk.glade:76
 #, fuzzy
 msgid "Mark all configuration files for replacement"
 msgstr "Er zijn geen .new configuratie bestanden in uw systeem"
 
-#: src/dotnew-gtk.glade:91
+#: src/dotnew-gtk.glade:77
 #, fuzzy
 msgid "Replace all"
 msgstr "Vervangen"
 
-#: src/dotnew-gtk.glade:104
+#: src/dotnew-gtk.glade:90
 #, fuzzy
 msgid "Mark all new configuration files for deletion"
 msgstr "Er zijn geen .new configuratie bestanden in uw systeem"
 
-#: src/dotnew-gtk.glade:105
+#: src/dotnew-gtk.glade:91
 #, fuzzy
 msgid "Delete all"
 msgstr "Verwijderen"
 
-#: src/dotnew-gtk.glade:118
+#: src/dotnew-gtk.glade:104
 msgid "Unmark all checkboxes"
 msgstr ""
 
-#: src/dotnew-gtk.glade:119
+#: src/dotnew-gtk.glade:105
 msgid "Unmark all"
 msgstr ""
 
-#: src/dotnew-gtk.glade:141
+#: src/dotnew-gtk.glade:127
 msgid "Refresh"
 msgstr ""
 
@@ -174,7 +170,7 @@ msgstr ""
 msgid " vs "
 msgstr ""
 
-#: src/dotnew-gtk:186
+#: src/dotnew-gtk:174
 msgid "Configuration file"
 msgstr ""
 
