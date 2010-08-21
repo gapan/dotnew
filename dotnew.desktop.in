@@ -2,7 +2,7 @@
 _Name=Dotnew
 _Comment=Manage .new system settings files
 Exec=gksu dotnew-gtk
-Icon=applications-system
+Icon=dotnew
 Terminal=false
 Type=Application
 Categories=Application;System;;
