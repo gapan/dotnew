@@ -160,8 +160,8 @@ class DotnewGTK:
 		builder = gtk.Builder()
 		if os.path.exists('dotnew-gtk.glade'):
 			builder.add_from_file('dotnew-gtk.glade')
-		elif os.path.exists('/usr/share/dotnew/dotnew/dotnew-gtk.glade'):
-			builder.add_from_file('/usr/share/dotnew/dotnew/dotnew-gtk.glade')
+		elif os.path.exists('/usr/share/dotnew/dotnew-gtk.glade'):
+			builder.add_from_file('/usr/share/dotnew/dotnew-gtk.glade')
 		self.window = builder.get_object('dotnew')
 
 		#
