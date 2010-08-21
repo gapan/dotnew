@@ -5,6 +5,7 @@ install -d -m 755 $DESTDIR/usr/share/applications
 install -d -m 755 $DESTDIR/usr/share/dotnew
 install -m 755 src/dotnew $DESTDIR/usr/sbin/
 install -m 755 src/dotnew-gtk $DESTDIR/usr/sbin/
+install -m 644 src/dotnew-gtk.glade $DESTDIR/usr/share/dotnew/
 install -m 644 dotnew.desktop $DESTDIR/usr/share/applications/
 install -m 644 dotnew-kde.desktop $DESTDIR/usr/share/applications/
 
