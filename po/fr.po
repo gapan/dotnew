@@ -35,7 +35,7 @@ msgstr "Annuler"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Un nouveau fichier de configuration est disponible: $file\\n\\nQue voulez vous faire ?"
+msgstr "Un nouveau fichier de configuration est disponible : $file\\n\\nQue voulez-vous faire ?"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
 #, sh-format
@@ -60,7 +60,7 @@ msgstr "Supprimer le nouveau fichier de configuration"
 #: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
 #, sh-format
 msgid "Diff"
-msgstr "Diff"
+msgstr "Différences"
 
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
@@ -131,7 +131,7 @@ msgstr "Comparer les fichiers ligne par ligne"
 
 #: src/dotnew-gtk.glade:53
 msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr "Utilisez gvimdiff ou vimdiff pour fusionner les différences"
+msgstr "Utiliser gvimdiff ou vimdiff pour fusionner les différences"
 
 #: src/dotnew-gtk.glade:76
 msgid "Mark all configuration files for replacement"
