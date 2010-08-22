@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: DotNew\n"
@@ -15,78 +15,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: ITALY\n"
 
 #: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "Devi essere l'amministratore (root) per esseguire questo"
 
-#: src/dotnew:33
-#: src/dotnew:44
-#: src/dotnew:100
-#: src/dotnew:103
+#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "OK"
 
-#: src/dotnew:33
-#: src/dotnew:44
+#: src/dotnew:33 src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Annulla"
 
-#: src/dotnew:35
-#: src/dotnew:46
+#: src/dotnew:35 src/dotnew:46
 #, sh-format
-msgid ""
-"New settings file found: $file\\n"
-"\\n"
-"What do you want to do with it?"
-msgstr ""
-"Nuove impostazioni trovate: $file\\n"
-"\\n"
-"Cosa ne vuoi farne?"
+msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
+msgstr "Nuove impostazioni trovate: $file\\n\\nCosa ne vuoi farne?"
 
-#: src/dotnew:36
-#: src/dotnew:47
-#: src/dotnew:62
-#: src/dotnew-gtk:176
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
 #, sh-format
 msgid "Replace"
 msgstr "Sostituisci"
 
-#: src/dotnew:36
-#: src/dotnew:47
+#: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Sostituisci le vecchie impostazioni con le nuove"
 
-#: src/dotnew:37
-#: src/dotnew:48
-#: src/dotnew:67
-#: src/dotnew-gtk:178
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:178
 #, sh-format
 msgid "Delete"
 msgstr "Cancella"
 
-#: src/dotnew:37
-#: src/dotnew:48
+#: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Cancella l'archivio delle nuove impostazioni"
 
-#: src/dotnew:38
-#: src/dotnew:49
-#: src/dotnew:70
-#: src/dotnew-gtk.glade:40
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
 #, sh-format
 msgid "Diff"
 msgstr "Diff"
 
-#: src/dotnew:38
-#: src/dotnew:49
+#: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "Vede le differenze tra il vecchio e il nuovo archivio delle impostazioni"
@@ -96,14 +73,12 @@ msgstr "Vede le differenze tra il vecchio e il nuovo archivio delle impostazioni
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "Usa vimdiff per modificare l'archivio delle vecchie e nuove impostazioni"
 
-#: src/dotnew:40
-#: src/dotnew:50
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Niente"
 
-#: src/dotnew:40
-#: src/dotnew:50
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "Non fare nulla per adesso, decidi dopo"
@@ -120,12 +95,8 @@ msgstr "No"
 
 #: src/dotnew:92
 #, sh-format
-msgid ""
-"There is no $orig file present.\\n"
-"Move $i to $orig ?"
-msgstr ""
-"Non c'e' nessun archivio $orig presente.\\n"
-"Muovere $i verso $orig?"
+msgid "There is no $orig file present.\\nMove $i to $orig ?"
+msgstr "Non c'e' nessun archivio $orig presente.\\nMuovere $i verso $orig?"
 
 #: src/dotnew:99
 #, sh-format
@@ -147,15 +118,13 @@ msgstr "Nessun archivio .new"
 msgid "There are no .new configuration files in your system"
 msgstr "Non ci sono archivi di configurazione .new sul tuo sistema"
 
-#: dotnew.desktop.in.h:1
-#: dotnew-kde.desktop.in.h:1
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Gestisci gli archivi di configurazione di sistema .new"
 
 #: src/dotnew-gtk.glade:35
-#, fuzzy
 msgid "Refresh configuration file list"
-msgstr "Non ci sono archivi di configurazione .new sul tuo sistema"
+msgstr "Aggiorna la lista degli archivi di configurazione"
 
 #: src/dotnew-gtk.glade:39
 msgid "Compare files line by line"
@@ -166,24 +135,20 @@ msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "Usa gvimdiff o vimdiff per miscelare i diffs"
 
 #: src/dotnew-gtk.glade:76
-#, fuzzy
 msgid "Mark all configuration files for replacement"
-msgstr "Non ci sono archivi di configurazione .new sul tuo sistema"
+msgstr "Segna tutti gli archivi di configurazione per la sostituzione"
 
 #: src/dotnew-gtk.glade:77
-#, fuzzy
 msgid "Replace all"
-msgstr "Sostituisci"
+msgstr "Sostituisci tutti"
 
 #: src/dotnew-gtk.glade:90
-#, fuzzy
 msgid "Mark all new configuration files for deletion"
-msgstr "Non ci sono archivi di configurazione .new sul tuo sistema"
+msgstr "Segna tutti gli archivi di configurazione per la cancellazione"
 
 #: src/dotnew-gtk.glade:91
-#, fuzzy
 msgid "Delete all"
-msgstr "Cancella"
+msgstr "Cancella Tutti"
 
 #: src/dotnew-gtk.glade:104
 msgid "Unmark all checkboxes"
@@ -205,14 +170,11 @@ msgstr "contro"
 msgid "Configuration file"
 msgstr "Archivio di configurazione"
 
-#, fuzzy
 #~ msgid "diff"
 #~ msgstr "Diff"
 
-#, fuzzy
 #~ msgid "VimDiff"
 #~ msgstr "Diff"
 
-#, fuzzy
 #~ msgid "gtk-cancel"
 #~ msgstr "Annulla"
