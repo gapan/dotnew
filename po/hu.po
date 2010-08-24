@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
@@ -35,8 +35,7 @@ msgstr "Mégsem"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
-"Új beállításokat tartalmazó fájl található: $file\\n\\nMit szeretne tenni?"
+msgstr "Új beállításokat tartalmazó fájl található: $file\\n\\nMit szeretne tenni?"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
 #, sh-format
@@ -71,9 +70,7 @@ msgstr "Összehasonlítani a régi és az új beállításokat tartalmazó fájl
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"vimdiff használata a régi és az új beállításokat tartalmazó fájlok "
-"szerkesztéséhez"
+msgstr "vimdiff használata a régi és az új beállításokat tartalmazó fájlok szerkesztéséhez"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -125,66 +122,58 @@ msgid "Manage .new system settings files"
 msgstr "Rendszer beállításokat  tartalmazó fájlok (.new) kezelése"
 
 #: src/dotnew-gtk.glade:35
-#, fuzzy
 msgid "Refresh configuration file list"
-msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
+msgstr "Konfigurációs fájllista frissítése"
 
 #: src/dotnew-gtk.glade:39
 msgid "Compare files line by line"
-msgstr ""
+msgstr "Fájlok összehasonlítása sorról sorra"
 
 #: src/dotnew-gtk.glade:53
 msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr ""
+msgstr "gvimdiff vagy vimdiff használata a fájlok összefésüléséhez"
 
 #: src/dotnew-gtk.glade:76
-#, fuzzy
 msgid "Mark all configuration files for replacement"
-msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
+msgstr "Minden konfigurációs fálj megjelölése cserélésre"
 
 #: src/dotnew-gtk.glade:77
-#, fuzzy
 msgid "Replace all"
-msgstr "Csere"
+msgstr "Mindet cserél"
 
 #: src/dotnew-gtk.glade:90
-#, fuzzy
 msgid "Mark all new configuration files for deletion"
-msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
+msgstr "Minden új konfigurációs fájl megjelölése törlésre"
 
 #: src/dotnew-gtk.glade:91
-#, fuzzy
 msgid "Delete all"
-msgstr "Törlés"
+msgstr "Mind töröl"
 
 #: src/dotnew-gtk.glade:104
 msgid "Unmark all checkboxes"
-msgstr ""
+msgstr "Minden kijelölés visszavonása"
 
 #: src/dotnew-gtk.glade:105
 msgid "Unmark all"
-msgstr ""
+msgstr "Kijelölést visszavon"
 
 #: src/dotnew-gtk.glade:127
 msgid "Refresh"
-msgstr ""
+msgstr "Frissítés"
 
 #: src/dotnew-gtk:111
 msgid " vs "
-msgstr ""
+msgstr "kontra"
 
 #: src/dotnew-gtk:180
 msgid "Configuration file"
-msgstr ""
+msgstr "Konfigurációs fájl"
 
-#, fuzzy
 #~ msgid "diff"
 #~ msgstr "Összehasonlítás"
 
-#, fuzzy
 #~ msgid "VimDiff"
 #~ msgstr "Összehasonlítás"
 
-#, fuzzy
 #~ msgid "gtk-cancel"
 #~ msgstr "Mégsem"
