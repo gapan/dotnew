@@ -146,7 +146,7 @@ msgstr "Alle löschen"
 
 #: src/dotnew-gtk.glade:104
 msgid "Unmark all checkboxes"
-msgstr ""
+msgstr "Alle Haken entfernen"
 
 #: src/dotnew-gtk.glade:105
 msgid "Unmark all"
@@ -158,7 +158,7 @@ msgstr "Neu laden"
 
 #: src/dotnew-gtk:111
 msgid " vs "
-msgstr ""
+msgstr "vs"
 
 #: src/dotnew-gtk:180
 msgid "Configuration file"
