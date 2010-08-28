@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -30,8 +30,7 @@ msgstr "Abbrechen"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
-"Neue Konfigurationsdatei gefunden: $file\\n\\nWas wollen Sie damit machen?"
+msgstr "Neue Konfigurationsdatei gefunden: $file\\n\\nWas wollen Sie damit machen?"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
 #, sh-format
@@ -61,15 +60,12 @@ msgstr "Diff"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
-"Betrachte den Unterschied zwischen der alten und der neuen "
-"Konfigurationsdatei"
+msgstr "Betrachte den Unterschied zwischen der alten und der neuen Konfigurationsdatei"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"Benutze vimdiff um die alte und die neue Konfigurationsdatei zu bearbeiten"
+msgstr "Benutze vimdiff um die alte und die neue Konfigurationsdatei zu bearbeiten"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -121,37 +117,32 @@ msgid "Manage .new system settings files"
 msgstr "Verwalte die .new Konfigurationsdateien"
 
 #: src/dotnew-gtk.glade:35
-#, fuzzy
 msgid "Refresh configuration file list"
-msgstr "Es existieren keine .new Konfigurationsdateien in Ihrem System"
+msgstr "Liste der Konfigurationsdateien auffrischen"
 
 #: src/dotnew-gtk.glade:39
 msgid "Compare files line by line"
-msgstr ""
+msgstr "Dateien zeilenweise vergleichen"
 
 #: src/dotnew-gtk.glade:53
 msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr ""
+msgstr "Gvimdiff oder vimdiff zum Zusammenführen der Diffs benutzen"
 
 #: src/dotnew-gtk.glade:76
-#, fuzzy
 msgid "Mark all configuration files for replacement"
-msgstr "Es existieren keine .new Konfigurationsdateien in Ihrem System"
+msgstr "Alle Konfigurationsdateien zum Ersetzen vormerken"
 
 #: src/dotnew-gtk.glade:77
-#, fuzzy
 msgid "Replace all"
-msgstr "Ersetzen"
+msgstr "Alle ersetzen"
 
 #: src/dotnew-gtk.glade:90
-#, fuzzy
 msgid "Mark all new configuration files for deletion"
-msgstr "Es existieren keine .new Konfigurationsdateien in Ihrem System"
+msgstr "Alle Konfigurationsdateien zum Löschen vormerken"
 
 #: src/dotnew-gtk.glade:91
-#, fuzzy
 msgid "Delete all"
-msgstr "Löschen"
+msgstr "Alle löschen"
 
 #: src/dotnew-gtk.glade:104
 msgid "Unmark all checkboxes"
@@ -159,11 +150,11 @@ msgstr ""
 
 #: src/dotnew-gtk.glade:105
 msgid "Unmark all"
-msgstr ""
+msgstr "Markierungen aufheben"
 
 #: src/dotnew-gtk.glade:127
 msgid "Refresh"
-msgstr ""
+msgstr "Neu laden"
 
 #: src/dotnew-gtk:111
 msgid " vs "
@@ -171,16 +162,13 @@ msgstr ""
 
 #: src/dotnew-gtk:180
 msgid "Configuration file"
-msgstr ""
+msgstr "Konfigurationsdatei"
 
-#, fuzzy
 #~ msgid "diff"
 #~ msgstr "Diff"
 
-#, fuzzy
 #~ msgid "VimDiff"
 #~ msgstr "Diff"
 
-#, fuzzy
 #~ msgid "gtk-cancel"
 #~ msgstr "Abbrechen"
