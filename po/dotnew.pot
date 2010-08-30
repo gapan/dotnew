@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:58+0300\n"
+"POT-Creation-Date: 2010-08-31 00:07+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:190
 #, sh-format
 msgid "Replace"
 msgstr ""
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Replace the old settings file with the new one"
 msgstr ""
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:178
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:192
 #, sh-format
 msgid "Delete"
 msgstr ""
@@ -132,31 +132,35 @@ msgstr ""
 msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr ""
 
-#: src/dotnew-gtk.glade:76
-msgid "Mark all configuration files for replacement"
-msgstr ""
-
-#: src/dotnew-gtk.glade:77
-msgid "Replace all"
+#: src/dotnew-gtk.glade:67
+msgid "Use meld to merge diffs"
 msgstr ""
 
 #: src/dotnew-gtk.glade:90
-msgid "Mark all new configuration files for deletion"
+msgid "Mark all configuration files for replacement"
 msgstr ""
 
 #: src/dotnew-gtk.glade:91
-msgid "Delete all"
+msgid "Replace all"
 msgstr ""
 
 #: src/dotnew-gtk.glade:104
-msgid "Unmark all checkboxes"
+msgid "Mark all new configuration files for deletion"
 msgstr ""
 
 #: src/dotnew-gtk.glade:105
+msgid "Delete all"
+msgstr ""
+
+#: src/dotnew-gtk.glade:118
+msgid "Unmark all checkboxes"
+msgstr ""
+
+#: src/dotnew-gtk.glade:119
 msgid "Unmark all"
 msgstr ""
 
-#: src/dotnew-gtk.glade:127
+#: src/dotnew-gtk.glade:141
 msgid "Refresh"
 msgstr ""
 
@@ -164,6 +168,6 @@ msgstr ""
 msgid " vs "
 msgstr ""
 
-#: src/dotnew-gtk:180
+#: src/dotnew-gtk:194
 msgid "Configuration file"
 msgstr ""

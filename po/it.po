@@ -2,12 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: DotNew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:58+0300\n"
+"POT-Creation-Date: 2010-08-31 00:06+0300\n"
 "PO-Revision-Date: 2010-08-22 09:33+0100\n"
 "Last-Translator: Mattia Tristo <mattia.tristo@gmail.com>\n"
 "Language-Team: \n"
@@ -38,7 +38,7 @@ msgstr "Annulla"
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "Nuove impostazioni trovate: $file\\n\\nCosa ne vuoi farne?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:190
 #, sh-format
 msgid "Replace"
 msgstr "Sostituisci"
@@ -48,7 +48,7 @@ msgstr "Sostituisci"
 msgid "Replace the old settings file with the new one"
 msgstr "Sostituisci le vecchie impostazioni con le nuove"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:178
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:192
 #, sh-format
 msgid "Delete"
 msgstr "Cancella"
@@ -66,12 +66,14 @@ msgstr "Diff"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr "Vede le differenze tra il vecchio e il nuovo archivio delle impostazioni"
+msgstr ""
+"Vede le differenze tra il vecchio e il nuovo archivio delle impostazioni"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr "Usa vimdiff per modificare l'archivio delle vecchie e nuove impostazioni"
+msgstr ""
+"Usa vimdiff per modificare l'archivio delle vecchie e nuove impostazioni"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -134,31 +136,36 @@ msgstr "Compara l'archivio linea per linea"
 msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "Usa gvimdiff o vimdiff per miscelare i diffs"
 
-#: src/dotnew-gtk.glade:76
+#: src/dotnew-gtk.glade:67
+#, fuzzy
+msgid "Use meld to merge diffs"
+msgstr "Usa gvimdiff o vimdiff per miscelare i diffs"
+
+#: src/dotnew-gtk.glade:90
 msgid "Mark all configuration files for replacement"
 msgstr "Segna tutti gli archivi di configurazione per la sostituzione"
 
-#: src/dotnew-gtk.glade:77
+#: src/dotnew-gtk.glade:91
 msgid "Replace all"
 msgstr "Sostituisci tutti"
 
-#: src/dotnew-gtk.glade:90
+#: src/dotnew-gtk.glade:104
 msgid "Mark all new configuration files for deletion"
 msgstr "Segna tutti gli archivi di configurazione per la cancellazione"
 
-#: src/dotnew-gtk.glade:91
+#: src/dotnew-gtk.glade:105
 msgid "Delete all"
 msgstr "Cancella Tutti"
 
-#: src/dotnew-gtk.glade:104
+#: src/dotnew-gtk.glade:118
 msgid "Unmark all checkboxes"
 msgstr "Segna come non selezionati tutti i controlli checkboxes"
 
-#: src/dotnew-gtk.glade:105
+#: src/dotnew-gtk.glade:119
 msgid "Unmark all"
 msgstr "Segnala tutti come non selezionati"
 
-#: src/dotnew-gtk.glade:127
+#: src/dotnew-gtk.glade:141
 msgid "Refresh"
 msgstr "Aggiorna"
 
@@ -166,7 +173,7 @@ msgstr "Aggiorna"
 msgid " vs "
 msgstr "contro"
 
-#: src/dotnew-gtk:180
+#: src/dotnew-gtk:194
 msgid "Configuration file"
 msgstr "Archivio di configurazione"
 

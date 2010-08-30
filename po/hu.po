@@ -2,12 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-21 23:58+0300\n"
+"POT-Creation-Date: 2010-08-31 00:06+0300\n"
 "PO-Revision-Date: 2010-07-21 19:24+0100\n"
 "Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
 "Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
@@ -35,9 +35,10 @@ msgstr "Mégsem"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Új beállításokat tartalmazó fájl található: $file\\n\\nMit szeretne tenni?"
+msgstr ""
+"Új beállításokat tartalmazó fájl található: $file\\n\\nMit szeretne tenni?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:176
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:190
 #, sh-format
 msgid "Replace"
 msgstr "Csere"
@@ -47,7 +48,7 @@ msgstr "Csere"
 msgid "Replace the old settings file with the new one"
 msgstr "Lecserélni a régi beállításokat tartalmazó fájlt az újra"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:178
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:192
 #, sh-format
 msgid "Delete"
 msgstr "Törlés"
@@ -70,7 +71,9 @@ msgstr "Összehasonlítani a régi és az új beállításokat tartalmazó fájl
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr "vimdiff használata a régi és az új beállításokat tartalmazó fájlok szerkesztéséhez"
+msgstr ""
+"vimdiff használata a régi és az új beállításokat tartalmazó fájlok "
+"szerkesztéséhez"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -133,31 +136,36 @@ msgstr "Fájlok összehasonlítása sorról sorra"
 msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "gvimdiff vagy vimdiff használata a fájlok összefésüléséhez"
 
-#: src/dotnew-gtk.glade:76
+#: src/dotnew-gtk.glade:67
+#, fuzzy
+msgid "Use meld to merge diffs"
+msgstr "gvimdiff vagy vimdiff használata a fájlok összefésüléséhez"
+
+#: src/dotnew-gtk.glade:90
 msgid "Mark all configuration files for replacement"
 msgstr "Minden konfigurációs fálj megjelölése cserélésre"
 
-#: src/dotnew-gtk.glade:77
+#: src/dotnew-gtk.glade:91
 msgid "Replace all"
 msgstr "Mindet cserél"
 
-#: src/dotnew-gtk.glade:90
+#: src/dotnew-gtk.glade:104
 msgid "Mark all new configuration files for deletion"
 msgstr "Minden új konfigurációs fájl megjelölése törlésre"
 
-#: src/dotnew-gtk.glade:91
+#: src/dotnew-gtk.glade:105
 msgid "Delete all"
 msgstr "Mind töröl"
 
-#: src/dotnew-gtk.glade:104
+#: src/dotnew-gtk.glade:118
 msgid "Unmark all checkboxes"
 msgstr "Minden kijelölés visszavonása"
 
-#: src/dotnew-gtk.glade:105
+#: src/dotnew-gtk.glade:119
 msgid "Unmark all"
 msgstr "Kijelölést visszavon"
 
-#: src/dotnew-gtk.glade:127
+#: src/dotnew-gtk.glade:141
 msgid "Refresh"
 msgstr "Frissítés"
 
@@ -165,7 +173,7 @@ msgstr "Frissítés"
 msgid " vs "
 msgstr "kontra"
 
-#: src/dotnew-gtk:180
+#: src/dotnew-gtk:194
 msgid "Configuration file"
 msgstr "Konfigurációs fájl"
 
