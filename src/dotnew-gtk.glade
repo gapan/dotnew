@@ -62,6 +62,20 @@
                   </packing>
                 </child>
                 <child>
+                  <object class="GtkToolButton" id="toolbutton_meld">
+                    <property name="visible">True</property>
+                    <property name="tooltip_text" translatable="yes">Use meld to merge diffs</property>
+                    <property name="label">Meld</property>
+                    <property name="use_underline">True</property>
+                    <property name="icon_name">meld</property>
+                    <signal name="clicked" handler="on_toolbutton_meld_clicked"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkSeparatorToolItem" id="toolbar_sep1">
                     <property name="visible">True</property>
                   </object>

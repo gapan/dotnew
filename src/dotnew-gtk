@@ -124,9 +124,20 @@ class DotnewGTK:
 				if os.access('/usr/bin/vimdiff', os.X_OK):	
 					if os.access('/usr/bin/xterm', os.X_OK):
 						os.system('xterm -e vimdiff '+selectedfilename+' '+selectedfilename+'.new')
+
 		except TypeError:
 			pass
 	
+	def on_toolbutton_meld_clicked(self, widget, data=None):
+		try:
+			selectedfile = self.treeview_files.get_selection()
+			self.liststore_files, iter = selectedfile.get_selected()
+			selectedfilename = self.liststore_files.get_value(iter, 2)	
+			if os.access('/usr/bin/meld', os.X_OK):
+				os.system('dbus-launch meld '+selectedfilename+' '+selectedfilename+'.new')
+		except TypeError:
+			pass
+
 	def on_toolbutton_replace_all_clicked(self, widget, data=None):
 		for i in self.liststore_files:
 			i[0]=1
@@ -165,9 +176,12 @@ class DotnewGTK:
 		#
 		self.toolbutton_diff = builder.get_object('toolbutton_diff')
 		self.toolbutton_vim = builder.get_object('toolbutton_vim')
+		self.toolbutton_meld = builder.get_object('toolbutton_meld')
 		if not os.access('/usr/bin/gvimdiff', os.X_OK):
 			if not os.access('/usr/bin/vimdiff', os.X_OK):
 				self.toolbutton_vim.hide()
+		if not os.access('/usr/bin/meld', os.X_OK):
+			self.toolbutton_meld.hide()
 		self.toolbutton_replace_all = builder.get_object('toolbutton_replace_all')
 		self.toolbutton_none = builder.get_object('toolbutton_none')
 
