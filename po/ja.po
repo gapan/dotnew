@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-31 00:06+0300\n"
+"POT-Creation-Date: 2010-08-31 00:07+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
 "Language-Team: \n"
@@ -30,8 +31,7 @@ msgstr "キャンセル"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
-"新しい設定ファイルがみつかりました: $file\\n\\nいったいどうしましょうか。"
+msgstr "新しい設定ファイルがみつかりました: $file\\n\\nいったいどうしましょうか。"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:190
 #, sh-format
@@ -130,9 +130,8 @@ msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "gvimdiff か vimdiffを使ってdiffファイルを結合する。"
 
 #: src/dotnew-gtk.glade:67
-#, fuzzy
 msgid "Use meld to merge diffs"
-msgstr "gvimdiff か vimdiffを使ってdiffファイルを結合する。"
+msgstr "meldを使ってdiffファイルを結合する。"
 
 #: src/dotnew-gtk.glade:90
 msgid "Mark all configuration files for replacement"
