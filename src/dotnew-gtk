@@ -163,6 +163,13 @@ class DotnewGTK:
 	def on_button_diff_ok_clicked(self, widget):
 		self.dialog_diff.hide()
 
+	def on_dialog_nonew_delete_event(self, widget, event):
+		self.dialog_nonew.hide()
+		return True
+
+	def on_button_nonew_ok_clicked(self, widget):
+		self.dialog_nonew.hide()
+	
 	def __init__(self):
 		builder = gtk.Builder()
 		if os.path.exists('dotnew-gtk.glade'):
@@ -206,8 +213,21 @@ class DotnewGTK:
 		self.textview_diff.modify_font(pango.FontDescription("monospace"))
 		self.textbuffer_diff = builder.get_object('textbuffer_diff')
 
+		#
+		# No .new files window
+		#
+		self.dialog_nonew = builder.get_object('dialog_nonew')
+		self.button_nonew_ok = builder.get_object('button_nonew_ok')
+
 		# Connect signals
 		builder.connect_signals(self)
+
+		# If no .new files are present, show a message
+		count = 0
+		for i in self.liststore_files:
+			count += 1
+		if count == 0:
+			self.dialog_nonew.show()
 
 if __name__ == "__main__":
 	app = DotnewGTK()
