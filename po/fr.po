@@ -3,12 +3,12 @@
 # Copyright (C) 2009 George Vlahavas
 # This file is distributed under the same license as the dotnew package.
 # George Vlahavas <vlahavas~at~gmail~dot~com>, 2009.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-31 00:07+0300\n"
+"POT-Creation-Date: 2010-09-02 12:26+0300\n"
 "PO-Revision-Date: 2009-07-31 15:08+0200\n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team: French\n"
@@ -20,7 +20,9 @@ msgstr ""
 #: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
-msgstr "Vous devez posséder le droits d'administrateur (root) afin d'exécuter ce programme"
+msgstr ""
+"Vous devez posséder le droits d'administrateur (root) afin d'exécuter ce "
+"programme"
 
 #: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
@@ -35,9 +37,11 @@ msgstr "Annuler"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Un nouveau fichier de configuration est disponible : $file\\n\\nQue voulez-vous faire ?"
+msgstr ""
+"Un nouveau fichier de configuration est disponible : $file\\n\\nQue voulez-"
+"vous faire ?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:190
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
 #, sh-format
 msgid "Replace"
 msgstr "Remplacer"
@@ -47,7 +51,7 @@ msgstr "Remplacer"
 msgid "Replace the old settings file with the new one"
 msgstr "Remplacer l'ancien fichier de configuration par le nouveau"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:192
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
 #, sh-format
 msgid "Delete"
 msgstr "Supprimer"
@@ -57,7 +61,7 @@ msgstr "Supprimer"
 msgid "Delete the new settings file"
 msgstr "Supprimer le nouveau fichier de configuration"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
 #, sh-format
 msgid "Diff"
 msgstr "Différences"
@@ -65,12 +69,16 @@ msgstr "Différences"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr "Afficher les différences entre l'ancien et le nouveau fichier de configuration"
+msgstr ""
+"Afficher les différences entre l'ancien et le nouveau fichier de "
+"configuration"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr "Utiliser vimdiff afin de modifier l'ancien et le nouveau fichier de configuration"
+msgstr ""
+"Utiliser vimdiff afin de modifier l'ancien et le nouveau fichier de "
+"configuration"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -107,69 +115,71 @@ msgstr "Action terminée"
 msgid "Done processing all .new files"
 msgstr "Tous les fichiers .new ont été parcourus"
 
-#: src/dotnew:103
+#: src/dotnew:103 src/dotnew-gtk.glade:346
 #, sh-format
 msgid "No .new files"
 msgstr "Aucun fichier .new"
 
-#: src/dotnew:104
+#: src/dotnew:104 src/dotnew-gtk.glade:365
 #, sh-format
 msgid "There are no .new configuration files in your system"
-msgstr "Il n'y a aucun nouveau fichier de configuration .new dans votre système"
+msgstr ""
+"Il n'y a aucun nouveau fichier de configuration .new dans votre système"
 
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Gérer les fichiers configuration système '.new'"
 
-#: src/dotnew-gtk.glade:35
+#: src/dotnew-gtk.glade:33
 msgid "Refresh configuration file list"
 msgstr "Rafraîchir la liste des fichiers de configuration"
 
-#: src/dotnew-gtk.glade:39
+#: src/dotnew-gtk.glade:37
 msgid "Compare files line by line"
 msgstr "Comparer les fichiers ligne par ligne"
 
-#: src/dotnew-gtk.glade:53
+#: src/dotnew-gtk.glade:51
 msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "Utiliser gvimdiff ou vimdiff pour fusionner les différences"
 
-#: src/dotnew-gtk.glade:67
+#: src/dotnew-gtk.glade:65
 msgid "Use meld to merge diffs"
 msgstr "Utiliser meld pour fusionner les différences"
 
-#: src/dotnew-gtk.glade:90
+#: src/dotnew-gtk.glade:88
 msgid "Mark all configuration files for replacement"
 msgstr "Marquer tous les fichiers de configuration comme \"à remplacer\""
 
-#: src/dotnew-gtk.glade:91
+#: src/dotnew-gtk.glade:89
 msgid "Replace all"
 msgstr "Les remplacer tous"
 
-#: src/dotnew-gtk.glade:104
+#: src/dotnew-gtk.glade:102
 msgid "Mark all new configuration files for deletion"
-msgstr "Marquer tous les nouveaux fichiers de configuration comme \"à supprimer\""
+msgstr ""
+"Marquer tous les nouveaux fichiers de configuration comme \"à supprimer\""
 
-#: src/dotnew-gtk.glade:105
+#: src/dotnew-gtk.glade:103
 msgid "Delete all"
 msgstr "Les supprimer tous"
 
-#: src/dotnew-gtk.glade:118
+#: src/dotnew-gtk.glade:116
 msgid "Unmark all checkboxes"
 msgstr "Retirer toutes les marques"
 
-#: src/dotnew-gtk.glade:119
+#: src/dotnew-gtk.glade:117
 msgid "Unmark all"
 msgstr "Tout retirer"
 
-#: src/dotnew-gtk.glade:141
+#: src/dotnew-gtk.glade:139
 msgid "Refresh"
 msgstr "Rafraîchir"
 
 #: src/dotnew-gtk:111
-msgid " vs "
+msgid "vs"
 msgstr "contre"
 
-#: src/dotnew-gtk:194
+#: src/dotnew-gtk:201
 msgid "Configuration file"
 msgstr "Fichier de configuration"
 

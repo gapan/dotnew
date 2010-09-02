@@ -108,7 +108,7 @@ class DotnewGTK:
 			selectedfilename = self.liststore_files.get_value(iter, 2)
 			diff = getdiff(selectedfilename)
 			self.textbuffer_diff.set_text(diff)
-			self.dialog_diff.set_title(selectedfilename+_(' vs ')+selectedfilename+'.new')
+			self.dialog_diff.set_title(selectedfilename+' '+_('vs')+' '++selectedfilename+'.new')
 			self.dialog_diff.show()
 		except TypeError:
 			pass

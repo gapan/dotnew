@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-31 00:07+0300\n"
+"POT-Creation-Date: 2010-09-02 12:26+0300\n"
 "PO-Revision-Date: 2010-09-01 07:15+0100\n"
 "Last-Translator: Markus Muttilainen <stillborn.zenwalk@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,70 +20,47 @@ msgstr ""
 msgid "You need to be root to run this"
 msgstr "Sinun täytyy olla pääkäyttäjä käyttääksesi tätä"
 
-#: src/dotnew:33
-#: src/dotnew:44
-#: src/dotnew:100
-#: src/dotnew:103
+#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "OK"
 
-#: src/dotnew:33
-#: src/dotnew:44
+#: src/dotnew:33 src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Peruuta"
 
-#: src/dotnew:35
-#: src/dotnew:46
+#: src/dotnew:35 src/dotnew:46
 #, sh-format
-msgid ""
-"New settings file found: $file\\n"
-"\\n"
-"What do you want to do with it?"
-msgstr ""
-"Uusi asetustiedosto löytyi: $file\\n"
-"\\n"
-"Mitä haluat tehdä sillä?"
+msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
+msgstr "Uusi asetustiedosto löytyi: $file\\n\\nMitä haluat tehdä sillä?"
 
-#: src/dotnew:36
-#: src/dotnew:47
-#: src/dotnew:62
-#: src/dotnew-gtk:190
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
 #, sh-format
 msgid "Replace"
 msgstr "Korvaa"
 
-#: src/dotnew:36
-#: src/dotnew:47
+#: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Korvaa vanha asetustiedosto uudella"
 
-#: src/dotnew:37
-#: src/dotnew:48
-#: src/dotnew:67
-#: src/dotnew-gtk:192
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
 #, sh-format
 msgid "Delete"
 msgstr "Poista"
 
-#: src/dotnew:37
-#: src/dotnew:48
+#: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Poista uusi asetustiedosto"
 
-#: src/dotnew:38
-#: src/dotnew:49
-#: src/dotnew:70
-#: src/dotnew-gtk.glade:40
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
 #, sh-format
 msgid "Diff"
 msgstr "Vertaa"
 
-#: src/dotnew:38
-#: src/dotnew:49
+#: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "Näytä vanhan ja uuden asetustiedoston eroavaisuudet "
@@ -93,14 +70,12 @@ msgstr "Näytä vanhan ja uuden asetustiedoston eroavaisuudet "
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "Käytä vimdiffiä muokataksesi vanhaa ja uutta asetustiedostoa"
 
-#: src/dotnew:40
-#: src/dotnew:50
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Ei mitään"
 
-#: src/dotnew:40
-#: src/dotnew:50
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "Elä tee mitään nyt, päätä myöhemmin"
@@ -117,12 +92,8 @@ msgstr "Ei"
 
 #: src/dotnew:92
 #, sh-format
-msgid ""
-"There is no $orig file present.\\n"
-"Move $i to $orig ?"
-msgstr ""
-"Tiedostoa $orig ei ole.\\n"
-"Siirrä $i tiedosto $orig tiedostoksi?"
+msgid "There is no $orig file present.\\nMove $i to $orig ?"
+msgstr "Tiedostoa $orig ei ole.\\nSiirrä $i tiedosto $orig tiedostoksi?"
 
 #: src/dotnew:99
 #, sh-format
@@ -134,70 +105,68 @@ msgstr "Valmis"
 msgid "Done processing all .new files"
 msgstr "Kaikkien .new tiedostojen käsittely valmis"
 
-#: src/dotnew:103
+#: src/dotnew:103 src/dotnew-gtk.glade:346
 #, sh-format
 msgid "No .new files"
 msgstr "Ei .new tiedostoja"
 
-#: src/dotnew:104
+#: src/dotnew:104 src/dotnew-gtk.glade:365
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Järjestelmässäsi ei ole .new asetustiedostoja"
 
-#: dotnew.desktop.in.h:1
-#: dotnew-kde.desktop.in.h:1
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Hallitse .new järjestelmäasetus tiedostoja"
 
-#: src/dotnew-gtk.glade:35
+#: src/dotnew-gtk.glade:33
 msgid "Refresh configuration file list"
 msgstr "Päivitä asetustiedosto lista"
 
-#: src/dotnew-gtk.glade:39
+#: src/dotnew-gtk.glade:37
 msgid "Compare files line by line"
 msgstr "Vertaa tiedostoja rivi riviltä"
 
-#: src/dotnew-gtk.glade:53
+#: src/dotnew-gtk.glade:51
 msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "Käytä gvimdiffiä tai vimdiffiä eroavaisuuksien merkitsemiseen"
 
-#: src/dotnew-gtk.glade:67
+#: src/dotnew-gtk.glade:65
 msgid "Use meld to merge diffs"
 msgstr "Käytä meldiä eroavaisuuksien merkitsemiseen"
 
-#: src/dotnew-gtk.glade:90
+#: src/dotnew-gtk.glade:88
 msgid "Mark all configuration files for replacement"
 msgstr "Merkitse kaikki asetustiedostot korvaamista varten"
 
-#: src/dotnew-gtk.glade:91
+#: src/dotnew-gtk.glade:89
 msgid "Replace all"
 msgstr "Korvaa kaikki"
 
-#: src/dotnew-gtk.glade:104
+#: src/dotnew-gtk.glade:102
 msgid "Mark all new configuration files for deletion"
 msgstr "Merkitse kaikki uudet asetustiedostot poistamista varten"
 
-#: src/dotnew-gtk.glade:105
+#: src/dotnew-gtk.glade:103
 msgid "Delete all"
 msgstr "Poista kaikki"
 
-#: src/dotnew-gtk.glade:118
+#: src/dotnew-gtk.glade:116
 msgid "Unmark all checkboxes"
 msgstr "Pois merkitse kaikki valintaruudut"
 
-#: src/dotnew-gtk.glade:119
+#: src/dotnew-gtk.glade:117
 msgid "Unmark all"
 msgstr "Pois merkitse kaikki"
 
-#: src/dotnew-gtk.glade:141
+#: src/dotnew-gtk.glade:139
 msgid "Refresh"
 msgstr "Päivitä"
 
 #: src/dotnew-gtk:111
-msgid " vs "
+msgid "vs"
 msgstr "vs"
 
-#: src/dotnew-gtk:194
+#: src/dotnew-gtk:201
 msgid "Configuration file"
 msgstr "Asetustiedosto"
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-31 00:06+0300\n"
+"POT-Creation-Date: 2010-09-02 12:26+0300\n"
 "PO-Revision-Date: 2010-07-21 19:24+0100\n"
 "Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
 "Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
@@ -38,7 +38,7 @@ msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 "Új beállításokat tartalmazó fájl található: $file\\n\\nMit szeretne tenni?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:190
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
 #, sh-format
 msgid "Replace"
 msgstr "Csere"
@@ -48,7 +48,7 @@ msgstr "Csere"
 msgid "Replace the old settings file with the new one"
 msgstr "Lecserélni a régi beállításokat tartalmazó fájlt az újra"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:192
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
 #, sh-format
 msgid "Delete"
 msgstr "Törlés"
@@ -58,7 +58,7 @@ msgstr "Törlés"
 msgid "Delete the new settings file"
 msgstr "Törölni az új beállításokat tartalmazó fájlt"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
 #, sh-format
 msgid "Diff"
 msgstr "Összehasonlítás"
@@ -110,12 +110,12 @@ msgstr "Kész"
 msgid "Done processing all .new files"
 msgstr "Minden .new fájl feldolgozva"
 
-#: src/dotnew:103
+#: src/dotnew:103 src/dotnew-gtk.glade:346
 #, sh-format
 msgid "No .new files"
 msgstr "Nincs .new fájl"
 
-#: src/dotnew:104
+#: src/dotnew:104 src/dotnew-gtk.glade:365
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
@@ -124,56 +124,56 @@ msgstr "Jelenleg nincs a rendszerben .new konfigurációs fájl"
 msgid "Manage .new system settings files"
 msgstr "Rendszer beállításokat  tartalmazó fájlok (.new) kezelése"
 
-#: src/dotnew-gtk.glade:35
+#: src/dotnew-gtk.glade:33
 msgid "Refresh configuration file list"
 msgstr "Konfigurációs fájllista frissítése"
 
-#: src/dotnew-gtk.glade:39
+#: src/dotnew-gtk.glade:37
 msgid "Compare files line by line"
 msgstr "Fájlok összehasonlítása sorról sorra"
 
-#: src/dotnew-gtk.glade:53
+#: src/dotnew-gtk.glade:51
 msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "gvimdiff vagy vimdiff használata a fájlok összefésüléséhez"
 
-#: src/dotnew-gtk.glade:67
+#: src/dotnew-gtk.glade:65
 #, fuzzy
 msgid "Use meld to merge diffs"
 msgstr "gvimdiff vagy vimdiff használata a fájlok összefésüléséhez"
 
-#: src/dotnew-gtk.glade:90
+#: src/dotnew-gtk.glade:88
 msgid "Mark all configuration files for replacement"
 msgstr "Minden konfigurációs fálj megjelölése cserélésre"
 
-#: src/dotnew-gtk.glade:91
+#: src/dotnew-gtk.glade:89
 msgid "Replace all"
 msgstr "Mindet cserél"
 
-#: src/dotnew-gtk.glade:104
+#: src/dotnew-gtk.glade:102
 msgid "Mark all new configuration files for deletion"
 msgstr "Minden új konfigurációs fájl megjelölése törlésre"
 
-#: src/dotnew-gtk.glade:105
+#: src/dotnew-gtk.glade:103
 msgid "Delete all"
 msgstr "Mind töröl"
 
-#: src/dotnew-gtk.glade:118
+#: src/dotnew-gtk.glade:116
 msgid "Unmark all checkboxes"
 msgstr "Minden kijelölés visszavonása"
 
-#: src/dotnew-gtk.glade:119
+#: src/dotnew-gtk.glade:117
 msgid "Unmark all"
 msgstr "Kijelölést visszavon"
 
-#: src/dotnew-gtk.glade:141
+#: src/dotnew-gtk.glade:139
 msgid "Refresh"
 msgstr "Frissítés"
 
 #: src/dotnew-gtk:111
-msgid " vs "
+msgid "vs"
 msgstr "kontra"
 
-#: src/dotnew-gtk:194
+#: src/dotnew-gtk:201
 msgid "Configuration file"
 msgstr "Konfigurációs fájl"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-31 00:06+0300\n"
+"POT-Creation-Date: 2010-09-02 12:26+0300\n"
 "PO-Revision-Date: 2010-03-23 09:27-0300\n"
 "Last-Translator: Willian Gustavo Veiga <wiltave@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 "Novo arquivo de configurações encontrado: $file\\n\\nO que você quer fazer "
 "com ele?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:190
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
 #, sh-format
 msgid "Replace"
 msgstr "Substituir"
@@ -47,7 +47,7 @@ msgstr "Substituir"
 msgid "Replace the old settings file with the new one"
 msgstr "Substituir o arquivo de configurações antigo pelo novo"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:192
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
 #, sh-format
 msgid "Delete"
 msgstr "Excluir"
@@ -57,7 +57,7 @@ msgstr "Excluir"
 msgid "Delete the new settings file"
 msgstr "Excluir o novo arquivo de configurações"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:40
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
 #, sh-format
 msgid "Diff"
 msgstr "Diff"
@@ -108,12 +108,12 @@ msgstr "Pronto"
 msgid "Done processing all .new files"
 msgstr "Processamento de todos os arquivos .new finalizado"
 
-#: src/dotnew:103
+#: src/dotnew:103 src/dotnew-gtk.glade:346
 #, sh-format
 msgid "No .new files"
 msgstr "Sem arquivos .new"
 
-#: src/dotnew:104
+#: src/dotnew:104 src/dotnew-gtk.glade:365
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Não existem arquivos de configurações .new no seu sistema"
@@ -122,60 +122,60 @@ msgstr "Não existem arquivos de configurações .new no seu sistema"
 msgid "Manage .new system settings files"
 msgstr "Administrar arquivos de configurações de sistema .new"
 
-#: src/dotnew-gtk.glade:35
+#: src/dotnew-gtk.glade:33
 #, fuzzy
 msgid "Refresh configuration file list"
 msgstr "Não existem arquivos de configurações .new no seu sistema"
 
-#: src/dotnew-gtk.glade:39
+#: src/dotnew-gtk.glade:37
 msgid "Compare files line by line"
 msgstr ""
 
-#: src/dotnew-gtk.glade:53
+#: src/dotnew-gtk.glade:51
 msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr ""
 
-#: src/dotnew-gtk.glade:67
+#: src/dotnew-gtk.glade:65
 msgid "Use meld to merge diffs"
 msgstr ""
 
-#: src/dotnew-gtk.glade:90
+#: src/dotnew-gtk.glade:88
 #, fuzzy
 msgid "Mark all configuration files for replacement"
 msgstr "Não existem arquivos de configurações .new no seu sistema"
 
-#: src/dotnew-gtk.glade:91
+#: src/dotnew-gtk.glade:89
 #, fuzzy
 msgid "Replace all"
 msgstr "Substituir"
 
-#: src/dotnew-gtk.glade:104
+#: src/dotnew-gtk.glade:102
 #, fuzzy
 msgid "Mark all new configuration files for deletion"
 msgstr "Não existem arquivos de configurações .new no seu sistema"
 
-#: src/dotnew-gtk.glade:105
+#: src/dotnew-gtk.glade:103
 #, fuzzy
 msgid "Delete all"
 msgstr "Excluir"
 
-#: src/dotnew-gtk.glade:118
+#: src/dotnew-gtk.glade:116
 msgid "Unmark all checkboxes"
 msgstr ""
 
-#: src/dotnew-gtk.glade:119
+#: src/dotnew-gtk.glade:117
 msgid "Unmark all"
 msgstr ""
 
-#: src/dotnew-gtk.glade:141
+#: src/dotnew-gtk.glade:139
 msgid "Refresh"
 msgstr ""
 
 #: src/dotnew-gtk:111
-msgid " vs "
+msgid "vs"
 msgstr ""
 
-#: src/dotnew-gtk:194
+#: src/dotnew-gtk:201
 msgid "Configuration file"
 msgstr ""
 
