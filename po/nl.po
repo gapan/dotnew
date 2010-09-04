@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the dotnew package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -63,14 +63,12 @@ msgstr "Diff"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
-"Bekijk de verschillen tussen de oude en nieuwe bestanden met instellingen"
+msgstr "Bekijk de verschillen tussen de oude en nieuwe bestanden met instellingen"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"Gebruik vimdiff om het oude en nieuwe bestand met instellingen te wijzigen"
+msgstr "Gebruik vimdiff om het oude en nieuwe bestand met instellingen te wijzigen"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -134,9 +132,8 @@ msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "Gebruik gvimdiff of vimdiff om diffs samen te voegen"
 
 #: src/dotnew-gtk.glade:65
-#, fuzzy
 msgid "Use meld to merge diffs"
-msgstr "Gebruik gvimdiff of vimdiff om diffs samen te voegen"
+msgstr "Gebruik samenvoegen om diffs fuseren"
 
 #: src/dotnew-gtk.glade:88
 msgid "Mark all configuration files for replacement"
