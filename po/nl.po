@@ -133,7 +133,7 @@ msgstr "Gebruik gvimdiff of vimdiff om diffs samen te voegen"
 
 #: src/dotnew-gtk.glade:65
 msgid "Use meld to merge diffs"
-msgstr "Gebruik samenvoegen om diffs fuseren"
+msgstr "Gebruik samensmelten om diffs fuseren"
 
 #: src/dotnew-gtk.glade:88
 msgid "Mark all configuration files for replacement"
