@@ -221,6 +221,7 @@ class DotnewGTK:
 
 		# Connect signals
 		builder.connect_signals(self)
+		self.window.show()
 
 		# If no .new files are present, show a message
 		count = 0
