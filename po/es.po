@@ -11,8 +11,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Spanish\n"
-"X-Generator: Lokalize 0.3\n"
 "X-Poedit-Country: SPAIN\n"
+"X-Generator: Lokalize 0.3\n"
 
 #: src/dotnew:20
 #, sh-format
@@ -32,9 +32,7 @@ msgstr "Cancelar"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
-"Encontrado nuevo archivo de configuración: $file\\n\\n¿Qué desea hacer con "
-"ello?"
+msgstr "Encontrado nuevo archivo de configuración: $file\\n\\n¿Qué desea hacer con ello?"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
 #, sh-format
@@ -64,14 +62,12 @@ msgstr "Diferencia"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
-"Mostrar las diferencias entre el archivo antiguo de configuración y el nuevo"
+msgstr "Mostrar las diferencias entre el archivo antiguo de configuración y el nuevo"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"Usar vimdiff para editar los archivos de configuración, antiguo y nuevo"
+msgstr "Usar vimdiff para editar los archivos de configuración, antiguo y nuevo"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -135,7 +131,6 @@ msgid "Use gvimdiff or vimdiff to merge diffs"
 msgstr "Usar gvimdiff o vimdiff para fusionar diferencias"
 
 #: src/dotnew-gtk.glade:65
-#, fuzzy
 msgid "Use meld to merge diffs"
 msgstr "Usar gvimdiff o vimdiff para fusionar diferencias"
 
@@ -175,14 +170,11 @@ msgstr "vs"
 msgid "Configuration file"
 msgstr "Archivo de configuración"
 
-#, fuzzy
 #~ msgid "diff"
 #~ msgstr "Diferencia"
 
-#, fuzzy
 #~ msgid "VimDiff"
 #~ msgstr "Diferencia"
 
-#, fuzzy
 #~ msgid "gtk-cancel"
 #~ msgstr "Cancelar"
