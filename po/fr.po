@@ -3,12 +3,12 @@
 # Copyright (C) 2009 George Vlahavas
 # This file is distributed under the same license as the dotnew package.
 # George Vlahavas <vlahavas~at~gmail~dot~com>, 2009.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:44+0300\n"
+"POT-Creation-Date: 2010-09-14 21:46+0300\n"
 "PO-Revision-Date: 2009-07-31 15:08+0200\n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team: French\n"
@@ -20,9 +20,7 @@ msgstr ""
 #: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
-msgstr ""
-"Vous devez posséder le droits d'administrateur (root) afin d'exécuter ce "
-"programme"
+msgstr "Vous devez posséder le droits d'administrateur (root) afin d'exécuter ce programme"
 
 #: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
@@ -37,9 +35,7 @@ msgstr "Annuler"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
-"Un nouveau fichier de configuration est disponible : $file\\n\\nQue voulez-"
-"vous faire ?"
+msgstr "Un nouveau fichier de configuration est disponible : $file\\n\\nQue voulez-vous faire ?"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
@@ -69,16 +65,12 @@ msgstr "Différences"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
-"Afficher les différences entre l'ancien et le nouveau fichier de "
-"configuration"
+msgstr "Afficher les différences entre l'ancien et le nouveau fichier de configuration"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"Utiliser vimdiff afin de modifier l'ancien et le nouveau fichier de "
-"configuration"
+msgstr "Utiliser vimdiff afin de modifier l'ancien et le nouveau fichier de configuration"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -123,8 +115,7 @@ msgstr "Aucun fichier .new"
 #: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
-msgstr ""
-"Il n'y a aucun nouveau fichier de configuration .new dans votre système"
+msgstr "Il n'y a aucun nouveau fichier de configuration .new dans votre système"
 
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
@@ -156,8 +147,7 @@ msgstr "Les remplacer tous"
 
 #: src/dotnew-gtk.glade:102
 msgid "Mark all new configuration files for deletion"
-msgstr ""
-"Marquer tous les nouveaux fichiers de configuration comme \"à supprimer\""
+msgstr "Marquer tous les nouveaux fichiers de configuration comme \"à supprimer\""
 
 #: src/dotnew-gtk.glade:103
 msgid "Delete all"
@@ -176,13 +166,12 @@ msgid "Refresh"
 msgstr "Rafraîchir"
 
 #: src/dotnew-gtk.glade:455
-#, fuzzy
 msgid "A utility to manage .new system configuration files"
-msgstr "Gérer les fichiers configuration système '.new'"
+msgstr "Gérer les fichiers de configuration système '.new'"
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
-msgstr ""
+msgstr "Cyrille Pontvieux <jrd~at~enialis~dot~net>"
 
 #: src/dotnew-gtk:121
 msgid "vs"
