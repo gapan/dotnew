@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-02 12:26+0300\n"
+"POT-Creation-Date: 2010-09-14 21:44+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 "新しい設定ファイルがみつかりました: $file\\n\\nいったいどうしましょうか。"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
 msgstr "取り替える"
@@ -44,7 +44,7 @@ msgstr "取り替える"
 msgid "Replace the old settings file with the new one"
 msgstr "古い設定を新しいのと取り替える"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
 msgstr "消去する"
@@ -104,12 +104,12 @@ msgstr "用意できました。"
 msgid "Done processing all .new files"
 msgstr "すべての .newファイルをプロセスし終わりました。"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:346
+#: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
 msgstr ".newファイルは、ありません。"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:365
+#: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "あなたのシステムには、.newファイルがありません。"
@@ -162,10 +162,19 @@ msgstr "すべてのマークを解除する。"
 msgid "Refresh"
 msgstr "リフレッシュ"
 
-#: src/dotnew-gtk:111
+#: src/dotnew-gtk.glade:455
+#, fuzzy
+msgid "A utility to manage .new system configuration files"
+msgstr ".new　システム設定ファイル管理する。"
+
+#: src/dotnew-gtk.glade:1133
+msgid "translator-credits"
+msgstr ""
+
+#: src/dotnew-gtk:121
 msgid "vs"
 msgstr "vs"
 
-#: src/dotnew-gtk:201
+#: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr "構成ファイル"

@@ -36,6 +36,16 @@ class DotnewGTK:
 		for i in configfiles():
 			self.liststore_files.append([False, False, re.sub('\.new$', '', i)])
 
+	def on_button_about_clicked(self, widget, data=None):
+		self.aboutdialog.show()
+
+	def on_aboutdialog_response(self, widget, data=None):
+		self.aboutdialog.hide()
+
+	def on_aboutdialog_delete_event(self, widget, event):
+		self.aboutdialog.hide()
+		return True
+	
 	def on_button_ok_clicked(self, widget, data=None):
 		for i in self.liststore_files:
 			if i[0] == 1:
@@ -203,7 +213,12 @@ class DotnewGTK:
 		self.liststore_files = builder.get_object('liststore_files')
 		self.liststore_files.clear()
 		self.create_file_list()
-		
+	
+		#
+		# About dialog
+		#
+		self.aboutdialog = builder.get_object('aboutdialog')
+
 		#
 		# Diff window
 		#

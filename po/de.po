@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-02 12:26+0300\n"
+"POT-Creation-Date: 2010-09-14 21:44+0300\n"
 "PO-Revision-Date: 2009-07-30 11:33+0100\n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: \n"
@@ -33,7 +33,7 @@ msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 "Neue Konfigurationsdatei gefunden: $file\\n\\nWas wollen Sie damit machen?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
 msgstr "Ersetzen"
@@ -43,7 +43,7 @@ msgstr "Ersetzen"
 msgid "Replace the old settings file with the new one"
 msgstr "Ersetze die alte Konfigurationsdatei mit der Neuen"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
 msgstr "Löschen"
@@ -106,12 +106,12 @@ msgstr "Erledigt"
 msgid "Done processing all .new files"
 msgstr "Alle .new Dateien wurden bearbeitet"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:346
+#: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
 msgstr "Keine .new Dateien"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:365
+#: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Es existieren keine .new Konfigurationsdateien in Ihrem System"
@@ -164,11 +164,20 @@ msgstr "Markierungen aufheben"
 msgid "Refresh"
 msgstr "Neu laden"
 
-#: src/dotnew-gtk:111
+#: src/dotnew-gtk.glade:455
+#, fuzzy
+msgid "A utility to manage .new system configuration files"
+msgstr "Verwalte die .new Konfigurationsdateien"
+
+#: src/dotnew-gtk.glade:1133
+msgid "translator-credits"
+msgstr ""
+
+#: src/dotnew-gtk:121
 msgid "vs"
 msgstr "vs"
 
-#: src/dotnew-gtk:201
+#: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr "Konfigurationsdatei"
 

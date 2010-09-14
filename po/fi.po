@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-02 12:26+0300\n"
+"POT-Creation-Date: 2010-09-14 21:44+0300\n"
 "PO-Revision-Date: 2010-09-01 07:15+0100\n"
 "Last-Translator: Markus Muttilainen <stillborn.zenwalk@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "Peruuta"
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "Uusi asetustiedosto löytyi: $file\\n\\nMitä haluat tehdä sillä?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
 msgstr "Korvaa"
@@ -45,7 +45,7 @@ msgstr "Korvaa"
 msgid "Replace the old settings file with the new one"
 msgstr "Korvaa vanha asetustiedosto uudella"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
 msgstr "Poista"
@@ -105,12 +105,12 @@ msgstr "Valmis"
 msgid "Done processing all .new files"
 msgstr "Kaikkien .new tiedostojen käsittely valmis"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:346
+#: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
 msgstr "Ei .new tiedostoja"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:365
+#: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Järjestelmässäsi ei ole .new asetustiedostoja"
@@ -163,10 +163,19 @@ msgstr "Pois merkitse kaikki"
 msgid "Refresh"
 msgstr "Päivitä"
 
-#: src/dotnew-gtk:111
+#: src/dotnew-gtk.glade:455
+#, fuzzy
+msgid "A utility to manage .new system configuration files"
+msgstr "Hallitse .new järjestelmäasetus tiedostoja"
+
+#: src/dotnew-gtk.glade:1133
+msgid "translator-credits"
+msgstr ""
+
+#: src/dotnew-gtk:121
 msgid "vs"
 msgstr "vs"
 
-#: src/dotnew-gtk:201
+#: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr "Asetustiedosto"

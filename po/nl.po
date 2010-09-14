@@ -2,12 +2,12 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the dotnew package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-02 12:26+0300\n"
+"POT-Creation-Date: 2010-09-14 21:44+0300\n"
 "PO-Revision-Date: 2010-05-03 20:04+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "Annuleren"
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "Nieuw instellingenbestand gevonden: $file\\n\\nWat wilt u ermee doen?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
 msgstr "Vervangen"
@@ -45,7 +45,7 @@ msgstr "Vervangen"
 msgid "Replace the old settings file with the new one"
 msgstr "Vervang het oude instellingen bestand met de nieuwe instellingen"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
 msgstr "Verwijderen"
@@ -63,12 +63,14 @@ msgstr "Diff"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr "Bekijk de verschillen tussen de oude en nieuwe bestanden met instellingen"
+msgstr ""
+"Bekijk de verschillen tussen de oude en nieuwe bestanden met instellingen"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr "Gebruik vimdiff om het oude en nieuwe bestand met instellingen te wijzigen"
+msgstr ""
+"Gebruik vimdiff om het oude en nieuwe bestand met instellingen te wijzigen"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -105,12 +107,12 @@ msgstr "Gereed"
 msgid "Done processing all .new files"
 msgstr "Gereed met het verwerken van alle .new bestanden"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:346
+#: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
 msgstr "Geen .new bestanden"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:365
+#: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Er zijn geen .new configuratie bestanden in uw systeem"
@@ -163,11 +165,20 @@ msgstr "Alles deselecteren"
 msgid "Refresh"
 msgstr "Verversen"
 
-#: src/dotnew-gtk:111
+#: src/dotnew-gtk.glade:455
+#, fuzzy
+msgid "A utility to manage .new system configuration files"
+msgstr "Beheer .new systeeminstellingen bestanden"
+
+#: src/dotnew-gtk.glade:1133
+msgid "translator-credits"
+msgstr ""
+
+#: src/dotnew-gtk:121
 msgid "vs"
 msgstr "vs"
 
-#: src/dotnew-gtk:201
+#: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr "Configuratiebestand"
 

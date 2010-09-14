@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SalixOS PL dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-02 12:26+0300\n"
+"POT-Creation-Date: 2010-09-14 21:44+0300\n"
 "PO-Revision-Date: 2010-04-24 19:56+0100\n"
 "Last-Translator: Adrian Marcinkowski <amfidiusz@gmail.com>\n"
 "Language-Team: \n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
 msgstr ""
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Replace the old settings file with the new one"
 msgstr ""
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
 msgstr ""
@@ -107,12 +107,12 @@ msgstr ""
 msgid "Done processing all .new files"
 msgstr ""
 
-#: src/dotnew:103 src/dotnew-gtk.glade:346
+#: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
 msgstr ""
 
-#: src/dotnew:104 src/dotnew-gtk.glade:365
+#: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr ""
@@ -165,10 +165,18 @@ msgstr ""
 msgid "Refresh"
 msgstr ""
 
-#: src/dotnew-gtk:111
+#: src/dotnew-gtk.glade:455
+msgid "A utility to manage .new system configuration files"
+msgstr ""
+
+#: src/dotnew-gtk.glade:1133
+msgid "translator-credits"
+msgstr ""
+
+#: src/dotnew-gtk:121
 msgid "vs"
 msgstr ""
 
-#: src/dotnew-gtk:201
+#: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr ""

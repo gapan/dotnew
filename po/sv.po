@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-02 12:26+0300\n"
+"POT-Creation-Date: 2010-09-14 21:44+0300\n"
 "PO-Revision-Date: 2010-08-29 17:20+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
@@ -37,7 +37,7 @@ msgstr "Avbryt"
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "Nya inställnings fil funnen: $file\\n\\nVad vill du göra med den?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:197
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
 msgstr "Ersätt"
@@ -47,7 +47,7 @@ msgstr "Ersätt"
 msgid "Replace the old settings file with the new one"
 msgstr "Ersätt den gamla inställnings filen med den nya"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:199
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
 msgstr "Ta bort"
@@ -108,12 +108,12 @@ msgstr "Klar"
 msgid "Done processing all .new files"
 msgstr "Klar med att behandla alla .new filer"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:346
+#: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
 msgstr "Inga nya .new filer"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:365
+#: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Det finns inga nya .new konfigurations filer i ditt system"
@@ -166,10 +166,19 @@ msgstr "Avmarkera alla"
 msgid "Refresh"
 msgstr "Uppdatera"
 
-#: src/dotnew-gtk:111
+#: src/dotnew-gtk.glade:455
+#, fuzzy
+msgid "A utility to manage .new system configuration files"
+msgstr "Hantera .new system inställnings filer"
+
+#: src/dotnew-gtk.glade:1133
+msgid "translator-credits"
+msgstr ""
+
+#: src/dotnew-gtk:121
 msgid "vs"
 msgstr "vs"
 
-#: src/dotnew-gtk:201
+#: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr "Konfigurations fil"
