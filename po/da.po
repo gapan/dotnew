@@ -2,12 +2,12 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the dotnew package.
 # Kris Thomsen <lakristho@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:44+0300\n"
+"POT-Creation-Date: 2010-09-14 21:46+0300\n"
 "PO-Revision-Date: 2010-08-31 17:33+0100\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -164,13 +164,12 @@ msgid "Refresh"
 msgstr "Genopfrisk"
 
 #: src/dotnew-gtk.glade:455
-#, fuzzy
 msgid "A utility to manage .new system configuration files"
-msgstr "Håndtér .new-systemindstillingsfiler"
+msgstr "Et værktøj til at håndtere .new-systemkonfigurationsfiler"
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
-msgstr ""
+msgstr "Kris Thomsen <lakristho~at~gmail~dot~com>"
 
 #: src/dotnew-gtk:121
 msgid "vs"
@@ -180,14 +179,11 @@ msgstr "vs"
 msgid "Configuration file"
 msgstr "Konfigurationsfil"
 
-#, fuzzy
 #~ msgid "diff"
 #~ msgstr "Diff"
 
-#, fuzzy
 #~ msgid "VimDiff"
 #~ msgstr "Diff"
 
-#, fuzzy
 #~ msgid "gtk-cancel"
 #~ msgstr "Annullér"
