@@ -2,12 +2,12 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the dotnew package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:44+0300\n"
+"POT-Creation-Date: 2010-09-14 21:46+0300\n"
 "PO-Revision-Date: 2010-05-03 20:04+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,14 +63,12 @@ msgstr "Diff"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
-"Bekijk de verschillen tussen de oude en nieuwe bestanden met instellingen"
+msgstr "Bekijk de verschillen tussen de oude en nieuwe bestanden met instellingen"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"Gebruik vimdiff om het oude en nieuwe bestand met instellingen te wijzigen"
+msgstr "Gebruik vimdiff om het oude en nieuwe bestand met instellingen te wijzigen"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -166,13 +164,12 @@ msgid "Refresh"
 msgstr "Verversen"
 
 #: src/dotnew-gtk.glade:455
-#, fuzzy
 msgid "A utility to manage .new system configuration files"
-msgstr "Beheer .new systeeminstellingen bestanden"
+msgstr "Een tool om .new systeeminstellingen te beheren"
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
-msgstr ""
+msgstr "vertaler-credits"
 
 #: src/dotnew-gtk:121
 msgid "vs"
