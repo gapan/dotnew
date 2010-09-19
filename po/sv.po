@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:44+0300\n"
-"PO-Revision-Date: 2010-08-29 17:20+0100\n"
+"POT-Creation-Date: 2010-09-14 21:46+0300\n"
+"PO-Revision-Date: 2010-09-19 19:26+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,47 +22,70 @@ msgstr ""
 msgid "You need to be root to run this"
 msgstr "Du måste vara root för att köra detta program"
 
-#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
+#: src/dotnew:33
+#: src/dotnew:44
+#: src/dotnew:100
+#: src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "OK"
 
-#: src/dotnew:33 src/dotnew:44
+#: src/dotnew:33
+#: src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/dotnew:35 src/dotnew:46
+#: src/dotnew:35
+#: src/dotnew:46
 #, sh-format
-msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Nya inställnings fil funnen: $file\\n\\nVad vill du göra med den?"
+msgid ""
+"New settings file found: $file\\n"
+"\\n"
+"What do you want to do with it?"
+msgstr ""
+"Ny inställnings fil funnen: $file\n"
+"\n"
+"Vad vill du göra med den?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
+#: src/dotnew:36
+#: src/dotnew:47
+#: src/dotnew:62
+#: src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
 msgstr "Ersätt"
 
-#: src/dotnew:36 src/dotnew:47
+#: src/dotnew:36
+#: src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Ersätt den gamla inställnings filen med den nya"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
+#: src/dotnew:37
+#: src/dotnew:48
+#: src/dotnew:67
+#: src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
 msgstr "Ta bort"
 
-#: src/dotnew:37 src/dotnew:48
+#: src/dotnew:37
+#: src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Ta bort den nya inställnings filen"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
+#: src/dotnew:38
+#: src/dotnew:49
+#: src/dotnew:70
+#: src/dotnew-gtk.glade:38
 #, sh-format
 msgid "Diff"
 msgstr "Skillnad"
 
-#: src/dotnew:38 src/dotnew:49
+#: src/dotnew:38
+#: src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "Visa skillnaden mellan den gamla och den nya inställnings filen"
@@ -70,15 +93,16 @@ msgstr "Visa skillnaden mellan den gamla och den nya inställnings filen"
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
-"Använd vimdiff för att redigera den gamla och den nya inställnings filen"
+msgstr "Använd vimdiff för att redigera den gamla och den nya inställnings filen"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:40
+#: src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Ingenting"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:40
+#: src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "Gör ingenting för tillfället, avgör senare"
@@ -95,8 +119,12 @@ msgstr "Nej"
 
 #: src/dotnew:92
 #, sh-format
-msgid "There is no $orig file present.\\nMove $i to $orig ?"
-msgstr "Det finns ingen $orig fil.\\nFlytta $i till $orig ?"
+msgid ""
+"There is no $orig file present.\\n"
+"Move $i to $orig ?"
+msgstr ""
+"Det finns ingen $orig fil.\n"
+"Flytta $i till $orig ?"
 
 #: src/dotnew:99
 #, sh-format
@@ -108,17 +136,20 @@ msgstr "Klar"
 msgid "Done processing all .new files"
 msgstr "Klar med att behandla alla .new filer"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:384
+#: src/dotnew:103
+#: src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
 msgstr "Inga nya .new filer"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:403
+#: src/dotnew:104
+#: src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Det finns inga nya .new konfigurations filer i ditt system"
 
-#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
+#: dotnew.desktop.in.h:1
+#: dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Hantera .new system inställnings filer"
 
@@ -136,7 +167,7 @@ msgstr "Använd gvimdiff eller vimdiff för att slå ihop skillnader"
 
 #: src/dotnew-gtk.glade:65
 msgid "Use meld to merge diffs"
-msgstr "Använd meld att slå samman diffar"
+msgstr "Använd meld att slå samman skillnader"
 
 #: src/dotnew-gtk.glade:88
 msgid "Mark all configuration files for replacement"
@@ -167,13 +198,12 @@ msgid "Refresh"
 msgstr "Uppdatera"
 
 #: src/dotnew-gtk.glade:455
-#, fuzzy
 msgid "A utility to manage .new system configuration files"
-msgstr "Hantera .new system inställnings filer"
+msgstr "Ett verktyg för att hantera .new system inställnings filer"
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
-msgstr ""
+msgstr "Ingemar Karlsson <ingemar@ingk.se>"
 
 #: src/dotnew-gtk:121
 msgid "vs"
@@ -182,3 +212,4 @@ msgstr "vs"
 #: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr "Konfigurations fil"
+
