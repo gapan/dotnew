@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ingemar Karlsson <po@ingk.se>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 21:46+0300\n"
-"PO-Revision-Date: 2010-09-19 19:26+0100\n"
+"PO-Revision-Date: 2010-09-26 09:44+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -203,7 +203,7 @@ msgstr "Ett verktyg för att hantera .new system inställnings filer"
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
-msgstr "Ingemar Karlsson <ingemar@ingk.se>"
+msgstr "Ingemar Karlsson <po@ingk.se>"
 
 #: src/dotnew-gtk:121
 msgid "vs"
