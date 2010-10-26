@@ -51,7 +51,7 @@
                     <property name="tooltip_text" translatable="yes">Use gvimdiff or vimdiff to merge diffs</property>
                     <property name="label">VimDiff</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">gvim</property>
+                    <property name="icon_name">dotnew-vimdiff</property>
                     <signal name="clicked" handler="on_toolbutton_vim_clicked"/>
                   </object>
                   <packing>

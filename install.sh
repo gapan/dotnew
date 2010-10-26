@@ -12,6 +12,8 @@ install -m 644 dotnew-kde.desktop $DESTDIR/usr/share/applications/
 # Install icons
 install -d -m 755 $DESTDIR/usr/share/icons/hicolor/scalable/apps/
 install -m 644 icons/dotnew.svg $DESTDIR/usr/share/icons/hicolor/scalable/apps/
+install -d -m 755 $DESTDIR/usr/share/icons/hicolor/scalable/actions/
+install -m 644 icons/dotnew-vimdiff.svg $DESTDIR/usr/share/icons/hicolor/scalable/actions/
 
 for i in 32 24 22 16; do
 	install -d -m 755 \
@@ -19,6 +21,11 @@ for i in 32 24 22 16; do
 	2> /dev/null
 	install -m 644 icons/dotnew-$i.png \
 	$DESTDIR/usr/share/icons/hicolor/${i}x${i}/apps/dotnew.png
+	install -d -m 755 \
+	$DESTDIR/usr/share/icons/hicolor/${i}x${i}/actions/ \
+	2> /dev/null
+	install -m 644 icons/dotnew-vimdiff-$i.png \
+	$DESTDIR/usr/share/icons/hicolor/${i}x${i}/actions/dotnew-vimdiff.png
 done
 
 for i in `ls po/*.po|sed "s/po\/\(.*\)\.po/\1/"`; do
