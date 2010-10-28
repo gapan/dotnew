@@ -1,9 +1,9 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:44+0300\n"
+"POT-Creation-Date: 2010-09-14 21:46+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
 "Language-Team: \n"
@@ -31,8 +31,7 @@ msgstr "キャンセル"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
-"新しい設定ファイルがみつかりました: $file\\n\\nいったいどうしましょうか。"
+msgstr "新しい設定ファイルがみつかりました: $file\\n\\nいったいどうしましょうか。"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
@@ -163,13 +162,12 @@ msgid "Refresh"
 msgstr "リフレッシュ"
 
 #: src/dotnew-gtk.glade:455
-#, fuzzy
 msgid "A utility to manage .new system configuration files"
-msgstr ".new　システム設定ファイル管理する。"
+msgstr ".new　システム設定ファイルを管理するツール。"
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
-msgstr ""
+msgstr "翻訳者"
 
 #: src/dotnew-gtk:121
 msgid "vs"
