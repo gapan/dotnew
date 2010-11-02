@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-14 21:46+0300\n"
+"PO-Revision-Date: 2010-11-02 21:31+0200\n"
+"Last-Translator: my name <email@address.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/dotnew:20
+#, sh-format
+msgid "You need to be root to run this"
+msgstr "נדרשת פריבילגיית שורש כדי להריץ תכנית זו"
+
+#: src/dotnew:33
+#: src/dotnew:44
+#: src/dotnew:100
+#: src/dotnew:103
+#, sh-format
+msgid "OK"
+msgstr "אישור"
+
+#: src/dotnew:33
+#: src/dotnew:44
+#, sh-format
+msgid "Cancel"
+msgstr "ביטול"
+
+#: src/dotnew:35
+#: src/dotnew:46
+#, sh-format
+msgid ""
+"New settings file found: $file\\n"
+"\\n"
+"What do you want to do with it?"
+msgstr ""
+"קובץ הגדרות חדש נמצא: $file\\n"
+"\\n"
+"מה ברצונך לעשות עם הקובץ?"
+
+#: src/dotnew:36
+#: src/dotnew:47
+#: src/dotnew:62
+#: src/dotnew-gtk:207
+#, sh-format
+msgid "Replace"
+msgstr "החלף"
+
+#: src/dotnew:36
+#: src/dotnew:47
+#, sh-format
+msgid "Replace the old settings file with the new one"
+msgstr "החלפת ההגדרות הישנות עם ההגדרות החדשות"
+
+#: src/dotnew:37
+#: src/dotnew:48
+#: src/dotnew:67
+#: src/dotnew-gtk:209
+#, sh-format
+msgid "Delete"
+msgstr "מחיקה"
+
+#: src/dotnew:37
+#: src/dotnew:48
+#, sh-format
+msgid "Delete the new settings file"
+msgstr "מחיקת קובץ ההגדרות החדשות"
+
+#: src/dotnew:38
+#: src/dotnew:49
+#: src/dotnew:70
+#: src/dotnew-gtk.glade:38
+#, sh-format
+msgid "Diff"
+msgstr "הבדל"
+
+#: src/dotnew:38
+#: src/dotnew:49
+#, sh-format
+msgid "View the differences between the old and new settings files"
+msgstr "צפיה בהבדלים בין קובץ התצורה הישן לבין קובץ התצורה החדש"
+
+#: src/dotnew:39
+#, sh-format
+msgid "Use vimdiff to edit the old and new settings files"
+msgstr "שימוש באפליקציה vimdiff לערוך את קובץ התצורה הישן ואת קובץ התצורה החדש"
+
+#: src/dotnew:40
+#: src/dotnew:50
+#, sh-format
+msgid "Nothing"
+msgstr "לא לבצע שום פעולה"
+
+#: src/dotnew:40
+#: src/dotnew:50
+#, sh-format
+msgid "Do nothing for now, decide about it later"
+msgstr "לא לעשות דבר לעת עתה, אני אחליט בעניין מאוחר יותר"
+
+#: src/dotnew:90
+#, sh-format
+msgid "Yes"
+msgstr "כן"
+
+#: src/dotnew:91
+#, sh-format
+msgid "No"
+msgstr "לא"
+
+#: src/dotnew:92
+#, sh-format
+msgid ""
+"There is no $orig file present.\\n"
+"Move $i to $orig ?"
+msgstr ""
+"לא קיים קובץ $orig.\\n"
+"האם ברצונך להעביר $i אל $orig ?"
+
+#: src/dotnew:99
+#, sh-format
+msgid "Ready"
+msgstr "מוכן"
+
+#: src/dotnew:101
+#, sh-format
+msgid "Done processing all .new files"
+msgstr "עיבוד קבצי דוטניו הסתיים"
+
+#: src/dotnew:103
+#: src/dotnew-gtk.glade:384
+#, sh-format
+msgid "No .new files"
+msgstr "אין קבצי דוטניו"
+
+#: src/dotnew:104
+#: src/dotnew-gtk.glade:403
+#, sh-format
+msgid "There are no .new configuration files in your system"
+msgstr "לא קיימים קבצי דוטניו במערכת"
+
+#: dotnew.desktop.in.h:1
+#: dotnew-kde.desktop.in.h:1
+msgid "Manage .new system settings files"
+msgstr "ניהול קבצי תצורת מערכת דוטניו"
+
+#: src/dotnew-gtk.glade:33
+msgid "Refresh configuration file list"
+msgstr "ריענון רשימת קבצי תצורה"
+
+#: src/dotnew-gtk.glade:37
+msgid "Compare files line by line"
+msgstr "השוואת קבצים בהדרגתיות שורה אחר שורה"
+
+#: src/dotnew-gtk.glade:51
+msgid "Use gvimdiff or vimdiff to merge diffs"
+msgstr "שימוש באפליקציה gvimdiff או vimdiff למזג הבדלים"
+
+#: src/dotnew-gtk.glade:65
+msgid "Use meld to merge diffs"
+msgstr "שימוש באפליקציה meld למזג הבדלים"
+
+#: src/dotnew-gtk.glade:88
+msgid "Mark all configuration files for replacement"
+msgstr "סימון כל קבצי התצורה להחלפה"
+
+#: src/dotnew-gtk.glade:89
+msgid "Replace all"
+msgstr "החלף הכל"
+
+#: src/dotnew-gtk.glade:102
+msgid "Mark all new configuration files for deletion"
+msgstr "סימון כל קבצי התצורה החדשים למחיקה"
+
+#: src/dotnew-gtk.glade:103
+msgid "Delete all"
+msgstr "מחק הכל"
+
+#: src/dotnew-gtk.glade:116
+msgid "Unmark all checkboxes"
+msgstr "ביטול סימון כל תיבות הסימון"
+
+#: src/dotnew-gtk.glade:117
+msgid "Unmark all"
+msgstr "ביטול כל הבחירות"
+
+#: src/dotnew-gtk.glade:139
+msgid "Refresh"
+msgstr "רענן"
+
+#: src/dotnew-gtk.glade:455
+msgid "A utility to manage .new system configuration files"
+msgstr "תוכנת עזר לניהול קבצי תצורת מערכת דוטניו"
+
+#: src/dotnew-gtk.glade:1133
+msgid "translator-credits"
+msgstr "Rothschild Maccabim <Maccabees@inferno>"
+
+#: src/dotnew-gtk:121
+msgid "vs"
+msgstr "כנגד"
+
+#: src/dotnew-gtk:211
+msgid "Configuration file"
+msgstr "קובץ תצורה"
+
