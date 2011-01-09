@@ -1,88 +1,68 @@
-# Klemens Häckel <click3d at linuxmail (dot) org>, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 21:46+0300\n"
-"PO-Revision-Date: 2010-09-16 00:03-0300\n"
-"Last-Translator: seacat <seacat.linux@gmail.com>\n"
-"Language-Team: Spanish\n"
+"PO-Revision-Date: 2011-01-09 15:46+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: SPAIN\n"
-"X-Generator: Lokalize 0.3\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "Debe ser root para ejecutar este programa"
 
-#: src/dotnew:33
-#: src/dotnew:44
-#: src/dotnew:100
-#: src/dotnew:103
+#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
 msgid "OK"
 msgstr "Aceptar"
 
-#: src/dotnew:33
-#: src/dotnew:44
+#: src/dotnew:33 src/dotnew:44
 #, sh-format
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/dotnew:35
-#: src/dotnew:46
+#: src/dotnew:35 src/dotnew:46
 #, sh-format
-msgid ""
-"New settings file found: $file\\n"
-"\\n"
-"What do you want to do with it?"
-msgstr ""
-"Encontrado nuevo archivo de configuración: $file\\n"
-"\\n"
-"¿Qué desea hacer con ello?"
+msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
+msgstr "Encontrado nuevo archivo de configuración: $file\\n\\n¿Qué desea hacer con ello?"
 
-#: src/dotnew:36
-#: src/dotnew:47
-#: src/dotnew:62
-#: src/dotnew-gtk:207
+#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
 msgstr "Reemplazar"
 
-#: src/dotnew:36
-#: src/dotnew:47
+#: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Reemplazar al archivo antiguo de configuración por el archivo nuevo"
 
-#: src/dotnew:37
-#: src/dotnew:48
-#: src/dotnew:67
-#: src/dotnew-gtk:209
+#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
 msgstr "Eliminar"
 
-#: src/dotnew:37
-#: src/dotnew:48
+#: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Eliminar el archivo nuevo de configuración"
 
-#: src/dotnew:38
-#: src/dotnew:49
-#: src/dotnew:70
-#: src/dotnew-gtk.glade:38
+#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
 #, sh-format
 msgid "Diff"
 msgstr "Diferencia"
 
-#: src/dotnew:38
-#: src/dotnew:49
+#: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "Mostrar las diferencias entre el archivo antiguo de configuración y el nuevo"
@@ -92,14 +72,12 @@ msgstr "Mostrar las diferencias entre el archivo antiguo de configuración y el 
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "Usar vimdiff para editar los archivos de configuración, antiguo y nuevo"
 
-#: src/dotnew:40
-#: src/dotnew:50
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Nothing"
 msgstr "Nada"
 
-#: src/dotnew:40
-#: src/dotnew:50
+#: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "No hacer nada por ahora, voy a decidir más tarde"
@@ -116,12 +94,8 @@ msgstr "No"
 
 #: src/dotnew:92
 #, sh-format
-msgid ""
-"There is no $orig file present.\\n"
-"Move $i to $orig ?"
-msgstr ""
-"No se encuentra ningún archivo $orig.\\n"
-"¿Mover $i a $orig?"
+msgid "There is no $orig file present.\\nMove $i to $orig ?"
+msgstr "No se encuentra ningún archivo $orig.\\n¿Mover $i a $orig?"
 
 #: src/dotnew:99
 #, sh-format
@@ -133,20 +107,17 @@ msgstr "Listo"
 msgid "Done processing all .new files"
 msgstr "Terminado el procesamiento de todos los archivos .new"
 
-#: src/dotnew:103
-#: src/dotnew-gtk.glade:384
+#: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
 msgstr "No existen archivos .new"
 
-#: src/dotnew:104
-#: src/dotnew-gtk.glade:403
+#: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "No se encuentran archivos de configuración .new en su sistema"
 
-#: dotnew.desktop.in.h:1
-#: dotnew-kde.desktop.in.h:1
+#: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
 msgstr "Administrar archivos .new de configuración del sistema"
 
@@ -209,12 +180,3 @@ msgstr "vs"
 #: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr "Archivo de configuración"
-
-#~ msgid "diff"
-#~ msgstr "Diferencia"
-
-#~ msgid "VimDiff"
-#~ msgstr "Diferencia"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Cancelar"

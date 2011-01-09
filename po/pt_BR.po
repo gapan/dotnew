@@ -2,18 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:44+0300\n"
-"PO-Revision-Date: 2010-03-23 09:27-0300\n"
-"Last-Translator: Willian Gustavo Veiga <wiltave@gmail.com>\n"
+"POT-Creation-Date: 2010-09-14 21:46+0300\n"
+"PO-Revision-Date: 2011-01-09 15:46+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #: src/dotnew:20
 #, sh-format
@@ -33,9 +35,7 @@ msgstr "Cancelar"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
-"Novo arquivo de configurações encontrado: $file\\n\\nO que você quer fazer "
-"com ele?"
+msgstr "Novo arquivo de configurações encontrado: $file\\n\\nO que você quer fazer com ele?"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
@@ -65,8 +65,7 @@ msgstr "Diff"
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
-"Visualizar as diferenças entre o arquivo de configurações antigo e o novo"
+msgstr "Visualizar as diferenças entre o arquivo de configurações antigo e o novo"
 
 #: src/dotnew:39
 #, sh-format
@@ -123,9 +122,8 @@ msgid "Manage .new system settings files"
 msgstr "Administrar arquivos de configurações de sistema .new"
 
 #: src/dotnew-gtk.glade:33
-#, fuzzy
 msgid "Refresh configuration file list"
-msgstr "Não existem arquivos de configurações .new no seu sistema"
+msgstr ""
 
 #: src/dotnew-gtk.glade:37
 msgid "Compare files line by line"
@@ -140,24 +138,20 @@ msgid "Use meld to merge diffs"
 msgstr ""
 
 #: src/dotnew-gtk.glade:88
-#, fuzzy
 msgid "Mark all configuration files for replacement"
-msgstr "Não existem arquivos de configurações .new no seu sistema"
+msgstr ""
 
 #: src/dotnew-gtk.glade:89
-#, fuzzy
 msgid "Replace all"
-msgstr "Substituir"
+msgstr ""
 
 #: src/dotnew-gtk.glade:102
-#, fuzzy
 msgid "Mark all new configuration files for deletion"
-msgstr "Não existem arquivos de configurações .new no seu sistema"
+msgstr ""
 
 #: src/dotnew-gtk.glade:103
-#, fuzzy
 msgid "Delete all"
-msgstr "Excluir"
+msgstr ""
 
 #: src/dotnew-gtk.glade:116
 msgid "Unmark all checkboxes"
@@ -172,9 +166,8 @@ msgid "Refresh"
 msgstr ""
 
 #: src/dotnew-gtk.glade:455
-#, fuzzy
 msgid "A utility to manage .new system configuration files"
-msgstr "Administrar arquivos de configurações de sistema .new"
+msgstr ""
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
@@ -187,15 +180,3 @@ msgstr ""
 #: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr ""
-
-#, fuzzy
-#~ msgid "diff"
-#~ msgstr "Diff"
-
-#, fuzzy
-#~ msgid "VimDiff"
-#~ msgstr "Diff"
-
-#, fuzzy
-#~ msgid "gtk-cancel"
-#~ msgstr "Cancelar"

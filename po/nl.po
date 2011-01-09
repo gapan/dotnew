@@ -1,19 +1,21 @@
-# Dutch .po file for dotnew.
-# Copyright (C) 2010
-# This file is distributed under the same license as the dotnew package.
-# Imar van Erven Dorens <gambit73@gmail.com>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 21:46+0300\n"
-"PO-Revision-Date: 2010-05-03 20:04+0100\n"
-"Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
+"PO-Revision-Date: 2011-01-09 15:46+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/dotnew:20
 #, sh-format
@@ -178,12 +180,3 @@ msgstr "vs"
 #: src/dotnew-gtk:211
 msgid "Configuration file"
 msgstr "Configuratiebestand"
-
-#~ msgid "diff"
-#~ msgstr "Diff"
-
-#~ msgid "VimDiff"
-#~ msgstr "Diff"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Annuleren"
