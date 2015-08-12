@@ -8,6 +8,12 @@ mo:
 	intltool-merge po/ -d -u dotnew.desktop.in dotnew.desktop
 	intltool-merge po/ -d -u dotnew-kde.desktop.in dotnew-kde.desktop
 
+clean:
+	rm -f dotnew.desktop
+	rm -f dotnew-kde.desktop
+	rm -f po/*.po~
+	rm -f po/*.mo
+
 install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
