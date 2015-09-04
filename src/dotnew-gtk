@@ -18,234 +18,247 @@ gettext.install("dotnew", "/usr/share/locale", unicode=1)
 gtk.glade.bindtextdomain("dotnew", "/usr/share/locale")
 gtk.glade.textdomain("dotnew")
 
+
 def configfiles():
-	filelist = []
-	for dirpath, dirname, files in os.walk('/etc'):
-		for file in files:
-			if file.endswith('.new'):
-				filelist.append(os.path.join(dirpath,file))
-	return filelist
+    filelist = []
+    for dirpath, dirname, files in os.walk('/etc'):
+        for file in files:
+            if file.endswith('.new'):
+                filelist.append(os.path.join(dirpath, file))
+    return filelist
+
 
 def getdiff(conffile):
-	res = commands.getoutput('diff -Naur '+conffile+' '+conffile+'.new')
-	return res
+    res = commands.getoutput(
+        'diff -Naur ' + conffile + ' ' + conffile + '.new')
+    return res
+
 
 class DotnewGTK:
-	def create_file_list(self):
-		self.liststore_files.clear()
-		for i in configfiles():
-			self.liststore_files.append([False, False, re.sub('\.new$', '', i)])
 
-	def on_button_about_clicked(self, widget, data=None):
-		self.aboutdialog.show()
+    def create_file_list(self):
+        self.liststore_files.clear()
+        for i in configfiles():
+            self.liststore_files.append(
+                [False, False, re.sub('\.new$', '', i)])
 
-	def on_aboutdialog_response(self, widget, data=None):
-		self.aboutdialog.hide()
+    def on_button_about_clicked(self, widget, data=None):
+        self.aboutdialog.show()
 
-	def on_aboutdialog_delete_event(self, widget, event):
-		self.aboutdialog.hide()
-		return True
-	
-	def on_button_ok_clicked(self, widget, data=None):
-		for i in self.liststore_files:
-			if i[0] == 1:
-				if os.path.exists(i[2]):
-					try:
-						shutil.copy2(i[2], i[2]+'.orig')
-					except IOError:
-						pass
-				try:
-					shutil.move(i[2]+'.new', i[2])
-				except IOError:
-					pass
-			else:
-				if i[1] == 1:
-					if os.path.exists(i[2]+'.new'):
-						try:
-							os.remove(i[2]+'.new')
-						except OSError:
-							pass
-		gtk.main_quit()
+    def on_aboutdialog_response(self, widget, data=None):
+        self.aboutdialog.hide()
 
-	def on_button_cancel_clicked(self, widget, data=None):
-		gtk.main_quit()
+    def on_aboutdialog_delete_event(self, widget, event):
+        self.aboutdialog.hide()
+        return True
 
-	def gtk_main_quit(self, widget, data=None):
-		gtk.main_quit()
+    def on_button_ok_clicked(self, widget, data=None):
+        for i in self.liststore_files:
+            if i[0] == 1:
+                if os.path.exists(i[2]):
+                    try:
+                        shutil.copy2(i[2], i[2] + '.orig')
+                    except IOError:
+                        pass
+                try:
+                    shutil.move(i[2] + '.new', i[2])
+                except IOError:
+                    pass
+            else:
+                if i[1] == 1:
+                    if os.path.exists(i[2] + '.new'):
+                        try:
+                            os.remove(i[2] + '.new')
+                        except OSError:
+                            pass
+        gtk.main_quit()
 
-	global replace_clicked
-	replace_clicked=False
-	global delete_clicked
-	delete_clicked=False
-	
-	def on_checkbox_replace_toggled(self, widget, data=None):
-		global replace_clicked
-		replace_clicked=True
-	
-	def on_checkbox_delete_toggled(self, widget, data=None):
-		global delete_clicked
-		delete_clicked=True
+    def on_button_cancel_clicked(self, widget, data=None):
+        gtk.main_quit()
 
-	def on_treeview_files_cursor_changed(self, widget, data=None):
-		global replace_clicked
-		global delete_clicked
-		selectedfile = self.treeview_files.get_selection()
-		self.liststore_files, iter = selectedfile.get_selected()
-		selectedfilename = self.liststore_files.get_value(iter, 2)
-		if replace_clicked==True:
-			for i in self.liststore_files:
-				if i[2] == selectedfilename:
-					if i[0] == 0:
-						i[0] = 1
-						i[1] = 0
-					else:
-						i[0] = 0
-			replace_clicked=False
-		if delete_clicked==True:
-			for i in self.liststore_files:
-				if i[2] == selectedfilename:
-					if i[1] == 0:
-						i[1] = 1
-						i[0] = 0
-					else:
-						i[1] = 0
-			delete_clicked=False
+    def gtk_main_quit(self, widget, data=None):
+        gtk.main_quit()
 
-	def on_toolbutton_diff_clicked(self, widget, data=None):
-		try:
-			selectedfile = self.treeview_files.get_selection()
-			self.liststore_files, iter = selectedfile.get_selected()
-			selectedfilename = self.liststore_files.get_value(iter, 2)
-			diff = getdiff(selectedfilename)
-			self.textbuffer_diff.set_text(diff)
-			self.dialog_diff.set_title(selectedfilename+' '+_('vs')+' '+selectedfilename+'.new')
-			self.dialog_diff.show()
-		except TypeError:
-			pass
+    global replace_clicked
+    replace_clicked = False
+    global delete_clicked
+    delete_clicked = False
 
-	def on_toolbutton_vim_clicked(self, widget, data=None):
-		try:
-			selectedfile = self.treeview_files.get_selection()
-			self.liststore_files, iter = selectedfile.get_selected()
-			selectedfilename = self.liststore_files.get_value(iter, 2)
-			if os.access('/usr/bin/gvimdiff', os.X_OK):
-				os.system('gvimdiff '+selectedfilename+' '+selectedfilename+'.new')
-			else:
-				if os.access('/usr/bin/vimdiff', os.X_OK):	
-					if os.access('/usr/bin/xterm', os.X_OK):
-						os.system('xterm -e vimdiff '+selectedfilename+' '+selectedfilename+'.new')
+    def on_checkbox_replace_toggled(self, widget, data=None):
+        global replace_clicked
+        replace_clicked = True
 
-		except TypeError:
-			pass
-	
-	def on_toolbutton_meld_clicked(self, widget, data=None):
-		try:
-			selectedfile = self.treeview_files.get_selection()
-			self.liststore_files, iter = selectedfile.get_selected()
-			selectedfilename = self.liststore_files.get_value(iter, 2)	
-			if os.access('/usr/bin/meld', os.X_OK):
-				os.system('dbus-launch meld '+selectedfilename+' '+selectedfilename+'.new')
-		except TypeError:
-			pass
+    def on_checkbox_delete_toggled(self, widget, data=None):
+        global delete_clicked
+        delete_clicked = True
 
-	def on_toolbutton_replace_all_clicked(self, widget, data=None):
-		for i in self.liststore_files:
-			i[0]=1
-			i[1]=0
+    def on_treeview_files_cursor_changed(self, widget, data=None):
+        global replace_clicked
+        global delete_clicked
+        selectedfile = self.treeview_files.get_selection()
+        self.liststore_files, iter = selectedfile.get_selected()
+        selectedfilename = self.liststore_files.get_value(iter, 2)
+        if replace_clicked == True:
+            for i in self.liststore_files:
+                if i[2] == selectedfilename:
+                    if i[0] == 0:
+                        i[0] = 1
+                        i[1] = 0
+                    else:
+                        i[0] = 0
+            replace_clicked = False
+        if delete_clicked == True:
+            for i in self.liststore_files:
+                if i[2] == selectedfilename:
+                    if i[1] == 0:
+                        i[1] = 1
+                        i[0] = 0
+                    else:
+                        i[1] = 0
+            delete_clicked = False
 
-	def on_toolbutton_delete_all_clicked(self, widget, data=None):
-		for i in self.liststore_files:
-			i[0]=0
-			i[1]=1
-	
-	def on_toolbutton_none_clicked(self, widget, data=None):
-		for i in self.liststore_files:
-			i[0]=0
-			i[1]=0
+    def on_toolbutton_diff_clicked(self, widget, data=None):
+        try:
+            selectedfile = self.treeview_files.get_selection()
+            self.liststore_files, iter = selectedfile.get_selected()
+            selectedfilename = self.liststore_files.get_value(iter, 2)
+            diff = getdiff(selectedfilename)
+            self.textbuffer_diff.set_text(diff)
+            self.dialog_diff.set_title(
+                selectedfilename + ' ' + _('vs') + ' ' + selectedfilename + '.new')
+            self.dialog_diff.show()
+        except TypeError:
+            pass
 
-	def on_toolbutton_refresh_clicked(self, widget, data=None):
-		self.create_file_list()
+    def on_toolbutton_vim_clicked(self, widget, data=None):
+        try:
+            selectedfile = self.treeview_files.get_selection()
+            self.liststore_files, iter = selectedfile.get_selected()
+            selectedfilename = self.liststore_files.get_value(iter, 2)
+            if os.access('/usr/bin/gvimdiff', os.X_OK):
+                os.system('gvimdiff ' + selectedfilename +
+                          ' ' + selectedfilename + '.new')
+            else:
+                if os.access('/usr/bin/vimdiff', os.X_OK):
+                    if os.access('/usr/bin/xterm', os.X_OK):
+                        os.system('xterm -e vimdiff ' + selectedfilename +
+                                  ' ' + selectedfilename + '.new')
 
-	def on_dialog_diff_delete_event(self, widget, event):
-		self.dialog_diff.hide()
-		return True
+        except TypeError:
+            pass
 
-	def on_button_diff_ok_clicked(self, widget):
-		self.dialog_diff.hide()
+    def on_toolbutton_meld_clicked(self, widget, data=None):
+        try:
+            selectedfile = self.treeview_files.get_selection()
+            self.liststore_files, iter = selectedfile.get_selected()
+            selectedfilename = self.liststore_files.get_value(iter, 2)
+            if os.access('/usr/bin/meld', os.X_OK):
+                os.system('dbus-launch meld ' + selectedfilename +
+                          ' ' + selectedfilename + '.new')
+        except TypeError:
+            pass
 
-	def on_dialog_nonew_delete_event(self, widget, event):
-		self.dialog_nonew.hide()
-		return True
+    def on_toolbutton_replace_all_clicked(self, widget, data=None):
+        for i in self.liststore_files:
+            i[0] = 1
+            i[1] = 0
 
-	def on_button_nonew_ok_clicked(self, widget):
-		self.dialog_nonew.hide()
-	
-	def __init__(self):
-		builder = gtk.Builder()
-		if os.path.exists('dotnew-gtk.glade'):
-			builder.add_from_file('dotnew-gtk.glade')
-		elif os.path.exists('/usr/share/dotnew/dotnew-gtk.glade'):
-			builder.add_from_file('/usr/share/dotnew/dotnew-gtk.glade')
-		self.window = builder.get_object('dotnew')
+    def on_toolbutton_delete_all_clicked(self, widget, data=None):
+        for i in self.liststore_files:
+            i[0] = 0
+            i[1] = 1
 
-		#
-		# Main window
-		#
-		self.toolbutton_diff = builder.get_object('toolbutton_diff')
-		self.toolbutton_vim = builder.get_object('toolbutton_vim')
-		self.toolbutton_meld = builder.get_object('toolbutton_meld')
-		if not os.access('/usr/bin/gvimdiff', os.X_OK):
-			if not os.access('/usr/bin/vimdiff', os.X_OK):
-				self.toolbutton_vim.hide()
-		if not os.access('/usr/bin/meld', os.X_OK):
-			self.toolbutton_meld.hide()
-		self.toolbutton_replace_all = builder.get_object('toolbutton_replace_all')
-		self.toolbutton_none = builder.get_object('toolbutton_none')
+    def on_toolbutton_none_clicked(self, widget, data=None):
+        for i in self.liststore_files:
+            i[0] = 0
+            i[1] = 0
 
-		self.treeview_files = builder.get_object('treeview_files')
-		self.treeviewcolumn_replace = builder.get_object('treeviewcolumn_replace')
-		self.treeviewcolumn_replace.set_title(_('Replace'))
-		self.treeviewcolumn_delete = builder.get_object('treeviewcolumn_delete')
-		self.treeviewcolumn_delete.set_title(_('Delete'))
-		self.treeviewcolumn_file = builder.get_object('treeviewcolumn_file')
-		self.treeviewcolumn_file.set_title(_('Configuration file'))
+    def on_toolbutton_refresh_clicked(self, widget, data=None):
+        self.create_file_list()
 
-		self.liststore_files = builder.get_object('liststore_files')
-		self.liststore_files.clear()
-		self.create_file_list()
-	
-		#
-		# About dialog
-		#
-		self.aboutdialog = builder.get_object('aboutdialog')
+    def on_dialog_diff_delete_event(self, widget, event):
+        self.dialog_diff.hide()
+        return True
 
-		#
-		# Diff window
-		#
-		self.dialog_diff = builder.get_object('dialog_diff')
-		self.button_diff_ok = builder.get_object('button_diff_ok')
-		self.textview_diff = builder.get_object('textview_diff')
-		self.textview_diff.modify_font(pango.FontDescription("monospace"))
-		self.textbuffer_diff = builder.get_object('textbuffer_diff')
+    def on_button_diff_ok_clicked(self, widget):
+        self.dialog_diff.hide()
 
-		#
-		# No .new files window
-		#
-		self.dialog_nonew = builder.get_object('dialog_nonew')
-		self.button_nonew_ok = builder.get_object('button_nonew_ok')
+    def on_dialog_nonew_delete_event(self, widget, event):
+        self.dialog_nonew.hide()
+        return True
 
-		# Connect signals
-		builder.connect_signals(self)
-		self.window.show()
+    def on_button_nonew_ok_clicked(self, widget):
+        self.dialog_nonew.hide()
 
-		# If no .new files are present, show a message
-		count = 0
-		for i in self.liststore_files:
-			count += 1
-		if count == 0:
-			self.dialog_nonew.show()
+    def __init__(self):
+        builder = gtk.Builder()
+        if os.path.exists('dotnew-gtk.glade'):
+            builder.add_from_file('dotnew-gtk.glade')
+        elif os.path.exists('/usr/share/dotnew/dotnew-gtk.glade'):
+            builder.add_from_file('/usr/share/dotnew/dotnew-gtk.glade')
+        self.window = builder.get_object('dotnew')
+
+        #
+        # Main window
+        #
+        self.toolbutton_diff = builder.get_object('toolbutton_diff')
+        self.toolbutton_vim = builder.get_object('toolbutton_vim')
+        self.toolbutton_meld = builder.get_object('toolbutton_meld')
+        if not os.access('/usr/bin/gvimdiff', os.X_OK):
+            if not os.access('/usr/bin/vimdiff', os.X_OK):
+                self.toolbutton_vim.hide()
+        if not os.access('/usr/bin/meld', os.X_OK):
+            self.toolbutton_meld.hide()
+        self.toolbutton_replace_all = builder.get_object(
+            'toolbutton_replace_all')
+        self.toolbutton_none = builder.get_object('toolbutton_none')
+
+        self.treeview_files = builder.get_object('treeview_files')
+        self.treeviewcolumn_replace = builder.get_object(
+            'treeviewcolumn_replace')
+        self.treeviewcolumn_replace.set_title(_('Replace'))
+        self.treeviewcolumn_delete = builder.get_object(
+            'treeviewcolumn_delete')
+        self.treeviewcolumn_delete.set_title(_('Delete'))
+        self.treeviewcolumn_file = builder.get_object('treeviewcolumn_file')
+        self.treeviewcolumn_file.set_title(_('Configuration file'))
+
+        self.liststore_files = builder.get_object('liststore_files')
+        self.liststore_files.clear()
+        self.create_file_list()
+
+        #
+        # About dialog
+        #
+        self.aboutdialog = builder.get_object('aboutdialog')
+
+        #
+        # Diff window
+        #
+        self.dialog_diff = builder.get_object('dialog_diff')
+        self.button_diff_ok = builder.get_object('button_diff_ok')
+        self.textview_diff = builder.get_object('textview_diff')
+        self.textview_diff.modify_font(pango.FontDescription("monospace"))
+        self.textbuffer_diff = builder.get_object('textbuffer_diff')
+
+        #
+        # No .new files window
+        #
+        self.dialog_nonew = builder.get_object('dialog_nonew')
+        self.button_nonew_ok = builder.get_object('button_nonew_ok')
+
+        # Connect signals
+        builder.connect_signals(self)
+        self.window.show()
+
+        # If no .new files are present, show a message
+        count = 0
+        for i in self.liststore_files:
+            count += 1
+        if count == 0:
+            self.dialog_nonew.show()
 
 if __name__ == "__main__":
-	app = DotnewGTK()
-	app.window.show()
-	gtk.main()
+    app = DotnewGTK()
+    app.window.show()
+    gtk.main()
