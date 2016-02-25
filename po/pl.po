@@ -1,26 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# ink3 <sgasior1@gmail.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 21:46+0300\n"
-"PO-Revision-Date: 2011-01-09 15:46+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-11-20 09:30+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Polish (http://www.transifex.com/gapan/dotnew/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
-msgstr ""
+msgstr "Musisz być rootem, aby to uruchomić "
 
 #: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
@@ -30,153 +31,153 @@ msgstr "OK"
 #: src/dotnew:33 src/dotnew:44
 #, sh-format
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr ""
+msgstr "Znaleziono nowe ustawienia  pliku: $file\\n\\n Co chcesz z tym zrobić?"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
 msgid "Replace"
-msgstr ""
+msgstr "Zastąp"
 
 #: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
-msgstr ""
+msgstr "Zastąp stary plik ustawień na nowy"
 
 #: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
-msgstr ""
+msgstr "Usuń nowy plik ustawień"
 
 #: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
 #, sh-format
 msgid "Diff"
-msgstr ""
+msgstr "Diff"
 
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr ""
+msgstr "Zobacz różnice między starymi i nowymi ustawieniami plików"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr ""
+msgstr "Użyj vimdiff do edycji starych i nowych ustawień plików"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Nothing"
-msgstr ""
+msgstr "Nic"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
-msgstr ""
+msgstr "Nie rób nic na razie, zadecyduj o tym później"
 
 #: src/dotnew:90
 #, sh-format
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: src/dotnew:91
 #, sh-format
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: src/dotnew:92
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
-msgstr ""
+msgstr "Nie ma $orig pliku.\\nPrzenieść $i do $orig?"
 
 #: src/dotnew:99
 #, sh-format
 msgid "Ready"
-msgstr ""
+msgstr "Gotowe"
 
 #: src/dotnew:101
 #, sh-format
 msgid "Done processing all .new files"
-msgstr ""
+msgstr "Ukończono przetwarzania wszystkich .new plików"
 
 #: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
-msgstr ""
+msgstr "Żadnych .new plików"
 
 #: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
-msgstr ""
+msgstr "Nie ma .new plików konfiguracyjnych w systemie"
 
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
-msgstr ""
+msgstr "Zarządzaj .new plikami ustawień systemu"
 
 #: src/dotnew-gtk.glade:33
 msgid "Refresh configuration file list"
-msgstr ""
+msgstr "Odśwież listę plików konfiguracyjnych"
 
 #: src/dotnew-gtk.glade:37
 msgid "Compare files line by line"
-msgstr ""
+msgstr "Porównaj pliki linia po linii"
 
 #: src/dotnew-gtk.glade:51
 msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr ""
+msgstr "Użyj gvimdiff lub vimdiff by połączyć różnice"
 
 #: src/dotnew-gtk.glade:65
 msgid "Use meld to merge diffs"
-msgstr ""
+msgstr "Użyj meld by połączyć różnice"
 
 #: src/dotnew-gtk.glade:88
 msgid "Mark all configuration files for replacement"
-msgstr ""
+msgstr "Oznacz wszystkie pliki konfiguracyjne do wymiany"
 
 #: src/dotnew-gtk.glade:89
 msgid "Replace all"
-msgstr ""
+msgstr "Wymień wszystkie"
 
 #: src/dotnew-gtk.glade:102
 msgid "Mark all new configuration files for deletion"
-msgstr ""
+msgstr "Oznacz wszystkie nowe pliki konfiguracyjne do usunięcia"
 
 #: src/dotnew-gtk.glade:103
 msgid "Delete all"
-msgstr ""
+msgstr "Usuń wszystkie"
 
 #: src/dotnew-gtk.glade:116
 msgid "Unmark all checkboxes"
-msgstr ""
+msgstr "Usuń zaznaczenie wszystkich pól wyboru"
 
 #: src/dotnew-gtk.glade:117
 msgid "Unmark all"
-msgstr ""
+msgstr "Odznacz wszystko"
 
 #: src/dotnew-gtk.glade:139
 msgid "Refresh"
-msgstr ""
+msgstr "Odśwież"
 
 #: src/dotnew-gtk.glade:455
 msgid "A utility to manage .new system configuration files"
-msgstr ""
+msgstr "Narzędzie do zarządzania. Nowe pliki konfiguracji systemu"
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
-msgstr ""
+msgstr "tłumacze"
 
 #: src/dotnew-gtk:121
 msgid "vs"
-msgstr ""
+msgstr "vs"
 
 #: src/dotnew-gtk:211
 msgid "Configuration file"
-msgstr ""
+msgstr "Plik konfiguracyjny"

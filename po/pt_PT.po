@@ -3,30 +3,31 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2011.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2011
+# Sérgio Marques <smarquespt@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 21:46+0300\n"
-"PO-Revision-Date: 2012-02-14 08:27+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-11-20 09:30+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) (http://www.transifex.com/gapan/dotnew/language/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_PT\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/dotnew:20
 #, sh-format
 msgid "You need to be root to run this"
-msgstr "Você precisa de ser o root para executar isto"
+msgstr "Tem que executar esta aplicação como root"
 
 #: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
 #, sh-format
 msgid "OK"
-msgstr "OK"
+msgstr "Confirmar"
 
 #: src/dotnew:33 src/dotnew:44
 #, sh-format
@@ -36,7 +37,7 @@ msgstr "Cancelar"
 #: src/dotnew:35 src/dotnew:46
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
-msgstr "Novas configurações de ficheiro encontradas: $ficheiro\\n\\nO que você quer fazer com ele?"
+msgstr "Encontrado ficheiro com novas definições: $file\\n\\nO que pretende fazer?"
 
 #: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
 #, sh-format
@@ -46,32 +47,32 @@ msgstr "Substituir"
 #: src/dotnew:36 src/dotnew:47
 #, sh-format
 msgid "Replace the old settings file with the new one"
-msgstr "Substituir o ficheiro de configurações antigo com o novo"
+msgstr "Substituir ficheiro de definições existente pelo mais recente"
 
 #: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
 #, sh-format
 msgid "Delete"
-msgstr "Excluir"
+msgstr "ELiminar"
 
 #: src/dotnew:37 src/dotnew:48
 #, sh-format
 msgid "Delete the new settings file"
-msgstr "Excluir o novo ficheiro de configurações"
+msgstr "Eliminar o novo ficheiro de definições"
 
 #: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
 #, sh-format
 msgid "Diff"
-msgstr "Diff"
+msgstr "Diferenças"
 
 #: src/dotnew:38 src/dotnew:49
 #, sh-format
 msgid "View the differences between the old and new settings files"
-msgstr "Ver as diferenças entre o velho e o novo ficheiro de configurações"
+msgstr "Ver diferenças entre os ficheiros"
 
 #: src/dotnew:39
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
-msgstr "Use o vimdiff para editar os antigos e os novos ficheiros de configurações"
+msgstr "Utilizar vimdiff para editar os ficheiros"
 
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
@@ -81,7 +82,7 @@ msgstr "Nada"
 #: src/dotnew:40 src/dotnew:50
 #, sh-format
 msgid "Do nothing for now, decide about it later"
-msgstr "Não faça nada por enquanto, decida sobre isso mais tarde"
+msgstr "Nada fazer. Decidir mais tarde."
 
 #: src/dotnew:90
 #, sh-format
@@ -96,7 +97,7 @@ msgstr "Não"
 #: src/dotnew:92
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
-msgstr "Não há nenhum $orig ficheiro presente.\\ nMova $i para $ orig?"
+msgstr "Não existe qualquer ficheiro $orig.\\nMover $i para $orig ?"
 
 #: src/dotnew:99
 #, sh-format
@@ -106,41 +107,41 @@ msgstr "Pronto"
 #: src/dotnew:101
 #, sh-format
 msgid "Done processing all .new files"
-msgstr "Feito processamento de todos . ficheiros novos"
+msgstr "Terminado o processamento dos ficheiros .new"
 
 #: src/dotnew:103 src/dotnew-gtk.glade:384
 #, sh-format
 msgid "No .new files"
-msgstr "Nenhuns .ficheiros novos"
+msgstr "Nenhum ficheiro .new"
 
 #: src/dotnew:104 src/dotnew-gtk.glade:403
 #, sh-format
 msgid "There are no .new configuration files in your system"
-msgstr "Não há nenhuns .ficheiros novos de configuração no seu sistema"
+msgstr "Não existem ficheiros .new no seu sistema"
 
 #: dotnew.desktop.in.h:1 dotnew-kde.desktop.in.h:1
 msgid "Manage .new system settings files"
-msgstr "Gerir .definições de novos ficheiros de sistema"
+msgstr "Gerir definições dos ficheiros .new"
 
 #: src/dotnew-gtk.glade:33
 msgid "Refresh configuration file list"
-msgstr "Atualizar lista de ficheiro de configuração"
+msgstr "Atualizar lista de ficheiros de configuração"
 
 #: src/dotnew-gtk.glade:37
 msgid "Compare files line by line"
-msgstr "Comparar ficheiros linha por linha"
+msgstr "Comparar ficheiros linha a linha"
 
 #: src/dotnew-gtk.glade:51
 msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr "Use o gvimdiff ou o vimdiff para fundir diffs"
+msgstr "Utilizar gvimdiff ou vimdiff para unir as diferenças"
 
 #: src/dotnew-gtk.glade:65
 msgid "Use meld to merge diffs"
-msgstr "Use o meld para fundir diffs"
+msgstr "Utilizar meld para unir as diferenças"
 
 #: src/dotnew-gtk.glade:88
 msgid "Mark all configuration files for replacement"
-msgstr "Marcar todos os ficheiros de configuração para a substituição"
+msgstr "Marcar todos os ficheiros de configuração para substituição"
 
 #: src/dotnew-gtk.glade:89
 msgid "Replace all"
@@ -148,7 +149,7 @@ msgstr "Substituir todos"
 
 #: src/dotnew-gtk.glade:102
 msgid "Mark all new configuration files for deletion"
-msgstr "Marcar todos os ficheiros novos de configuração parar eliminação"
+msgstr "Marcar todos os ficheiros de configuração para eliminação"
 
 #: src/dotnew-gtk.glade:103
 msgid "Delete all"
@@ -164,15 +165,15 @@ msgstr "Desmarcar todos"
 
 #: src/dotnew-gtk.glade:139
 msgid "Refresh"
-msgstr "Refrescar"
+msgstr "Atualizar"
 
 #: src/dotnew-gtk.glade:455
 msgid "A utility to manage .new system configuration files"
-msgstr "Um utilitário  para gerir .novos ficheiros de configuração do sistema"
+msgstr "Utilitário  para gerir ficheiros de configuração .new do sistema"
 
 #: src/dotnew-gtk.glade:1133
 msgid "translator-credits"
-msgstr "Tradutor-créditos"
+msgstr "Sérgio Marques <smarquespt@gmail.com>"
 
 #: src/dotnew-gtk:121
 msgid "vs"
