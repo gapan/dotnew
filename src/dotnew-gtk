@@ -192,10 +192,10 @@ class DotnewGTK:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("dotnew")
-        if os.path.exists('dotnew-gtk.glade'):
-            builder.add_from_file('dotnew-gtk.glade')
-        elif os.path.exists('/usr/share/dotnew/dotnew-gtk.glade'):
-            builder.add_from_file('/usr/share/dotnew/dotnew-gtk.glade')
+        if os.path.exists('dotnew-gtk.ui'):
+            builder.add_from_file('dotnew-gtk.ui')
+        elif os.path.exists('/usr/share/dotnew/dotnew-gtk.ui'):
+            builder.add_from_file('/usr/share/dotnew/dotnew-gtk.ui')
         self.window = builder.get_object('dotnew')
 
         #

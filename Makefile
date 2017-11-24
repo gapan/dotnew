@@ -20,7 +20,7 @@ pot:
 		-x po/EXCLUDE \
 		-L Glade \
 		-o po/dotnew.pot \
-		src/dotnew-gtk.glade
+		src/dotnew-gtk.ui
 	xgettext --from-code=utf-8 \
 		-j \
 		-L Python \
@@ -47,7 +47,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/share/dotnew
 	install -m 755 src/dotnew $(DESTDIR)/usr/sbin/
 	install -m 755 src/dotnew-gtk $(DESTDIR)/usr/sbin/
-	install -m 644 src/dotnew-gtk.glade $(DESTDIR)/usr/share/dotnew/
+	install -m 644 src/dotnew-gtk.ui $(DESTDIR)/usr/share/dotnew/
 	install -m 644 dotnew.desktop $(DESTDIR)/usr/share/applications/
 	install -m 644 dotnew-kde.desktop $(DESTDIR)/usr/share/applications/
 	install -d -m 755 $(DESTDIR)/usr/share/icons/hicolor/scalable/apps/
