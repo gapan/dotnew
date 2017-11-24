@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from gi.repository import Pango
 import os
 import commands
-import pango
 import re
 import shutil
 
@@ -12,6 +14,7 @@ import shutil
 # Internationalization
 import locale
 import gettext
+locale.setlocale(locale.LC_ALL, '')
 locale.setlocale(locale.LC_ALL, '')
 locale.bindtextdomain("dotnew", "/usr/share/locale")
 gettext.bindtextdomain("dotnew", "/usr/share/locale")
@@ -70,13 +73,13 @@ class DotnewGTK:
                             os.remove(i[2] + '.new')
                         except OSError:
                             pass
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     global replace_clicked
     replace_clicked = False
@@ -190,7 +193,7 @@ class DotnewGTK:
         self.dialog_nonew.hide()
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("dotnew")
         if os.path.exists('dotnew-gtk.ui'):
             builder.add_from_file('dotnew-gtk.ui')
@@ -238,7 +241,7 @@ class DotnewGTK:
         self.dialog_diff = builder.get_object('dialog_diff')
         self.button_diff_ok = builder.get_object('button_diff_ok')
         self.textview_diff = builder.get_object('textview_diff')
-        self.textview_diff.modify_font(pango.FontDescription("monospace"))
+        self.textview_diff.modify_font(Pango.FontDescription("monospace"))
         self.textbuffer_diff = builder.get_object('textbuffer_diff')
 
         #
@@ -261,4 +264,4 @@ class DotnewGTK:
 if __name__ == "__main__":
     app = DotnewGTK()
     app.window.show()
-    gtk.main()
+    Gtk.main()
