@@ -99,25 +99,26 @@ class DotnewGTK:
         global delete_clicked
         selectedfile = self.treeview_files.get_selection()
         self.liststore_files, iter = selectedfile.get_selected()
-        selectedfilename = self.liststore_files.get_value(iter, 2)
-        if replace_clicked == True:
-            for i in self.liststore_files:
-                if i[2] == selectedfilename:
-                    if i[0] == 0:
-                        i[0] = 1
-                        i[1] = 0
-                    else:
-                        i[0] = 0
-            replace_clicked = False
-        if delete_clicked == True:
-            for i in self.liststore_files:
-                if i[2] == selectedfilename:
-                    if i[1] == 0:
-                        i[1] = 1
-                        i[0] = 0
-                    else:
-                        i[1] = 0
-            delete_clicked = False
+        if iter is not None:
+            selectedfilename = self.liststore_files.get_value(iter, 2)
+            if replace_clicked == True:
+                for i in self.liststore_files:
+                    if i[2] == selectedfilename:
+                        if i[0] == 0:
+                            i[0] = 1
+                            i[1] = 0
+                        else:
+                            i[0] = 0
+                replace_clicked = False
+            if delete_clicked == True:
+                for i in self.liststore_files:
+                    if i[2] == selectedfilename:
+                        if i[1] == 0:
+                            i[1] = 1
+                            i[0] = 0
+                        else:
+                            i[1] = 0
+                delete_clicked = False
 
     def on_toolbutton_diff_clicked(self, widget, data=None):
         try:
