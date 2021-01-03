@@ -346,7 +346,7 @@
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">dotnew</property>
     <property name="program_name">dotnew</property>
-    <property name="copyright">Copyright © 2010 George Vlahavas</property>
+    <property name="copyright">Copyright © 2010-2020 George Vlahavas</property>
     <property name="comments" translatable="yes">A utility to manage .new system configuration files</property>
     <property name="website">http://dotnew.sourceforge.net</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
