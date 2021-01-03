@@ -166,7 +166,7 @@
                     <property name="tooltip_text" translatable="yes">Use meld to merge diffs</property>
                     <property name="label">Meld</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">meld</property>
+                    <property name="icon_name">org.gnome.meld</property>
                     <signal name="clicked" handler="on_toolbutton_meld_clicked" swapped="no"/>
                   </object>
                   <packing>
