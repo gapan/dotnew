@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gi
@@ -6,7 +6,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from gi.repository import Pango
 import os
-import commands
+import subprocess
 import re
 import shutil
 
@@ -31,8 +31,8 @@ def configfiles():
 
 
 def getdiff(conffile):
-    res = commands.getoutput(
-        'diff -Naur ' + conffile + ' ' + conffile + '.new')
+    res = subprocess.getoutput(
+        'diff -Naur {0} {0}.new'.format(conffile))
     return res
 
 
