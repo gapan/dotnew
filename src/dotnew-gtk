@@ -139,14 +139,11 @@ class DotnewGTK:
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
             if os.access('/usr/bin/gvimdiff', os.X_OK):
-                os.system('gvimdiff ' + selectedfilename +
-                          ' ' + selectedfilename + '.new')
+                os.system('gvimdiff {0} {0}.new'.format(selectedfilename))
             else:
                 if os.access('/usr/bin/vimdiff', os.X_OK):
                     if os.access('/usr/bin/xterm', os.X_OK):
-                        os.system('xterm -e vimdiff ' + selectedfilename +
-                                  ' ' + selectedfilename + '.new')
-
+                        os.system('xterm -e "vimdiff {0} {0}.new"'.format(selectedfilename))
         except TypeError:
             pass
 
@@ -156,8 +153,7 @@ class DotnewGTK:
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
             if os.access('/usr/bin/meld', os.X_OK):
-                os.system('dbus-launch meld ' + selectedfilename +
-                          ' ' + selectedfilename + '.new')
+                os.system('dbus-launch meld {0} {0}.new'.format(selectedfilename))
         except TypeError:
             pass
 
