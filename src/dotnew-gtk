@@ -35,6 +35,48 @@ def getdiff(conffile):
         'diff -Naur {0} {0}.new'.format(conffile))
     return res
 
+def exec_exists(path):
+    return os.access(path, os.X_OK)
+
+def get_terminal():
+    try:
+        # First see if we're inside a standard desktop session and pick the
+        # appropriate terminal if it's there. If using sudo to start
+        # dotnew-gtk, you need to use the -E option for the variable to exist.
+        xdg_session = os.environ['XDG_CURRENT_DESKTOP']
+        if xdg_session == 'XFCE' and exec_exists('/usr/bin/xfce4-terminal'):
+            return '/usr/bin/xfce4-terminal -e '
+        if xdg_session == 'MATE' and exec_exists('/usr/bin/mate-terminal'):
+            return '/usr/bin/mate-terminal -e '
+        if xdg_session == 'KDE' and exec_exists('/usr/bin/konsole'):
+            return '/usr/bin/konsole -e '
+        if xdg_session == 'LXDE' and exec_exists('/usr/bin/lxterminal'):
+            return '/usr/bin/lxterminal -e '
+        if xdg_session == 'LXQt' and exec_exists('/usr/bin/qterminal'):
+            return '/usr/bin/qterminal -e '
+        if xdg_session == 'GNOME' and exec_exists('/usr/bin/gnome-terminal'):
+            return '/usr/bin/gnome-terminal -e '
+    except KeyError:
+        pass
+    # or fall back to anything that is installed, in this order
+    if exec_exists('/usr/bin/xfce4-terminal'):
+        return '/usr/bin/xfce4-terminal -e '
+    if exec_exists('/usr/bin/mate-terminal'):
+        return '/usr/bin/mate-terminal -e '
+    if exec_exists('/usr/bin/konsole'):
+        return '/usr/bin/konsole -e '
+    if exec_exists('/usr/bin/lxterminal'):
+        return '/usr/bin/lxterminal -e '
+    if exec_exists('/usr/bin/qterminal'):
+        return '/usr/bin/qterminal -e '
+    if exec_exists('/usr/bin/gnome-terminal'):
+        return '/usr/bin/gnome-terminal -e '
+    if exec_exists('/usr/bin/xterm'):
+        return '/usr/bin/xterm -e '
+    if exec_exists('/usr/bin/urxvt'):
+        return '/usr/bin/urxvt -e '
+    return None
+
 
 class DotnewGTK:
 
@@ -143,12 +185,12 @@ class DotnewGTK:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
-            if os.access('/usr/bin/gvimdiff', os.X_OK):
+            if exec_exists('/usr/bin/gvimdiff'):
                 os.system('gvimdiff {0} {0}.new'.format(selectedfilename))
             else:
-                if os.access('/usr/bin/vimdiff', os.X_OK):
-                    if os.access('/usr/bin/xterm', os.X_OK):
-                        os.system('xterm -e "vimdiff {0} {0}.new"'.format(selectedfilename))
+                if exec_exists('/usr/bin/vimdiff'):
+                    if self.terminal:
+                        os.system(self.terminal + '"vimdiff {0} {0}.new"'.format(selectedfilename))
         except TypeError:
             pass
 
@@ -158,9 +200,9 @@ class DotnewGTK:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
-            if os.access('/usr/bin/nvim', os.X_OK):
-                if os.access('/usr/bin/xterm', os.X_OK):
-                    os.system('xterm -e "nvim -d {0} {0}.new"'.format(selectedfilename))
+            if exec_exists('/usr/bin/nvim'):
+                if self.terminal:
+                    os.system(self.terminal + '"nvim -d {0} {0}.new"'.format(selectedfilename))
         except TypeError:
             pass
 
@@ -170,8 +212,11 @@ class DotnewGTK:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
-            if os.access('/usr/bin/meld', os.X_OK):
-                os.system('dbus-launch meld {0} {0}.new'.format(selectedfilename))
+            if exec_exists('/usr/bin/meld'):
+                if exec_exists('/usr/bin/dbus-launch'):
+                    os.system('dbus-launch /usr/bin/meld {0} {0}.new'.format(selectedfilename))
+                else:
+                    os.system('/usr/bin/meld {0} {0}.new'.format(selectedfilename))
         except TypeError:
             pass
 
@@ -231,15 +276,15 @@ class DotnewGTK:
         self.button_vim = builder.get_object('button_vim')
         self.button_meld = builder.get_object('button_meld')
         self.compare_options = 1
-        if os.access('/usr/bin/gvimdiff', os.X_OK) or os.access('/usr/bin/vimdiff', os.X_OK):
+        if exec_exists('/usr/bin/gvimdiff') or exec_exists('/usr/bin/vimdiff'):
             self.compare_options = self.compare_options + 1
         else:
             self.button_vim.hide()
-        if os.access('/usr/bin/nvim', os.X_OK):
+        if exec_exists('/usr/bin/nvim'):
             self.compare_options = self.compare_options + 1
         else:
             self.button_nvim.hide()
-        if os.access('/usr/bin/meld', os.X_OK):
+        if exec_exists('/usr/bin/meld'):
             self.compare_options = self.compare_options + 1
         else:
             self.button_meld.hide()
@@ -281,6 +326,9 @@ class DotnewGTK:
         # Connect signals
         builder.connect_signals(self)
         self.window.show()
+
+        # Get favorable terminal
+        self.terminal = get_terminal()
 
         # If no .new files are present, show a message
         count = 0
