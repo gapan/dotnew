@@ -152,6 +152,18 @@ class DotnewGTK:
         except TypeError:
             pass
 
+    def on_button_neovim_clicked(self, widget, data=None):
+        self.popover_compare.hide()
+        try:
+            selectedfile = self.treeview_files.get_selection()
+            self.liststore_files, iter = selectedfile.get_selected()
+            selectedfilename = self.liststore_files.get_value(iter, 2)
+            if os.access('/usr/bin/nvim', os.X_OK):
+                if os.access('/usr/bin/xterm', os.X_OK):
+                    os.system('xterm -e "nvim -d {0} {0}.new"'.format(selectedfilename))
+        except TypeError:
+            pass
+
     def on_button_meld_clicked(self, widget, data=None):
         self.popover_compare.hide()
         try:
@@ -223,6 +235,10 @@ class DotnewGTK:
             self.compare_options = self.compare_options + 1
         else:
             self.button_vim.hide()
+        if os.access('/usr/bin/nvim', os.X_OK):
+            self.compare_options = self.compare_options + 1
+        else:
+            self.button_nvim.hide()
         if os.access('/usr/bin/meld', os.X_OK):
             self.compare_options = self.compare_options + 1
         else:

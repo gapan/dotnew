@@ -1121,7 +1121,7 @@ Public License instead of this License.  But first, please read
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">1</property>
+                <property name="position">0</property>
               </packing>
             </child>
             <child>
@@ -1132,6 +1132,20 @@ Public License instead of this License.  But first, please read
                 <property name="receives-default">True</property>
                 <property name="tooltip-text" translatable="yes">Use gvimdiff or vimdiff to merge diffs</property>
                 <signal name="clicked" handler="on_button_vim_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button_neovim">
+                <property name="label">Neovim</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_button_neovim_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
