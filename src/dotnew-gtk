@@ -120,7 +120,11 @@ class DotnewGTK:
                             i[1] = 0
                 delete_clicked = False
 
-    def on_toolbutton_diff_clicked(self, widget, data=None):
+    def on_button_diff_clicked(self, widget, data=None):
+        self.popover_compare.hide()
+        self.use_diff()
+
+    def use_diff(self):
         try:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
@@ -133,7 +137,8 @@ class DotnewGTK:
         except TypeError:
             pass
 
-    def on_toolbutton_vim_clicked(self, widget, data=None):
+    def on_button_vim_clicked(self, widget, data=None):
+        self.popover_compare.hide()
         try:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
@@ -147,7 +152,8 @@ class DotnewGTK:
         except TypeError:
             pass
 
-    def on_toolbutton_meld_clicked(self, widget, data=None):
+    def on_button_meld_clicked(self, widget, data=None):
+        self.popover_compare.hide()
         try:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
@@ -157,23 +163,29 @@ class DotnewGTK:
         except TypeError:
             pass
 
-    def on_toolbutton_replace_all_clicked(self, widget, data=None):
+    def on_button_replace_all_clicked(self, widget, data=None):
         for i in self.liststore_files:
             i[0] = 1
             i[1] = 0
 
-    def on_toolbutton_delete_all_clicked(self, widget, data=None):
+    def on_button_delete_all_clicked(self, widget, data=None):
         for i in self.liststore_files:
             i[0] = 0
             i[1] = 1
 
-    def on_toolbutton_none_clicked(self, widget, data=None):
+    def on_button_none_clicked(self, widget, data=None):
         for i in self.liststore_files:
             i[0] = 0
             i[1] = 0
 
-    def on_toolbutton_refresh_clicked(self, widget, data=None):
+    def on_button_refresh_clicked(self, widget, data=None):
         self.create_file_list()
+
+    def on_button_compare_clicked(self, widget, data=None):
+        if self.compare_options == 1:
+            self.use_diff()
+        else:
+            self.popover_compare.show()
 
     def on_dialog_diff_delete_event(self, widget, event):
         self.dialog_diff.hide()
@@ -201,17 +213,20 @@ class DotnewGTK:
         #
         # Main window
         #
-        self.toolbutton_diff = builder.get_object('toolbutton_diff')
-        self.toolbutton_vim = builder.get_object('toolbutton_vim')
-        self.toolbutton_meld = builder.get_object('toolbutton_meld')
-        if not os.access('/usr/bin/gvimdiff', os.X_OK):
-            if not os.access('/usr/bin/vimdiff', os.X_OK):
-                self.toolbutton_vim.hide()
-        if not os.access('/usr/bin/meld', os.X_OK):
-            self.toolbutton_meld.hide()
-        self.toolbutton_replace_all = builder.get_object(
-            'toolbutton_replace_all')
-        self.toolbutton_none = builder.get_object('toolbutton_none')
+        self.button_compare = builder.get_object('button_compare')
+        self.popover_compare = builder.get_object('popover_compare')
+        self.button_diff = builder.get_object('button_diff')
+        self.button_vim = builder.get_object('button_vim')
+        self.button_meld = builder.get_object('button_meld')
+        self.compare_options = 1
+        if os.access('/usr/bin/gvimdiff', os.X_OK) or os.access('/usr/bin/vimdiff', os.X_OK):
+            self.compare_options = self.compare_options + 1
+        else:
+            self.button_vim.hide()
+        if os.access('/usr/bin/meld', os.X_OK):
+            self.compare_options = self.compare_options + 1
+        else:
+            self.button_meld.hide()
 
         self.treeview_files = builder.get_object('treeview_files')
         self.treeviewcolumn_replace = builder.get_object(
@@ -238,7 +253,7 @@ class DotnewGTK:
         self.dialog_diff = builder.get_object('dialog_diff')
         self.button_diff_ok = builder.get_object('button_diff_ok')
         self.textview_diff = builder.get_object('textview_diff')
-        self.textview_diff.modify_font(Pango.FontDescription("monospace"))
+        self.textview_diff.set_monospace(True)
         self.textbuffer_diff = builder.get_object('textbuffer_diff')
 
         #
