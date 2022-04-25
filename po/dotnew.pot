@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-25 18:35+0300\n"
+"POT-Creation-Date: 2022-04-25 18:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,98 +22,103 @@ msgstr ""
 msgid "You need to be root to run this"
 msgstr ""
 
-#: src/dotnew:34 src/dotnew:45 src/dotnew:101 src/dotnew:104
-#: src/dotnew-gtk.ui:1059 src/dotnew-gtk.ui:1301
+#: src/dotnew:35 src/dotnew:95 src/dotnew:98 src/dotnew-gtk.ui:1059
+#: src/dotnew-gtk.ui:1301
 #, sh-format
 msgid "OK"
 msgstr ""
 
-#: src/dotnew:34 src/dotnew:45 src/dotnew-gtk.ui:64
+#: src/dotnew:35 src/dotnew-gtk.ui:64
 #, sh-format
 msgid "Cancel"
 msgstr ""
 
-#: src/dotnew:36 src/dotnew:47
+#: src/dotnew:37
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:63 src/dotnew-gtk:344
+#: src/dotnew:38 src/dotnew:54 src/dotnew-gtk:344
 #, sh-format
 msgid "Replace"
 msgstr ""
 
-#: src/dotnew:37 src/dotnew:48
+#: src/dotnew:38
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr ""
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:68 src/dotnew-gtk:347
+#: src/dotnew:39 src/dotnew:59 src/dotnew-gtk:347
 #, sh-format
 msgid "Delete"
 msgstr ""
 
-#: src/dotnew:38 src/dotnew:49
+#: src/dotnew:39
 #, sh-format
 msgid "Delete the new settings file"
 msgstr ""
 
-#: src/dotnew:39 src/dotnew:50 src/dotnew:71
+#: src/dotnew:40 src/dotnew:62
 #, sh-format
 msgid "Diff"
 msgstr ""
 
-#: src/dotnew:39 src/dotnew:50
+#: src/dotnew:40
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr ""
 
-#: src/dotnew:40
+#: src/dotnew:41
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr ""
 
-#: src/dotnew:41 src/dotnew:51
+#: src/dotnew:42
+#, sh-format
+msgid "Use neovim to edit the old and new settings files"
+msgstr ""
+
+#: src/dotnew:43
 #, sh-format
 msgid "Nothing"
 msgstr ""
 
-#: src/dotnew:41 src/dotnew:51
+#: src/dotnew:43
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr ""
 
-#: src/dotnew:91
+#: src/dotnew:85
 #, sh-format
 msgid "Yes"
 msgstr ""
 
-#: src/dotnew:92
+#: src/dotnew:86
 #, sh-format
 msgid "No"
 msgstr ""
 
-#: src/dotnew:93
+#: src/dotnew:87
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
 msgstr ""
 
-#: src/dotnew:100
+#: src/dotnew:94
 #, sh-format
 msgid "Ready"
 msgstr ""
 
-#: src/dotnew:102
+#: src/dotnew:96
 #, sh-format
 msgid "Done processing all .new files"
 msgstr ""
 
-#: src/dotnew:104 src/dotnew-gtk.ui:1035
+#: src/dotnew:98 src/dotnew-gtk.ui:1035
 #, sh-format
 msgid "No .new files"
 msgstr ""
 
-#: src/dotnew:105 src/dotnew-gtk.ui:1083
+#: src/dotnew:99 src/dotnew-gtk.ui:1083
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr ""
