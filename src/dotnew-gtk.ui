@@ -1172,6 +1172,34 @@ Public License instead of this License.  But first, please read
                 <property name="position">3</property>
               </packing>
             </child>
+            <child>
+              <object class="GtkButton" id="button_kompare">
+                <property name="label">Kompare</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_button_kompare_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button_kdiff3">
+                <property name="label">KDiff3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_button_kdiff3_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
           </object>
           <packing>
             <property name="expand">False</property>
