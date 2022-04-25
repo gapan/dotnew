@@ -9,6 +9,7 @@ using the GTK+3 toolkit. The user is allowed to:
 - replace the old configuration file with the new one
 - delete the new configuration file
 - view a diff between the old and new configuration files
-- merge differences between the old and new configuration files using
-  vimdiff (gvimdiff too for the GTK+3 version) if it is installed
+- merge differences between the old and new configuration files using a
+  selection of optional tools. These include vim, neovim, meld, diffuse,
+  kompare, kdiff3, xxdiff and tkdiff.
 
