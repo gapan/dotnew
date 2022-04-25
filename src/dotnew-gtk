@@ -185,12 +185,10 @@ class DotnewGTK:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
-            if exec_exists('/usr/bin/gvimdiff'):
-                os.system('gvimdiff {0} {0}.new'.format(selectedfilename))
-            else:
-                if exec_exists('/usr/bin/vimdiff'):
-                    if self.terminal:
-                        os.system(self.terminal + '"vimdiff {0} {0}.new"'.format(selectedfilename))
+            if self.has_gvim:
+                os.system('/usr/bin/gvimdiff {0} {0}.new'.format(selectedfilename))
+            elif self.has_vim and self.terminal:
+                os.system(self.terminal + '"/usr/bin/vimdiff {0} {0}.new"'.format(selectedfilename))
         except TypeError:
             pass
 
@@ -200,9 +198,8 @@ class DotnewGTK:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
-            if exec_exists('/usr/bin/nvim'):
-                if self.terminal:
-                    os.system(self.terminal + '"nvim -d {0} {0}.new"'.format(selectedfilename))
+            if self.has_nvim and self.terminal:
+                os.system(self.terminal + '"/usr/bin/nvim -d {0} {0}.new"'.format(selectedfilename))
         except TypeError:
             pass
 
@@ -212,9 +209,9 @@ class DotnewGTK:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
-            if exec_exists('/usr/bin/meld'):
-                if exec_exists('/usr/bin/dbus-launch'):
-                    os.system('dbus-launch /usr/bin/meld {0} {0}.new'.format(selectedfilename))
+            if self.has_meld:
+                if self.has_dbus:
+                    os.system('/usr/bin/dbus-launch /usr/bin/meld {0} {0}.new'.format(selectedfilename))
                 else:
                     os.system('/usr/bin/meld {0} {0}.new'.format(selectedfilename))
         except TypeError:
@@ -276,18 +273,31 @@ class DotnewGTK:
         self.button_vim = builder.get_object('button_vim')
         self.button_meld = builder.get_object('button_meld')
         self.compare_options = 1
-        if exec_exists('/usr/bin/gvimdiff') or exec_exists('/usr/bin/vimdiff'):
+
+        # determine capabilities
+        self.has_gvim = False
+        self.has_vim = False
+        self.has_nvim = False
+        self.has_meld = False
+        if exec_exists('/usr/bin/gvimdiff'):
+            self.has_gvim = True
+            self.compare_options = self.compare_options + 1
+        elif exec_exists('/usr/bin/vimdiff'):
+            self.has_vim = True
             self.compare_options = self.compare_options + 1
         else:
             self.button_vim.hide()
         if exec_exists('/usr/bin/nvim'):
+            self.has_nvim = True
             self.compare_options = self.compare_options + 1
         else:
             self.button_nvim.hide()
         if exec_exists('/usr/bin/meld'):
+            self.has_meld = True
             self.compare_options = self.compare_options + 1
         else:
             self.button_meld.hide()
+        self.has_dbus = exec_exists('/usr/bin/dbus-launch')
 
         self.treeview_files = builder.get_object('treeview_files')
         self.treeviewcolumn_replace = builder.get_object(
