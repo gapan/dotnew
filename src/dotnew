@@ -28,28 +28,19 @@ dialog="dialog"
 
 dotnewdialog()
 {
-if [ -x /usr/bin/vimdiff ]; then
-    file=$1
-    $dialog --title "dotnew" --backtitle "$file" \
-    --ok-label "`eval_gettext 'OK'`" --cancel-label "`eval_gettext 'Cancel'`" \
-    --menu \
-    "`eval_gettext 'New settings file found: $file\n\nWhat do you want to do with it?'`" 20 110 5 \
-    "`eval_gettext 'Replace'`" "`eval_gettext 'Replace the old settings file with the new one'`" \
-    "`eval_gettext 'Delete'`" "`eval_gettext 'Delete the new settings file'`" \
-    "`eval_gettext 'Diff'`" "`eval_gettext 'View the differences between the old and new settings files'`" \
-    "Vimdiff" "`eval_gettext 'Use vimdiff to edit the old and new settings files'`" \
-    "`eval_gettext 'Nothing'`" "`eval_gettext 'Do nothing for now, decide about it later'`" 2> /tmp/dotnew.$$
-else
-    file=$1
-    $dialog --title "dotnew" --backtitle "$file" \
-    --ok-label "`eval_gettext 'OK'`" --cancel-label "`eval_gettext 'Cancel'`" \
-    --menu \
-    "`eval_gettext 'New settings file found: $file\n\nWhat do you want to do with it?'`" 20 110 5 \
-    "`eval_gettext 'Replace'`" "`eval_gettext 'Replace the old settings file with the new one'`" \
-    "`eval_gettext 'Delete'`" "`eval_gettext 'Delete the new settings file'`" \
-    "`eval_gettext 'Diff'`" "`eval_gettext 'View the differences between the old and new settings files'`" \
-    "`eval_gettext 'Nothing'`" "`eval_gettext 'Do nothing for now, decide about it later'`" 2> /tmp/dotnew.$$
-fi
+[ -x /usr/bin/vimdiff ] && HAS_VIMDIFF=1
+[ -x /usr/bin/nvim ] && HAS_NVIM=1
+file=$1
+$dialog --title "dotnew" --backtitle "$file" \
+--ok-label "`eval_gettext 'OK'`" --cancel-label "`eval_gettext 'Cancel'`" \
+--menu \
+"`eval_gettext 'New settings file found: $file\n\nWhat do you want to do with it?'`" 20 110 6 \
+"`eval_gettext 'Replace'`" "`eval_gettext 'Replace the old settings file with the new one'`" \
+"`eval_gettext 'Delete'`" "`eval_gettext 'Delete the new settings file'`" \
+"`eval_gettext 'Diff'`" "`eval_gettext 'View the differences between the old and new settings files'`" \
+${HAS_VIMDIFF:+"Vimdiff" "`eval_gettext 'Use vimdiff to edit the old and new settings files'`"} \
+${HAS_NVIM:+"Nvim" "`eval_gettext 'Use neovim to edit the old and new settings files'`"} \
+"`eval_gettext 'Nothing'`" "`eval_gettext 'Do nothing for now, decide about it later'`" 2> /tmp/dotnew.$$
 
 if [ ! $? -eq 0 ]; then
     rm -f /tmp/dotnew.$$
@@ -76,6 +67,9 @@ case $choice in
         ;;
     Vimdiff)
         vimdiff $2 $1
+        ;;
+    Nvim)
+        nvim -d $2 $1
         ;;
 esac
 }
