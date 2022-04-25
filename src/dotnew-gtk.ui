@@ -1135,7 +1135,7 @@ Public License instead of this License.  But first, please read
               <object class="GtkFlowBoxChild" id="flowboxchild_vim">
                 <property name="width-request">100</property>
                 <property name="height-request">80</property>
-                <property name="can-focus">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_vim">
                     <property name="label">Vim</property>
@@ -1151,7 +1151,7 @@ Public License instead of this License.  But first, please read
               <object class="GtkFlowBoxChild" id="flowboxchild_neovim">
                 <property name="width-request">100</property>
                 <property name="height-request">80</property>
-                <property name="can-focus">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_neovim">
                     <property name="label">Neovim</property>
@@ -1167,7 +1167,7 @@ Public License instead of this License.  But first, please read
               <object class="GtkFlowBoxChild" id="flowboxchild_meld">
                 <property name="width-request">100</property>
                 <property name="height-request">80</property>
-                <property name="can-focus">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_meld">
                     <property name="label">Meld</property>
@@ -1183,7 +1183,7 @@ Public License instead of this License.  But first, please read
               <object class="GtkFlowBoxChild" id="flowboxchild_diffuse">
                 <property name="width-request">100</property>
                 <property name="height-request">80</property>
-                <property name="can-focus">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_diffuse">
                     <property name="label">Diffuse</property>
@@ -1199,7 +1199,7 @@ Public License instead of this License.  But first, please read
               <object class="GtkFlowBoxChild" id="flowboxchild_kompare">
                 <property name="width-request">100</property>
                 <property name="height-request">80</property>
-                <property name="can-focus">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_kompare">
                     <property name="label">Kompare</property>
@@ -1215,7 +1215,7 @@ Public License instead of this License.  But first, please read
               <object class="GtkFlowBoxChild" id="flowboxchild_kdiff3">
                 <property name="width-request">100</property>
                 <property name="height-request">80</property>
-                <property name="can-focus">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_kdiff3">
                     <property name="label">KDiff3</property>
@@ -1231,7 +1231,7 @@ Public License instead of this License.  But first, please read
               <object class="GtkFlowBoxChild" id="flowboxchild_xxdiff">
                 <property name="width-request">100</property>
                 <property name="height-request">80</property>
-                <property name="can-focus">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_xxdiff">
                     <property name="label" translatable="yes">xxdiff</property>
@@ -1247,7 +1247,7 @@ Public License instead of this License.  But first, please read
               <object class="GtkFlowBoxChild" id="flowboxchild_tkdiff">
                 <property name="width-request">100</property>
                 <property name="height-request">80</property>
-                <property name="can-focus">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_tkdiff">
                     <property name="label">TkDiff</property>
