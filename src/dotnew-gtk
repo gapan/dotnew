@@ -276,82 +276,63 @@ class DotnewGTK:
         # Main window
         #
         self.button_compare = builder.get_object('button_compare')
+        self.button_merge = builder.get_object('button_merge')
         self.popover_compare = builder.get_object('popover_compare')
-        self.button_vim = builder.get_object('button_vim')
-        self.button_meld = builder.get_object('button_meld')
-        self.button_diffuse = builder.get_object('button_diffuse')
-        self.button_kompare = builder.get_object('button_kompare')
-        self.button_kdiff3 = builder.get_object('button_kdiff3')
-        self.button_xxdiff = builder.get_object('button_xxdiff')
-        self.button_tkdiff = builder.get_object('button_tkdiff')
+        self.flowboxchild_vim = builder.get_object('flowboxchild_vim')
+        self.flowboxchild_neovim = builder.get_object('flowboxchild_neovim')
+        self.flowboxchild_meld = builder.get_object('flowboxchild_meld')
+        self.flowboxchild_diffuse = builder.get_object('flowboxchild_diffuse')
+        self.flowboxchild_kompare = builder.get_object('flowboxchild_kompare')
+        self.flowboxchild_kdiff3 = builder.get_object('flowboxchild_kdiff3')
+        self.flowboxchild_xxdiff = builder.get_object('flowboxchild_xxdiff')
+        self.flowboxchild_tkdiff = builder.get_object('flowboxchild_tkdiff')
 
         # determine capabilities
         self.has_gvim = False
         self.has_vim = False
-        self.has_nvim = False
-        self.has_meld = False
-        self.has_diffuse = False
-        self.has_kompare = False
-        self.has_kdiff3 = False
-        self.has_xxdiff = False
-        self.has_tkdiff = False
         self.merge_options = 0
-        self.merge_tool = None
+        self.merge_tool = None   # only used when only one tool is installed
         self.merge_tool_use_terminal = False
         if exec_exists('/usr/bin/gvimdiff'):
             self.has_gvim = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/gvimdiff'
+            self.flowboxchild_vim.show()
         elif exec_exists('/usr/bin/vimdiff'):
             self.has_vim = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/vimdiff'
             self.merge_tool_use_terminal = True
-        else:
-            self.button_vim.hide()
+            self.flowboxchild_vim.show()
         if exec_exists('/usr/bin/nvim'):
-            self.has_nvim = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/nvim'
             self.merge_tool_use_terminal = True
-        else:
-            self.button_nvim.hide()
+            self.flowboxchild_neovim.show()
         if exec_exists('/usr/bin/meld'):
-            self.has_meld = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/meld'
-        else:
-            self.button_meld.hide()
+            self.flowboxchild_meld.show()
         if exec_exists('/usr/bin/diffuse'):
-            self.has_diffuse = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/diffuse'
-        else:
-            self.button_diffuse.hide()
+            self.flowboxchild_diffuse.show()
         if exec_exists('/usr/bin/kompare'):
-            self.has_kompare = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/kompare'
-        else:
-            self.button_kompare.hide()
+            self.flowboxchild_kompare.show()
         if exec_exists('/usr/bin/kdiff3'):
-            self.has_kdiff3 = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/kdiff3'
-        else:
-            self.button_kdiff3.hide()
+            self.flowboxchild_kdiff3.show()
         if exec_exists('/usr/bin/xxdiff'):
-            self.has_xxdiff = True
             self.merge_options = self.merge_options + 1
-            self.merge_tool = '/usr/bin/xdiff'
-        else:
-            self.button_xxdiff.hide()
+            self.merge_tool = '/usr/bin/xxdiff'
+            self.flowboxchild_xxdiff.show()
         if exec_exists('/usr/bin/tkdiff'):
-            self.has_tkdiff = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/tkdiff'
-        else:
-            self.button_tkdiff.hide()
+            self.flowboxchild_tkdiff.show()
         self.has_dbus = exec_exists('/usr/bin/dbus-launch')
         # hide the merge button if there is no merge tool installed
         if self.merge_options == 0:

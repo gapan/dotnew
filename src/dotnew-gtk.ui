@@ -1097,7 +1097,7 @@ Public License instead of this License.  But first, please read
   </object>
   <object class="GtkPopover" id="popover_compare">
     <property name="can-focus">False</property>
-    <property name="relative-to">button_compare</property>
+    <property name="relative-to">button_merge</property>
     <property name="position">bottom</property>
     <child>
       <object class="GtkBox">
@@ -1122,129 +1122,147 @@ Public License instead of this License.  But first, please read
           </packing>
         </child>
         <child>
-          <object class="GtkBox">
+          <object class="GtkFlowBox" id="flowbox_merge_tools">
+            <property name="name">flowbox_merge_tools</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="spacing">6</property>
-            <property name="homogeneous">True</property>
+            <property name="no-show-all">True</property>
+            <property name="column-spacing">6</property>
+            <property name="row-spacing">6</property>
+            <property name="min-children-per-line">2</property>
+            <property name="max-children-per-line">4</property>
             <child>
-              <object class="GtkButton" id="button_vim">
-                <property name="label">Vim</property>
-                <property name="visible">True</property>
+              <object class="GtkFlowBoxChild" id="flowboxchild_vim">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
                 <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="tooltip-text" translatable="yes">Use gvimdiff or vimdiff to merge diffs</property>
-                <signal name="clicked" handler="on_button_vim_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkButton" id="button_vim">
+                    <property name="label">Vim</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_button_vim_clicked" swapped="no"/>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_neovim">
-                <property name="label">Neovim</property>
-                <property name="visible">True</property>
+              <object class="GtkFlowBoxChild" id="flowboxchild_neovim">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
                 <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_button_neovim_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkButton" id="button_neovim">
+                    <property name="label">Neovim</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_button_neovim_clicked" swapped="no"/>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_meld">
-                <property name="label">Meld</property>
-                <property name="visible">True</property>
+              <object class="GtkFlowBoxChild" id="flowboxchild_meld">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
                 <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="tooltip-text" translatable="yes">Use meld to merge diffs</property>
-                <signal name="clicked" handler="on_button_meld_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkButton" id="button_meld">
+                    <property name="label">Meld</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_button_meld_clicked" swapped="no"/>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">3</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_diffuse">
-                <property name="label">Diffuse</property>
-                <property name="visible">True</property>
+              <object class="GtkFlowBoxChild" id="flowboxchild_diffuse">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
                 <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_button_diffuse_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkButton" id="button_diffuse">
+                    <property name="label">Diffuse</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_button_diffuse_clicked" swapped="no"/>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">4</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_kompare">
-                <property name="label">Kompare</property>
-                <property name="visible">True</property>
+              <object class="GtkFlowBoxChild" id="flowboxchild_kompare">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
                 <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_button_kompare_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkButton" id="button_kompare">
+                    <property name="label">Kompare</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_button_kompare_clicked" swapped="no"/>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">5</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_kdiff3">
-                <property name="label">KDiff3</property>
-                <property name="visible">True</property>
+              <object class="GtkFlowBoxChild" id="flowboxchild_kdiff3">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
                 <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_button_kdiff3_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkButton" id="button_kdiff3">
+                    <property name="label">KDiff3</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_button_kdiff3_clicked" swapped="no"/>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">6</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_xxdiff">
-                <property name="label" translatable="yes">xxdiff</property>
-                <property name="visible">True</property>
+              <object class="GtkFlowBoxChild" id="flowboxchild_xxdiff">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
                 <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_button_xxdiff_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkButton" id="button_xxdiff">
+                    <property name="label" translatable="yes">xxdiff</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_button_xxdiff_clicked" swapped="no"/>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">7</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_tkdiff">
-                <property name="label">TkDiff</property>
-                <property name="visible">True</property>
+              <object class="GtkFlowBoxChild" id="flowboxchild_tkdiff">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
                 <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <signal name="clicked" handler="on_button_tkdiff_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkButton" id="button_tkdiff">
+                    <property name="label">TkDiff</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="on_button_tkdiff_clicked" swapped="no"/>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">8</property>
-              </packing>
             </child>
           </object>
           <packing>
             <property name="expand">False</property>
-            <property name="fill">True</property>
+            <property name="fill">False</property>
             <property name="position">1</property>
           </packing>
         </child>
