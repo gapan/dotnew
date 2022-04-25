@@ -162,11 +162,7 @@ class DotnewGTK:
                             i[1] = 0
                 delete_clicked = False
 
-    def on_button_diff_clicked(self, widget, data=None):
-        self.popover_compare.hide()
-        self.use_diff()
-
-    def use_diff(self):
+    def on_button_compare_clicked(self, widget, data=None):
         try:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
@@ -305,11 +301,8 @@ class DotnewGTK:
     def on_button_refresh_clicked(self, widget, data=None):
         self.create_file_list()
 
-    def on_button_compare_clicked(self, widget, data=None):
-        if self.compare_options == 1:
-            self.use_diff()
-        else:
-            self.popover_compare.show()
+    def on_button_merge_clicked(self, widget, data=None):
+        self.popover_compare.show()
 
     def on_dialog_diff_delete_event(self, widget, event):
         self.dialog_diff.hide()
@@ -347,7 +340,6 @@ class DotnewGTK:
         self.button_kdiff3 = builder.get_object('button_kdiff3')
         self.button_xxdiff = builder.get_object('button_xxdiff')
         self.button_tkdiff = builder.get_object('button_tkdiff')
-        self.compare_options = 1
 
         # determine capabilities
         self.has_gvim = False
@@ -359,50 +351,64 @@ class DotnewGTK:
         self.has_kdiff3 = False
         self.has_xxdiff = False
         self.has_tkdiff = False
+        self.merge_options = 0
+        self.merge_tool = None
         if exec_exists('/usr/bin/gvimdiff'):
             self.has_gvim = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/gvimdiff'
         elif exec_exists('/usr/bin/vimdiff'):
             self.has_vim = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/vimdiff'
         else:
             self.button_vim.hide()
         if exec_exists('/usr/bin/nvim'):
             self.has_nvim = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/nvim'
         else:
             self.button_nvim.hide()
         if exec_exists('/usr/bin/meld'):
             self.has_meld = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/meld'
         else:
             self.button_meld.hide()
         if exec_exists('/usr/bin/diffuse'):
             self.has_diffuse = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/diffuse'
         else:
             self.button_diffuse.hide()
         if exec_exists('/usr/bin/kompare'):
             self.has_kompare = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/kompare'
         else:
             self.button_kompare.hide()
         if exec_exists('/usr/bin/kdiff3'):
             self.has_kdiff3 = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/kdiff3'
         else:
             self.button_kdiff3.hide()
         if exec_exists('/usr/bin/xxdiff'):
             self.has_xxdiff = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/xdiff'
         else:
             self.button_xxdiff.hide()
         if exec_exists('/usr/bin/tkdiff'):
             self.has_tkdiff = True
-            self.compare_options = self.compare_options + 1
+            self.merge_options = self.merge_options + 1
+            self.merge_tool = '/usr/bin/tkdiff'
         else:
             self.button_tkdiff.hide()
         self.has_dbus = exec_exists('/usr/bin/dbus-launch')
+        # hide the merge button if there is no merge tool installed
+        if self.merge_options == 0:
+            self.button_merge.hide()
 
         self.treeview_files = builder.get_object('treeview_files')
         self.treeviewcolumn_replace = builder.get_object(
