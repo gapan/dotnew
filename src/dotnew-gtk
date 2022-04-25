@@ -277,7 +277,6 @@ class DotnewGTK:
         #
         self.button_compare = builder.get_object('button_compare')
         self.popover_compare = builder.get_object('popover_compare')
-        self.button_diff = builder.get_object('button_diff')
         self.button_vim = builder.get_object('button_vim')
         self.button_meld = builder.get_object('button_meld')
         self.button_diffuse = builder.get_object('button_diffuse')
