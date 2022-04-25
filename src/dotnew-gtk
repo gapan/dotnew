@@ -259,6 +259,34 @@ class DotnewGTK:
         except TypeError:
             pass
 
+    def on_button_xxdiff_clicked(self, widget, data=None):
+        self.popover_compare.hide()
+        try:
+            selectedfile = self.treeview_files.get_selection()
+            self.liststore_files, iter = selectedfile.get_selected()
+            selectedfilename = self.liststore_files.get_value(iter, 2)
+            if self.has_xxdiff:
+                if self.has_dbus:
+                    os.system('/usr/bin/dbus-launch /usr/bin/xxdiff {0} {0}.new'.format(selectedfilename))
+                else:
+                    os.system('/usr/bin/xxdiff {0} {0}.new'.format(selectedfilename))
+        except TypeError:
+            pass
+
+    def on_button_tkdiff_clicked(self, widget, data=None):
+        self.popover_compare.hide()
+        try:
+            selectedfile = self.treeview_files.get_selection()
+            self.liststore_files, iter = selectedfile.get_selected()
+            selectedfilename = self.liststore_files.get_value(iter, 2)
+            if self.has_tkdiff:
+                if self.has_dbus:
+                    os.system('/usr/bin/dbus-launch /usr/bin/tkdiff {0} {0}.new'.format(selectedfilename))
+                else:
+                    os.system('/usr/bin/tkdiff {0} {0}.new'.format(selectedfilename))
+        except TypeError:
+            pass
+
     def on_button_replace_all_clicked(self, widget, data=None):
         for i in self.liststore_files:
             i[0] = 1
@@ -317,6 +345,8 @@ class DotnewGTK:
         self.button_diffuse = builder.get_object('button_diffuse')
         self.button_kompare = builder.get_object('button_kompare')
         self.button_kdiff3 = builder.get_object('button_kdiff3')
+        self.button_xxdiff = builder.get_object('button_xxdiff')
+        self.button_tkdiff = builder.get_object('button_tkdiff')
         self.compare_options = 1
 
         # determine capabilities
@@ -327,6 +357,8 @@ class DotnewGTK:
         self.has_diffuse = False
         self.has_kompare = False
         self.has_kdiff3 = False
+        self.has_xxdiff = False
+        self.has_tkdiff = False
         if exec_exists('/usr/bin/gvimdiff'):
             self.has_gvim = True
             self.compare_options = self.compare_options + 1
@@ -360,6 +392,16 @@ class DotnewGTK:
             self.compare_options = self.compare_options + 1
         else:
             self.button_kdiff3.hide()
+        if exec_exists('/usr/bin/xxdiff'):
+            self.has_xxdiff = True
+            self.compare_options = self.compare_options + 1
+        else:
+            self.button_xxdiff.hide()
+        if exec_exists('/usr/bin/tkdiff'):
+            self.has_tkdiff = True
+            self.compare_options = self.compare_options + 1
+        else:
+            self.button_tkdiff.hide()
         self.has_dbus = exec_exists('/usr/bin/dbus-launch')
 
         self.treeview_files = builder.get_object('treeview_files')
