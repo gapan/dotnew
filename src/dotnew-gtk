@@ -217,6 +217,20 @@ class DotnewGTK:
         except TypeError:
             pass
 
+    def on_button_diffuse_clicked(self, widget, data=None):
+        self.popover_compare.hide()
+        try:
+            selectedfile = self.treeview_files.get_selection()
+            self.liststore_files, iter = selectedfile.get_selected()
+            selectedfilename = self.liststore_files.get_value(iter, 2)
+            if self.has_diffuse:
+                if self.has_dbus:
+                    os.system('/usr/bin/dbus-launch /usr/bin/diffuse {0} {0}.new'.format(selectedfilename))
+                else:
+                    os.system('/usr/bin/diffuse {0} {0}.new'.format(selectedfilename))
+        except TypeError:
+            pass
+
     def on_button_kompare_clicked(self, widget, data=None):
         self.popover_compare.hide()
         try:
@@ -300,6 +314,7 @@ class DotnewGTK:
         self.button_diff = builder.get_object('button_diff')
         self.button_vim = builder.get_object('button_vim')
         self.button_meld = builder.get_object('button_meld')
+        self.button_diffuse = builder.get_object('button_diffuse')
         self.button_kompare = builder.get_object('button_kompare')
         self.button_kdiff3 = builder.get_object('button_kdiff3')
         self.compare_options = 1
@@ -309,6 +324,7 @@ class DotnewGTK:
         self.has_vim = False
         self.has_nvim = False
         self.has_meld = False
+        self.has_diffuse = False
         self.has_kompare = False
         self.has_kdiff3 = False
         if exec_exists('/usr/bin/gvimdiff'):
@@ -329,6 +345,11 @@ class DotnewGTK:
             self.compare_options = self.compare_options + 1
         else:
             self.button_meld.hide()
+        if exec_exists('/usr/bin/diffuse'):
+            self.has_diffuse = True
+            self.compare_options = self.compare_options + 1
+        else:
+            self.button_diffuse.hide()
         if exec_exists('/usr/bin/kompare'):
             self.has_kompare = True
             self.compare_options = self.compare_options + 1

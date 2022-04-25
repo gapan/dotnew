@@ -1173,6 +1173,20 @@ Public License instead of this License.  But first, please read
               </packing>
             </child>
             <child>
+              <object class="GtkButton" id="button_diffuse">
+                <property name="label">Diffuse</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_button_diffuse_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkButton" id="button_kompare">
                 <property name="label">Kompare</property>
                 <property name="visible">True</property>
@@ -1183,7 +1197,7 @@ Public License instead of this License.  But first, please read
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">4</property>
+                <property name="position">5</property>
               </packing>
             </child>
             <child>
@@ -1197,7 +1211,7 @@ Public License instead of this License.  But first, please read
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">5</property>
+                <property name="position">6</property>
               </packing>
             </child>
           </object>
