@@ -176,110 +176,50 @@ class DotnewGTK:
             pass
 
     def on_button_vim_clicked(self, widget, data=None):
-        self.popover_compare.hide()
-        try:
-            selectedfile = self.treeview_files.get_selection()
-            self.liststore_files, iter = selectedfile.get_selected()
-            selectedfilename = self.liststore_files.get_value(iter, 2)
-            if self.has_gvim:
-                os.system('/usr/bin/gvimdiff {0} {0}.new'.format(selectedfilename))
-            elif self.has_vim and self.terminal:
-                os.system(self.terminal + '"/usr/bin/vimdiff {0} {0}.new"'.format(selectedfilename))
-        except TypeError:
-            pass
+        if self.has_gvim:
+            self.launch_merge_tool('/usr/bin/gvimdiff')
+        elif self.has_vim:
+            self.launch_merge_tool('/usr/bin/vimdiff', use_terminal = True)
 
     def on_button_neovim_clicked(self, widget, data=None):
-        self.popover_compare.hide()
-        try:
-            selectedfile = self.treeview_files.get_selection()
-            self.liststore_files, iter = selectedfile.get_selected()
-            selectedfilename = self.liststore_files.get_value(iter, 2)
-            if self.has_nvim and self.terminal:
-                os.system(self.terminal + '"/usr/bin/nvim -d {0} {0}.new"'.format(selectedfilename))
-        except TypeError:
-            pass
+        self.launch_merge_tool('/usr/bin/nvim -d', use_terminal = True)
 
     def on_button_meld_clicked(self, widget, data=None):
-        self.popover_compare.hide()
-        try:
-            selectedfile = self.treeview_files.get_selection()
-            self.liststore_files, iter = selectedfile.get_selected()
-            selectedfilename = self.liststore_files.get_value(iter, 2)
-            if self.has_meld:
-                if self.has_dbus:
-                    os.system('/usr/bin/dbus-launch /usr/bin/meld {0} {0}.new'.format(selectedfilename))
-                else:
-                    os.system('/usr/bin/meld {0} {0}.new'.format(selectedfilename))
-        except TypeError:
-            pass
+        self.launch_merge_tool('/usr/bin/meld')
 
     def on_button_diffuse_clicked(self, widget, data=None):
-        self.popover_compare.hide()
-        try:
-            selectedfile = self.treeview_files.get_selection()
-            self.liststore_files, iter = selectedfile.get_selected()
-            selectedfilename = self.liststore_files.get_value(iter, 2)
-            if self.has_diffuse:
-                if self.has_dbus:
-                    os.system('/usr/bin/dbus-launch /usr/bin/diffuse {0} {0}.new'.format(selectedfilename))
-                else:
-                    os.system('/usr/bin/diffuse {0} {0}.new'.format(selectedfilename))
-        except TypeError:
-            pass
+        self.launch_merge_tool('/usr/bin/diffuse')
 
     def on_button_kompare_clicked(self, widget, data=None):
-        self.popover_compare.hide()
-        try:
-            selectedfile = self.treeview_files.get_selection()
-            self.liststore_files, iter = selectedfile.get_selected()
-            selectedfilename = self.liststore_files.get_value(iter, 2)
-            if self.has_kompare:
-                if self.has_dbus:
-                    os.system('/usr/bin/dbus-launch /usr/bin/kompare {0} {0}.new'.format(selectedfilename))
-                else:
-                    os.system('/usr/bin/kompare {0} {0}.new'.format(selectedfilename))
-        except TypeError:
-            pass
+        self.launch_merge_tool('/usr/bin/kompare')
 
     def on_button_kdiff3_clicked(self, widget, data=None):
-        self.popover_compare.hide()
-        try:
-            selectedfile = self.treeview_files.get_selection()
-            self.liststore_files, iter = selectedfile.get_selected()
-            selectedfilename = self.liststore_files.get_value(iter, 2)
-            if self.has_kdiff3:
-                if self.has_dbus:
-                    os.system('/usr/bin/dbus-launch /usr/bin/kdiff3 {0} {0}.new'.format(selectedfilename))
-                else:
-                    os.system('/usr/bin/kdiff3 {0} {0}.new'.format(selectedfilename))
-        except TypeError:
-            pass
+        self.launch_merge_tool('/usr/bin/kdiff3')
 
     def on_button_xxdiff_clicked(self, widget, data=None):
-        self.popover_compare.hide()
-        try:
-            selectedfile = self.treeview_files.get_selection()
-            self.liststore_files, iter = selectedfile.get_selected()
-            selectedfilename = self.liststore_files.get_value(iter, 2)
-            if self.has_xxdiff:
-                if self.has_dbus:
-                    os.system('/usr/bin/dbus-launch /usr/bin/xxdiff {0} {0}.new'.format(selectedfilename))
-                else:
-                    os.system('/usr/bin/xxdiff {0} {0}.new'.format(selectedfilename))
-        except TypeError:
-            pass
+        self.launch_merge_tool('/usr/bin/xxdiff')
 
     def on_button_tkdiff_clicked(self, widget, data=None):
+        self.launch_merge_tool('/usr/bin/tkdiff')
+
+    def launch_merge_tool(self, merge_tool, use_terminal = False):
         self.popover_compare.hide()
         try:
             selectedfile = self.treeview_files.get_selection()
             self.liststore_files, iter = selectedfile.get_selected()
             selectedfilename = self.liststore_files.get_value(iter, 2)
-            if self.has_tkdiff:
-                if self.has_dbus:
-                    os.system('/usr/bin/dbus-launch /usr/bin/tkdiff {0} {0}.new'.format(selectedfilename))
+            if use_terminal:
+                if self.terminal:
+                    # careful with the spaces here
+                    os.system(self.terminal + ' "' + merge_tool + ' {0} {0}.new"'.format(selectedfilename))
                 else:
-                    os.system('/usr/bin/tkdiff {0} {0}.new'.format(selectedfilename))
+                    print('No terminal emulator found.')
+            elif self.has_dbus:
+                # careful with the spaces here
+                os.system('/usr/bin/dbus-launch ' + merge_tool + ' {0} {0}.new'.format(selectedfilename))
+            else:
+                # careful with the spaces here
+                os.system(merge_tool + ' {0} {0}.new'.format(selectedfilename))
         except TypeError:
             pass
 
@@ -302,7 +242,12 @@ class DotnewGTK:
         self.create_file_list()
 
     def on_button_merge_clicked(self, widget, data=None):
-        self.popover_compare.show()
+        # only show the popover if there are 2 or more options
+        if self.merge_options == 1:
+            self.launch_merge_tool(self.merge_tool,
+                    use_terminal = self.merge_tool_use_terminal)
+        else:
+            self.popover_compare.show()
 
     def on_dialog_diff_delete_event(self, widget, event):
         self.dialog_diff.hide()
@@ -353,6 +298,7 @@ class DotnewGTK:
         self.has_tkdiff = False
         self.merge_options = 0
         self.merge_tool = None
+        self.merge_tool_use_terminal = False
         if exec_exists('/usr/bin/gvimdiff'):
             self.has_gvim = True
             self.merge_options = self.merge_options + 1
@@ -361,12 +307,14 @@ class DotnewGTK:
             self.has_vim = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/vimdiff'
+            self.merge_tool_use_terminal = True
         else:
             self.button_vim.hide()
         if exec_exists('/usr/bin/nvim'):
             self.has_nvim = True
             self.merge_options = self.merge_options + 1
             self.merge_tool = '/usr/bin/nvim'
+            self.merge_tool_use_terminal = True
         else:
             self.button_nvim.hide()
         if exec_exists('/usr/bin/meld'):
