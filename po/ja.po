@@ -4,13 +4,14 @@
 # 
 # Translators:
 # ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
+# gapan <vlahavas@gmail.com>, 2022
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:46+0300\n"
-"PO-Revision-Date: 2017-09-19 09:08+0000\n"
-"Last-Translator: ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen.\n"
+"POT-Creation-Date: 2022-04-25 18:48+0300\n"
+"PO-Revision-Date: 2010-11-30 06:54+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2022\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/dotnew/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,102 +19,108 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/dotnew:20
+#: src/dotnew:21
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "root 権限で実行してください"
 
-#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
+#: src/dotnew:35 src/dotnew:95 src/dotnew:98 src/dotnew-gtk.ui:1059
+#: src/dotnew-gtk.ui:1301
 #, sh-format
 msgid "OK"
 msgstr "OK"
 
-#: src/dotnew:33 src/dotnew:44
+#: src/dotnew:35 src/dotnew-gtk.ui:64
 #, sh-format
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/dotnew:35 src/dotnew:46
+#: src/dotnew:37
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "新しい設定ファイルが見つかりました: $file\\n\\nどのようにしますか？"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
+#: src/dotnew:38 src/dotnew:54 src/dotnew-gtk:344
 #, sh-format
 msgid "Replace"
 msgstr "置き換える"
 
-#: src/dotnew:36 src/dotnew:47
+#: src/dotnew:38
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "旧設定ファイルを新しいものへ置き換える"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
+#: src/dotnew:39 src/dotnew:59 src/dotnew-gtk:347
 #, sh-format
 msgid "Delete"
 msgstr "消去する"
 
-#: src/dotnew:37 src/dotnew:48
+#: src/dotnew:39
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "新しい設定ファイルを消去する"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
+#: src/dotnew:40 src/dotnew:62
 #, sh-format
 msgid "Diff"
 msgstr "差分"
 
-#: src/dotnew:38 src/dotnew:49
+#: src/dotnew:40
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "新・旧設定ファイルの違いを表示"
 
-#: src/dotnew:39
+#: src/dotnew:41
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "vimdiff を用いて新・旧設定ファイルを編集する"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:42
+#, sh-format
+msgid "Use neovim to edit the old and new settings files"
+msgstr "neovim を用いて新・旧設定ファイルを編集する"
+
+#: src/dotnew:43
 #, sh-format
 msgid "Nothing"
 msgstr "何もしない"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:43
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "今は何もせず、後できめる"
 
-#: src/dotnew:90
+#: src/dotnew:85
 #, sh-format
 msgid "Yes"
 msgstr "はい"
 
-#: src/dotnew:91
+#: src/dotnew:86
 #, sh-format
 msgid "No"
 msgstr "いいえ"
 
-#: src/dotnew:92
+#: src/dotnew:87
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
 msgstr "ファイル $orig がありません。\\n $i から $orig へ移動しますか？"
 
-#: src/dotnew:99
+#: src/dotnew:94
 #, sh-format
 msgid "Ready"
 msgstr "準備できました"
 
-#: src/dotnew:101
+#: src/dotnew:96
 #, sh-format
 msgid "Done processing all .new files"
 msgstr "すべての .new ファイルの作業を完了しました"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:384
+#: src/dotnew:98 src/dotnew-gtk.ui:1035
 #, sh-format
 msgid "No .new files"
 msgstr ".new ファイルがありません"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:403
+#: src/dotnew:99 src/dotnew-gtk.ui:1083
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "システムに .new 設定ファイルは存在しません"
@@ -122,62 +129,70 @@ msgstr "システムに .new 設定ファイルは存在しません"
 msgid "Manage .new system settings files"
 msgstr ".new システム設定ファイルの管理"
 
-#: src/dotnew-gtk.glade:33
-msgid "Refresh configuration file list"
-msgstr "構成ファイルリストを更新"
+#: src/dotnew-gtk.ui:43
+msgid "About"
+msgstr ""
 
-#: src/dotnew-gtk.glade:37
-msgid "Compare files line by line"
-msgstr "行ごとに比較"
+#: src/dotnew-gtk.ui:78
+msgid "Apply changes"
+msgstr ""
 
-#: src/dotnew-gtk.glade:51
-msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr "gvimdiff または vimdiff を用いて違いを結合する"
+#: src/dotnew-gtk.ui:190
+msgid "Compare"
+msgstr ""
 
-#: src/dotnew-gtk.glade:65
-msgid "Use meld to merge diffs"
-msgstr "meld を用いて違いを結合する"
+#: src/dotnew-gtk.ui:204
+msgid "Merge"
+msgstr ""
 
-#: src/dotnew-gtk.glade:88
-msgid "Mark all configuration files for replacement"
-msgstr "すべての構成ファイルを置き換えのためマークする"
-
-#: src/dotnew-gtk.glade:89
+#: src/dotnew-gtk.ui:229
 msgid "Replace all"
 msgstr "すべてを置き換える"
 
-#: src/dotnew-gtk.glade:102
-msgid "Mark all new configuration files for deletion"
-msgstr "すべての新しい構成ファイルを消去のためマークする"
+#: src/dotnew-gtk.ui:233
+msgid "Mark all configuration files for replacement"
+msgstr "すべての構成ファイルを置き換えのためマークする"
 
-#: src/dotnew-gtk.glade:103
+#: src/dotnew-gtk.ui:244
 msgid "Delete all"
 msgstr "すべて消去"
 
-#: src/dotnew-gtk.glade:116
-msgid "Unmark all checkboxes"
-msgstr "全チェックボックスのマークを解除"
+#: src/dotnew-gtk.ui:248
+msgid "Mark all new configuration files for deletion"
+msgstr "すべての新しい構成ファイルを消去のためマークする"
 
-#: src/dotnew-gtk.glade:117
+#: src/dotnew-gtk.ui:259
 msgid "Unmark all"
 msgstr "すべてのマークを解除する。"
 
-#: src/dotnew-gtk.glade:139
-msgid "Refresh"
-msgstr "更新"
+#: src/dotnew-gtk.ui:263
+msgid "Unmark all checkboxes"
+msgstr "全チェックボックスのマークを解除"
 
-#: src/dotnew-gtk.glade:455
+#: src/dotnew-gtk.ui:285
+msgid "Refresh list"
+msgstr ""
+
+#: src/dotnew-gtk.ui:289
+msgid "Refresh configuration file list"
+msgstr "構成ファイルリストを更新"
+
+#: src/dotnew-gtk.ui:328
 msgid "A utility to manage .new system configuration files"
 msgstr ".new システム設定ファイル管理ツール"
 
-#: src/dotnew-gtk.glade:1133
+#: src/dotnew-gtk.ui:1006
 msgid "translator-credits"
 msgstr "BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <balloonakafusen+salix@gmail.com>\nその他"
 
-#: src/dotnew-gtk:121
+#: src/dotnew-gtk.ui:1116
+msgid "using"
+msgstr ""
+
+#: src/dotnew-gtk:173
 msgid "vs"
 msgstr "vs"
 
-#: src/dotnew-gtk:211
+#: src/dotnew-gtk:349
 msgid "Configuration file"
 msgstr "構成ファイル"

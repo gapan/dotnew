@@ -3,13 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Gambit <gambit73@gmail.com>, 2022
+# gapan <vlahavas@gmail.com>, 2022
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:46+0300\n"
-"PO-Revision-Date: 2017-09-19 09:08+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-25 18:48+0300\n"
+"PO-Revision-Date: 2010-11-30 06:54+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2022\n"
 "Language-Team: Dutch (http://www.transifex.com/gapan/dotnew/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,102 +19,108 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/dotnew:20
+#: src/dotnew:21
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "U moet root zijn om dit uit te voeren"
 
-#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
+#: src/dotnew:35 src/dotnew:95 src/dotnew:98 src/dotnew-gtk.ui:1059
+#: src/dotnew-gtk.ui:1301
 #, sh-format
 msgid "OK"
 msgstr "OK"
 
-#: src/dotnew:33 src/dotnew:44
+#: src/dotnew:35 src/dotnew-gtk.ui:64
 #, sh-format
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: src/dotnew:35 src/dotnew:46
+#: src/dotnew:37
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "Nieuw instellingenbestand gevonden: $file\\n\\nWat wilt u ermee doen?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
+#: src/dotnew:38 src/dotnew:54 src/dotnew-gtk:344
 #, sh-format
 msgid "Replace"
 msgstr "Vervangen"
 
-#: src/dotnew:36 src/dotnew:47
+#: src/dotnew:38
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "Vervang het oude instellingen bestand met de nieuwe instellingen"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
+#: src/dotnew:39 src/dotnew:59 src/dotnew-gtk:347
 #, sh-format
 msgid "Delete"
 msgstr "Verwijderen"
 
-#: src/dotnew:37 src/dotnew:48
+#: src/dotnew:39
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "Verwijder het bestand met de nieuwe instellingen"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
+#: src/dotnew:40 src/dotnew:62
 #, sh-format
 msgid "Diff"
 msgstr "Diff"
 
-#: src/dotnew:38 src/dotnew:49
+#: src/dotnew:40
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "Bekijk de verschillen tussen de oude en nieuwe bestanden met instellingen"
 
-#: src/dotnew:39
+#: src/dotnew:41
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "Gebruik vimdiff om het oude en nieuwe bestand met instellingen te wijzigen"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:42
+#, sh-format
+msgid "Use neovim to edit the old and new settings files"
+msgstr "Gebruik neovim om het oude en nieuwe bestand met instellingen te wijzigen"
+
+#: src/dotnew:43
 #, sh-format
 msgid "Nothing"
 msgstr "Niets"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:43
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "Doe niets op het moment, besluit later"
 
-#: src/dotnew:90
+#: src/dotnew:85
 #, sh-format
 msgid "Yes"
 msgstr "Ja"
 
-#: src/dotnew:91
+#: src/dotnew:86
 #, sh-format
 msgid "No"
 msgstr "Nee"
 
-#: src/dotnew:92
+#: src/dotnew:87
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
 msgstr "Er is geen $orig bestand aanwezig.\\nVerplaats $i naar $orig?"
 
-#: src/dotnew:99
+#: src/dotnew:94
 #, sh-format
 msgid "Ready"
 msgstr "Gereed"
 
-#: src/dotnew:101
+#: src/dotnew:96
 #, sh-format
 msgid "Done processing all .new files"
 msgstr "Gereed met het verwerken van alle .new bestanden"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:384
+#: src/dotnew:98 src/dotnew-gtk.ui:1035
 #, sh-format
 msgid "No .new files"
 msgstr "Geen .new bestanden"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:403
+#: src/dotnew:99 src/dotnew-gtk.ui:1083
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "Er zijn geen .new configuratie bestanden in uw systeem"
@@ -121,62 +129,70 @@ msgstr "Er zijn geen .new configuratie bestanden in uw systeem"
 msgid "Manage .new system settings files"
 msgstr "Beheer .new systeeminstellingen bestanden"
 
-#: src/dotnew-gtk.glade:33
-msgid "Refresh configuration file list"
-msgstr "Configuratiebestand lijst vernieuwen"
+#: src/dotnew-gtk.ui:43
+msgid "About"
+msgstr "Informatie over"
 
-#: src/dotnew-gtk.glade:37
-msgid "Compare files line by line"
-msgstr "Vergelijk bestanden lijn voor lijn"
+#: src/dotnew-gtk.ui:78
+msgid "Apply changes"
+msgstr "Wijzigingen uitvoeren"
 
-#: src/dotnew-gtk.glade:51
-msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr "Gebruik gvimdiff of vimdiff om diffs samen te voegen"
+#: src/dotnew-gtk.ui:190
+msgid "Compare"
+msgstr "Vergelijken"
 
-#: src/dotnew-gtk.glade:65
-msgid "Use meld to merge diffs"
-msgstr "Gebruik samensmelten om diffs fuseren"
+#: src/dotnew-gtk.ui:204
+msgid "Merge"
+msgstr ""
 
-#: src/dotnew-gtk.glade:88
-msgid "Mark all configuration files for replacement"
-msgstr "Markeer alle configuratiebestanden ter vervanging"
-
-#: src/dotnew-gtk.glade:89
+#: src/dotnew-gtk.ui:229
 msgid "Replace all"
 msgstr "Vervang alles"
 
-#: src/dotnew-gtk.glade:102
-msgid "Mark all new configuration files for deletion"
-msgstr "Markeer alle nieuwe configuratiebestanden voor verwijdering"
+#: src/dotnew-gtk.ui:233
+msgid "Mark all configuration files for replacement"
+msgstr "Markeer alle configuratiebestanden ter vervanging"
 
-#: src/dotnew-gtk.glade:103
+#: src/dotnew-gtk.ui:244
 msgid "Delete all"
 msgstr "Verwijder alles"
 
-#: src/dotnew-gtk.glade:116
-msgid "Unmark all checkboxes"
-msgstr "Alle markeringen deselecteren"
+#: src/dotnew-gtk.ui:248
+msgid "Mark all new configuration files for deletion"
+msgstr "Markeer alle nieuwe configuratiebestanden voor verwijdering"
 
-#: src/dotnew-gtk.glade:117
+#: src/dotnew-gtk.ui:259
 msgid "Unmark all"
 msgstr "Alles deselecteren"
 
-#: src/dotnew-gtk.glade:139
-msgid "Refresh"
-msgstr "Verversen"
+#: src/dotnew-gtk.ui:263
+msgid "Unmark all checkboxes"
+msgstr "Alle markeringen deselecteren"
 
-#: src/dotnew-gtk.glade:455
+#: src/dotnew-gtk.ui:285
+msgid "Refresh list"
+msgstr "Ververs lijst"
+
+#: src/dotnew-gtk.ui:289
+msgid "Refresh configuration file list"
+msgstr "Configuratiebestand lijst vernieuwen"
+
+#: src/dotnew-gtk.ui:328
 msgid "A utility to manage .new system configuration files"
 msgstr "Een tool om .new systeeminstellingen te beheren"
 
-#: src/dotnew-gtk.glade:1133
+#: src/dotnew-gtk.ui:1006
 msgid "translator-credits"
 msgstr "vertaler-credits"
 
-#: src/dotnew-gtk:121
+#: src/dotnew-gtk.ui:1116
+msgid "using"
+msgstr "in gebruik door"
+
+#: src/dotnew-gtk:173
 msgid "vs"
 msgstr "vs"
 
-#: src/dotnew-gtk:211
+#: src/dotnew-gtk:349
 msgid "Configuration file"
 msgstr "Configuratiebestand"

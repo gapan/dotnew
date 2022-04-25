@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Panwar108 <caspian7pena@gmail.com>, 2020
+# gapan <vlahavas@gmail.com>, 2022
 msgid ""
 msgstr ""
 "Project-Id-Version: dotnew\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 21:46+0300\n"
-"PO-Revision-Date: 2020-06-14 15:13+0000\n"
-"Last-Translator: Panwar108 <caspian7pena@gmail.com>\n"
+"POT-Creation-Date: 2022-04-25 18:48+0300\n"
+"PO-Revision-Date: 2010-11-30 06:54+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2022\n"
 "Language-Team: Hindi (India) (http://www.transifex.com/gapan/dotnew/language/hi_IN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,102 +19,108 @@ msgstr ""
 "Language: hi_IN\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/dotnew:20
+#: src/dotnew:21
 #, sh-format
 msgid "You need to be root to run this"
 msgstr "इस कार्य हेतु आपका रुट उपयोक्ता होना आवश्यक है"
 
-#: src/dotnew:33 src/dotnew:44 src/dotnew:100 src/dotnew:103
+#: src/dotnew:35 src/dotnew:95 src/dotnew:98 src/dotnew-gtk.ui:1059
+#: src/dotnew-gtk.ui:1301
 #, sh-format
 msgid "OK"
 msgstr "ठीक है"
 
-#: src/dotnew:33 src/dotnew:44
+#: src/dotnew:35 src/dotnew-gtk.ui:64
 #, sh-format
 msgid "Cancel"
 msgstr "रद्द करें"
 
-#: src/dotnew:35 src/dotnew:46
+#: src/dotnew:37
 #, sh-format
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr "नई सेटिंग्स फ़ाइल पायी गई : $file\\n\\nफ़ाइल संबंधी क्या कार्य किया जाए?"
 
-#: src/dotnew:36 src/dotnew:47 src/dotnew:62 src/dotnew-gtk:207
+#: src/dotnew:38 src/dotnew:54 src/dotnew-gtk:344
 #, sh-format
 msgid "Replace"
 msgstr "बदलें"
 
-#: src/dotnew:36 src/dotnew:47
+#: src/dotnew:38
 #, sh-format
 msgid "Replace the old settings file with the new one"
 msgstr "पुरानी सेटिंग्स फ़ाइल को नई से बदल दें"
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:67 src/dotnew-gtk:209
+#: src/dotnew:39 src/dotnew:59 src/dotnew-gtk:347
 #, sh-format
 msgid "Delete"
 msgstr "हटाएँ"
 
-#: src/dotnew:37 src/dotnew:48
+#: src/dotnew:39
 #, sh-format
 msgid "Delete the new settings file"
 msgstr "नई सेटिंग्स फ़ाइल हटाएँ"
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:70 src/dotnew-gtk.glade:38
+#: src/dotnew:40 src/dotnew:62
 #, sh-format
 msgid "Diff"
 msgstr "अंतर"
 
-#: src/dotnew:38 src/dotnew:49
+#: src/dotnew:40
 #, sh-format
 msgid "View the differences between the old and new settings files"
 msgstr "पुरानी व नई सेटिंग्स फ़ाइलों के बीच अंतर देखें"
 
-#: src/dotnew:39
+#: src/dotnew:41
 #, sh-format
 msgid "Use vimdiff to edit the old and new settings files"
 msgstr "VimDiff द्वारा पुरानी व नई सेटिंग्स फ़ाइलें संपादित करें"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:42
+#, sh-format
+msgid "Use neovim to edit the old and new settings files"
+msgstr "Neovim द्वारा पुरानी व नई सेटिंग्स फ़ाइलें संपादित करें"
+
+#: src/dotnew:43
 #, sh-format
 msgid "Nothing"
 msgstr "कुछ नहीं"
 
-#: src/dotnew:40 src/dotnew:50
+#: src/dotnew:43
 #, sh-format
 msgid "Do nothing for now, decide about it later"
 msgstr "अभी कुछ न करें, निर्णय बाद के लिए टाल दें"
 
-#: src/dotnew:90
+#: src/dotnew:85
 #, sh-format
 msgid "Yes"
 msgstr "हाँ"
 
-#: src/dotnew:91
+#: src/dotnew:86
 #, sh-format
 msgid "No"
 msgstr "नहीं"
 
-#: src/dotnew:92
+#: src/dotnew:87
 #, sh-format
 msgid "There is no $orig file present.\\nMove $i to $orig ?"
 msgstr "कोई $orig फ़ाइल मौजूद नहीं है।\\n$i को $orig में भेजें?"
 
-#: src/dotnew:99
+#: src/dotnew:94
 #, sh-format
 msgid "Ready"
 msgstr "तैयार"
 
-#: src/dotnew:101
+#: src/dotnew:96
 #, sh-format
 msgid "Done processing all .new files"
 msgstr "सभी .new फाइलों को संसाधित कर लिया गया"
 
-#: src/dotnew:103 src/dotnew-gtk.glade:384
+#: src/dotnew:98 src/dotnew-gtk.ui:1035
 #, sh-format
 msgid "No .new files"
 msgstr "कोई .new फ़ाइलें नहीं है"
 
-#: src/dotnew:104 src/dotnew-gtk.glade:403
+#: src/dotnew:99 src/dotnew-gtk.ui:1083
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr "आपके सिस्टम में कोई .new विन्यास फ़ाइलें नहीं है"
@@ -122,62 +129,70 @@ msgstr "आपके सिस्टम में कोई .new विन्य
 msgid "Manage .new system settings files"
 msgstr ".new सिस्टम सेटिंग्स फ़ाइलों हेतु प्रबंधन करें"
 
-#: src/dotnew-gtk.glade:33
-msgid "Refresh configuration file list"
-msgstr "विन्यास फ़ाइल सूची रिफ्रेश करें"
+#: src/dotnew-gtk.ui:43
+msgid "About"
+msgstr ""
 
-#: src/dotnew-gtk.glade:37
-msgid "Compare files line by line"
-msgstr "फ़ाइलों की पंक्ति-दर-पंक्ति तुलना करें"
+#: src/dotnew-gtk.ui:78
+msgid "Apply changes"
+msgstr ""
 
-#: src/dotnew-gtk.glade:51
-msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr "फ़ाइलों का अंतर GvimDiff या VimDiff द्वारा विलय करें"
+#: src/dotnew-gtk.ui:190
+msgid "Compare"
+msgstr ""
 
-#: src/dotnew-gtk.glade:65
-msgid "Use meld to merge diffs"
-msgstr "फ़ाइलों का अंतर Meld द्वारा विलय करें"
+#: src/dotnew-gtk.ui:204
+msgid "Merge"
+msgstr ""
 
-#: src/dotnew-gtk.glade:88
-msgid "Mark all configuration files for replacement"
-msgstr "सभी विन्यास फ़ाइलों को बदलाव हेतु चयनित करें"
-
-#: src/dotnew-gtk.glade:89
+#: src/dotnew-gtk.ui:229
 msgid "Replace all"
 msgstr "सभी को बदलें"
 
-#: src/dotnew-gtk.glade:102
-msgid "Mark all new configuration files for deletion"
-msgstr "सभी नई विन्यास फ़ाइलों को हटाने हेतु चयनित करें"
+#: src/dotnew-gtk.ui:233
+msgid "Mark all configuration files for replacement"
+msgstr "सभी विन्यास फ़ाइलों को बदलाव हेतु चयनित करें"
 
-#: src/dotnew-gtk.glade:103
+#: src/dotnew-gtk.ui:244
 msgid "Delete all"
 msgstr "सभी को हटाएँ"
 
-#: src/dotnew-gtk.glade:116
-msgid "Unmark all checkboxes"
-msgstr "सभी विकल्प अचयनित करें"
+#: src/dotnew-gtk.ui:248
+msgid "Mark all new configuration files for deletion"
+msgstr "सभी नई विन्यास फ़ाइलों को हटाने हेतु चयनित करें"
 
-#: src/dotnew-gtk.glade:117
+#: src/dotnew-gtk.ui:259
 msgid "Unmark all"
 msgstr "सभी को अचयनित करें"
 
-#: src/dotnew-gtk.glade:139
-msgid "Refresh"
-msgstr "रिफ्रेश करें"
+#: src/dotnew-gtk.ui:263
+msgid "Unmark all checkboxes"
+msgstr "सभी विकल्प अचयनित करें"
 
-#: src/dotnew-gtk.glade:455
+#: src/dotnew-gtk.ui:285
+msgid "Refresh list"
+msgstr ""
+
+#: src/dotnew-gtk.ui:289
+msgid "Refresh configuration file list"
+msgstr "विन्यास फ़ाइल सूची रिफ्रेश करें"
+
+#: src/dotnew-gtk.ui:328
 msgid "A utility to manage .new system configuration files"
 msgstr ".new सिस्टम विन्यास फ़ाइलों के प्रबंधन हेतु एक साधन"
 
-#: src/dotnew-gtk.glade:1133
+#: src/dotnew-gtk.ui:1006
 msgid "translator-credits"
 msgstr "अनुवादक आभार"
 
-#: src/dotnew-gtk:121
+#: src/dotnew-gtk.ui:1116
+msgid "using"
+msgstr ""
+
+#: src/dotnew-gtk:173
 msgid "vs"
 msgstr "की तुलना में"
 
-#: src/dotnew-gtk:211
+#: src/dotnew-gtk:349
 msgid "Configuration file"
 msgstr "विन्यास फ़ाइल"
