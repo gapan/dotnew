@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-24 21:59+0300\n"
+"POT-Creation-Date: 2022-04-25 18:35+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "You need to be root to run this"
 msgstr ""
 
 #: src/dotnew:34 src/dotnew:45 src/dotnew:101 src/dotnew:104
-#: src/dotnew-gtk.ui:1045 src/dotnew-gtk.ui:1210
+#: src/dotnew-gtk.ui:1059 src/dotnew-gtk.ui:1301
 #, sh-format
 msgid "OK"
 msgstr ""
@@ -38,7 +38,7 @@ msgstr ""
 msgid "New settings file found: $file\\n\\nWhat do you want to do with it?"
 msgstr ""
 
-#: src/dotnew:37 src/dotnew:48 src/dotnew:63 src/dotnew-gtk:295
+#: src/dotnew:37 src/dotnew:48 src/dotnew:63 src/dotnew-gtk:344
 #, sh-format
 msgid "Replace"
 msgstr ""
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Replace the old settings file with the new one"
 msgstr ""
 
-#: src/dotnew:38 src/dotnew:49 src/dotnew:68 src/dotnew-gtk:298
+#: src/dotnew:38 src/dotnew:49 src/dotnew:68 src/dotnew-gtk:347
 #, sh-format
 msgid "Delete"
 msgstr ""
@@ -108,12 +108,12 @@ msgstr ""
 msgid "Done processing all .new files"
 msgstr ""
 
-#: src/dotnew:104 src/dotnew-gtk.ui:1021
+#: src/dotnew:104 src/dotnew-gtk.ui:1035
 #, sh-format
 msgid "No .new files"
 msgstr ""
 
-#: src/dotnew:105 src/dotnew-gtk.ui:1069
+#: src/dotnew:105 src/dotnew-gtk.ui:1083
 #, sh-format
 msgid "There are no .new configuration files in your system"
 msgstr ""
@@ -134,66 +134,58 @@ msgstr ""
 msgid "Compare"
 msgstr ""
 
-#: src/dotnew-gtk.ui:215
+#: src/dotnew-gtk.ui:204
+msgid "Merge"
+msgstr ""
+
+#: src/dotnew-gtk.ui:229
 msgid "Replace all"
 msgstr ""
 
-#: src/dotnew-gtk.ui:219
+#: src/dotnew-gtk.ui:233
 msgid "Mark all configuration files for replacement"
 msgstr ""
 
-#: src/dotnew-gtk.ui:230
+#: src/dotnew-gtk.ui:244
 msgid "Delete all"
 msgstr ""
 
-#: src/dotnew-gtk.ui:234
+#: src/dotnew-gtk.ui:248
 msgid "Mark all new configuration files for deletion"
 msgstr ""
 
-#: src/dotnew-gtk.ui:245
+#: src/dotnew-gtk.ui:259
 msgid "Unmark all"
 msgstr ""
 
-#: src/dotnew-gtk.ui:249
+#: src/dotnew-gtk.ui:263
 msgid "Unmark all checkboxes"
 msgstr ""
 
-#: src/dotnew-gtk.ui:271
+#: src/dotnew-gtk.ui:285
 msgid "Refresh list"
 msgstr ""
 
-#: src/dotnew-gtk.ui:275
+#: src/dotnew-gtk.ui:289
 msgid "Refresh configuration file list"
 msgstr ""
 
-#: src/dotnew-gtk.ui:314
+#: src/dotnew-gtk.ui:328
 msgid "A utility to manage .new system configuration files"
 msgstr ""
 
-#: src/dotnew-gtk.ui:992
+#: src/dotnew-gtk.ui:1006
 msgid "translator-credits"
 msgstr ""
 
-#: src/dotnew-gtk.ui:1098
+#: src/dotnew-gtk.ui:1116
 msgid "using"
 msgstr ""
 
-#: src/dotnew-gtk.ui:1118
-msgid "Compare files line by line"
-msgstr ""
-
-#: src/dotnew-gtk.ui:1133
-msgid "Use gvimdiff or vimdiff to merge diffs"
-msgstr ""
-
-#: src/dotnew-gtk.ui:1162
-msgid "Use meld to merge diffs"
-msgstr ""
-
-#: src/dotnew-gtk:177
+#: src/dotnew-gtk:173
 msgid "vs"
 msgstr ""
 
-#: src/dotnew-gtk:300
+#: src/dotnew-gtk:349
 msgid "Configuration file"
 msgstr ""
