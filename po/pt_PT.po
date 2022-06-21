@@ -3,7 +3,8 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2011,2019
+# gapan <vlahavas@gmail.com>, 2022
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2011,2019,2022
 # Sérgio Marques <smarquespt@gmail.com>, 2013
 # gapan <vlahavas@gmail.com>, 2022
 msgid ""
@@ -12,13 +13,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-25 18:48+0300\n"
 "PO-Revision-Date: 2010-11-30 06:54+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>, 2022\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2011,2019,2022\n"
 "Language-Team: Portuguese (Portugal) (http://www.transifex.com/gapan/dotnew/language/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_PT\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: src/dotnew:21
 #, sh-format
@@ -132,19 +133,19 @@ msgstr "Gerir definições dos ficheiros .new"
 
 #: src/dotnew-gtk.ui:43
 msgid "About"
-msgstr ""
+msgstr "Acerca"
 
 #: src/dotnew-gtk.ui:78
 msgid "Apply changes"
-msgstr ""
+msgstr "Aplicar alterações"
 
 #: src/dotnew-gtk.ui:190
 msgid "Compare"
-msgstr ""
+msgstr "Comparar"
 
 #: src/dotnew-gtk.ui:204
 msgid "Merge"
-msgstr ""
+msgstr "Unir"
 
 #: src/dotnew-gtk.ui:229
 msgid "Replace all"
@@ -172,7 +173,7 @@ msgstr "Desmarcar todas as caixas de seleção"
 
 #: src/dotnew-gtk.ui:285
 msgid "Refresh list"
-msgstr ""
+msgstr "Atualizar lista"
 
 #: src/dotnew-gtk.ui:289
 msgid "Refresh configuration file list"
@@ -188,7 +189,7 @@ msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>\nSérgio Marques <smarquespt@gm
 
 #: src/dotnew-gtk.ui:1116
 msgid "using"
-msgstr ""
+msgstr "usando"
 
 #: src/dotnew-gtk:173
 msgid "vs"
